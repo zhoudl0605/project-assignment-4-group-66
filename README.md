@@ -2,9 +2,12 @@
 
 ### Development enviroment requirement
 
-- Node 21
-- Yarn/NPM
-- Mysql
+- Node 22 LTS
+  - https://nodejs.org/en/download/package-manager
+- Yarn/NPM (yarn is optional)
+  - https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
+- MongoDB 8
+  - https://www.mongodb.com/docs/manual/installation/
 
 ### Project structure
 
@@ -13,6 +16,6 @@
 
 ### Techniques
 
-- Vue
-- Express
+- React.js
+- Express.js
 - Socket.io
