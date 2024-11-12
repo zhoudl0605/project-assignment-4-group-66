@@ -8,11 +8,14 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/mongoose": "^5.11.97",
     "dotenv": "^16.4.5",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
-    "mongodb": "^6.10.0"
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1"
   },
   "devDependencies": {
     "@types/koa": "^2.15.0",

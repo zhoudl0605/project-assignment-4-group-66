@@ -6,7 +6,7 @@
   - https://nodejs.org/en/download/package-manager
 - Yarn/NPM (yarn is optional)
   - https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
-- MongoDB 8
+- MongoDB 6
   - https://www.mongodb.com/docs/manual/installation/
 
 ### Project structure
