@@ -1,12 +1,4 @@
-/**
- * Database module
- * @module DatabaseModule
- *
- * This module is a singleton that is used to interact with the database
- * It will use the MongoDB library to connect to the database
- */
-
-import { MongoClient } from "mongodb";
+import mongoose, { ConnectOptions } from "mongoose";
 
 type DatabaseConfig = {
     host: string;
@@ -14,20 +6,19 @@ type DatabaseConfig = {
     username: string;
     password: string;
     database: string;
+    options?: ConnectOptions | undefined;
 };
 
 export class DatabaseModule {
     private static instance: DatabaseModule;
     private config: DatabaseConfig;
-    private client: MongoClient | undefined;
 
     private constructor() {
-        // Initialize the database connection configuration
         this.config = DatabaseModule.getConfig();
     }
 
     /**
-     * Get the singleton instance of the database module
+     * 获取DatabaseModule单例实例
      */
     public static getInstance(): DatabaseModule {
         if (!DatabaseModule.instance) {
@@ -37,55 +28,60 @@ export class DatabaseModule {
     }
 
     /**
-     * Connect to the database if not already connected
+     * 连接数据库，如果已连接则返回当前连接
      */
-    public async connect(): Promise<MongoClient> {
-        if (this.client) return this.client;
+    public async connect(): Promise<typeof mongoose> {
+        if (mongoose.connection.readyState) {
+            return mongoose;
+        }
 
-        const { host, port, username, password, database } = this.config;
+        const { host, port, username, password, database, options } =
+            this.config;
         const encodedUser = encodeURIComponent(username);
         const encodedPass = encodeURIComponent(password);
-        const url = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=admin`;
-
-        this.client = new MongoClient(url);
+        const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=admin`;
 
         try {
-            await this.client.connect();
+            await mongoose.connect(uri, options);
             console.log("Database connection established successfully");
         } catch (err) {
             console.error("Database connection failed", err);
             throw new Error("Failed to connect to the database");
         }
 
-        return this.client;
+        return mongoose;
     }
 
     /**
-     * Close the database connection
+     * 断开数据库连接
      */
     public async disconnect(): Promise<void> {
-        if (this.client) {
-            await this.client.close();
-            this.client = undefined;
-            console.log("Database connection closed");
+        if (mongoose.connection.readyState) {
+            try {
+                await mongoose.disconnect();
+                console.log("Database connection closed");
+            } catch (err) {
+                console.error("Failed to close the database connection", err);
+            }
         }
     }
 
     /**
-     * Test the database connection
+     * 测试数据库连接
      */
     public async testConnection(): Promise<boolean> {
         try {
             await this.connect();
+            console.log("Database connection is working");
             return true;
-        } catch (err) {
-            console.error("Database connection test failed:", err);
+        } catch (error) {
+            console.error("Database connection test failed", error);
             return false;
         }
     }
 
     /**
-     * Load and return the database configuration
+     * 加载并返回数据库配置
      */
     public static getConfig(): DatabaseConfig {
         return {
@@ -94,6 +90,9 @@ export class DatabaseModule {
             username: process.env.DB_USER || "",
             password: process.env.DB_PASSWORD || "",
             database: process.env.DB_DATABASE || "test",
+            options: {
+                connectTimeoutMS: 5000,
+            },
         };
     }
 }

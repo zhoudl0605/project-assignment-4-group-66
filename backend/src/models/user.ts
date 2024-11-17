@@ -2,6 +2,11 @@
 
 import mongoose, { Schema, Document } from "mongoose";
 
+export enum UserRole {
+    USER = "user",
+    ADMIN = "admin",
+}
+
 export type UserAddress = {
     address1: string;
     address2?: string;
@@ -16,9 +21,9 @@ export interface IUser extends Document {
     email: string;
     role?: string;
     password: string;
-    salt: string;
     address?: UserAddress;
     createdAt?: Date;
+    updatedAt?: Date;
 }
 
 // define User modle Schema
@@ -36,38 +41,40 @@ const UserSchema: Schema = new Schema({
         type: String,
         required: true,
         unique: true,
-        match: /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/, // 简单的邮箱验证
+        match: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     },
     address: {
-        address1: {
-            type: String,
-            required: true,
-        },
-        address2: {
-            type: String,
-        },
-        city: {
-            type: String,
-            required: true,
-        },
-        province: {
-            type: String,
-            required: true,
-        },
-        postalCode: {
-            type: String,
-            required: true,
+        type: {
+            address1: {
+                type: String,
+                required: true,
+            },
+            address2: {
+                type: String,
+            },
+            city: {
+                type: String,
+                required: true,
+            },
+            province: {
+                type: String,
+                required: true,
+            },
+            postalCode: {
+                type: String,
+                required: true,
+            },
         },
     },
     password: {
         type: String,
         required: true,
     },
-    salt: {
-        type: String,
-        required: true,
-    },
     createdAt: {
+        type: Date,
+        default: Date.now,
+    },
+    updatedAt: {
         type: Date,
         default: Date.now,
     },

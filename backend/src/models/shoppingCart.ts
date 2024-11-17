@@ -20,6 +20,7 @@ const ShoppingCartSchema: Schema = new Schema({
             productId: {
                 type: String,
                 required: true,
+                unique: true,
             },
             quantity: {
                 type: Number,
