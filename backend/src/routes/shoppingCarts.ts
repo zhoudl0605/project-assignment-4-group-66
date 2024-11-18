@@ -1,5 +1,5 @@
 import Router from "koa-router";
-import { ShoppingCartController } from "../controllers/shoppingCart";
+import { ShoppingCartController } from "../controllers/shoppingCartController";
 import { authMiddleware } from "../middlewares/authMiddleware";
 
 const shoppingCartRouter = new Router({
