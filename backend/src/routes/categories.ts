@@ -5,8 +5,8 @@ const cateRouter = new Router({
     prefix: "/categories",
 });
 
-cateRouter.post("", ExceptionController.unimplemented);
-cateRouter.get("", ExceptionController.unimplemented);
+cateRouter.post("/", ExceptionController.unimplemented);
+cateRouter.get("/", ExceptionController.unimplemented);
 cateRouter.get("/:id", ExceptionController.unimplemented);
 
 export default cateRouter;

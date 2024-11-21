@@ -38,7 +38,7 @@ export class ShoppingCartService {
     async removeProductFromShoppingCart(userId: string, productId: string) {
         let shoppingCart = await this.getShoppingCartById(userId);
         let products = shoppingCart.products.filter(
-            (product) => product.productId !== productId
+            (product) => product.productId.toString() !== productId
         );
 
         return await this.shoppingCartDao.updateShoppingCartItems(
