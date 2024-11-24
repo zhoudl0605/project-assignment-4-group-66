@@ -14,7 +14,6 @@ async function main() {
     if (!(await db.testConnection())) {
         process.exit(1);
     }
-    console.log("Database connection established successfully");
 
     // Apply middlewares
     app.use(errorHandler); // Global error handler

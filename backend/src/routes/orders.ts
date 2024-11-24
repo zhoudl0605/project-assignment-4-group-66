@@ -1,28 +1,15 @@
 import Router from "koa-router";
+import { OrdersController } from "../controllers/ordersController";
+import { ExceptionController } from "../controllers/exceptionsController";
+import { authMiddleware } from "../middlewares/authMiddleware";
 
-const router = new Router({
-    prefix: "/auth",
-});
+const ordersRouter = new Router({
+    prefix: "/orders",
+}).use(authMiddleware);
 
-/**
- * Register the routes for the auth module
- * @response the user's JWT token
- */
-router.post("/login", async (ctx) => {
-    ctx.body = "Login";
+// get all orders belonging to the user
+ordersRouter.get("/", OrdersController.getOrdersController);
+ordersRouter.post("/", ExceptionController.unimplemented);
+ordersRouter.get("/:id", ExceptionController.unimplemented);
 
-    // get the username and password from the request body
-    // const { username, password } = ctx.request.body;
-});
-
-router.post("/admin-login", async (ctx) => {
-    ctx.body = "Admin Login";
-});
-
-router.post("/signup", async (ctx) => {
-    ctx.body = "Register";
-});
-
-router.post("/logout", async (ctx) => {
-    ctx.body = "Logout";
-});
+export default ordersRouter;
