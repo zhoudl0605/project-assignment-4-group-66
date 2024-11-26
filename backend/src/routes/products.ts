@@ -1,5 +1,3 @@
-import Router from "koa-router";
-import { ExceptionController } from "../controllers/exceptionsController";
 import { ProductsController } from "../controllers/productsController";
 import express from "express";
 

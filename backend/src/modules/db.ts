@@ -18,9 +18,6 @@ export class DatabaseModule {
         this.config = DatabaseModule.getConfig();
     }
 
-    /**
-     * 获取DatabaseModule单例实例
-     */
     public static getInstance(): DatabaseModule {
         if (!DatabaseModule.instance) {
             DatabaseModule.instance = new DatabaseModule();
@@ -28,9 +25,6 @@ export class DatabaseModule {
         return DatabaseModule.instance;
     }
 
-    /**
-     * 连接数据库，如果已连接则返回当前连接
-     */
     public async connect(): Promise<typeof mongoose> {
         if (mongoose.connection.readyState) {
             return mongoose;
@@ -61,9 +55,6 @@ export class DatabaseModule {
         return mongoose;
     }
 
-    /**
-     * 断开数据库连接
-     */
     public async disconnect(): Promise<void> {
         if (mongoose.connection.readyState) {
             try {
@@ -75,9 +66,6 @@ export class DatabaseModule {
         }
     }
 
-    /**
-     * 测试数据库连接
-     */
     public async testConnection(): Promise<boolean> {
         try {
             await this.connect();
@@ -89,9 +77,6 @@ export class DatabaseModule {
         }
     }
 
-    /**
-     * 加载并返回数据库配置
-     */
     public static getConfig(): DatabaseConfig {
         return {
             host: process.env.DATABASE_HOST || "localhost",

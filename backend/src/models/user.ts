@@ -13,7 +13,6 @@ export type UserAddress = {
     postalCode: string;
 };
 
-// 定义 User 数据类型
 export interface IUser extends Document {
     name: string;
     email: string;
@@ -24,7 +23,6 @@ export interface IUser extends Document {
     updatedAt?: Date;
 }
 
-// 定义 Address Schema
 const AddressSchema: Schema = new Schema({
     address1: {
         type: String,
@@ -51,7 +49,6 @@ const AddressSchema: Schema = new Schema({
     },
 });
 
-// 定义 User Schema
 const UserSchema: Schema = new Schema(
     {
         name: {
@@ -66,11 +63,11 @@ const UserSchema: Schema = new Schema(
         },
         role: {
             type: String,
-            enum: Object.values(UserRole), // 使用 UserRole 枚举
+            enum: Object.values(UserRole), 
             default: UserRole.USER,
         },
         address: {
-            type: AddressSchema, // 嵌套 Address Schema
+            type: AddressSchema, 
         },
         password: {
             type: String,
@@ -78,15 +75,14 @@ const UserSchema: Schema = new Schema(
         },
     },
     {
-        timestamps: true, // 自动生成 createdAt 和 updatedAt
+        timestamps: true, 
     }
 );
 
 UserSchema.methods.toJSON = function () {
     const obj = this.toObject();
-    delete obj.password; // 删除 password 字段
+    delete obj.password; 
     return obj;
 };
 
-// 创建并导出 User 模型
 export const UserModel = mongoose.model<IUser>("User", UserSchema);
