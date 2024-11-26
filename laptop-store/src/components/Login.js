@@ -24,7 +24,7 @@ function LoginRegister() {
         try {
             setIsSubmitting(true);
             if (isLogin) {
-                const response = await axios.post('http://149.248.55.157:3030/auth/login', { email, password });
+                const response = await axios.post('/api/login', { email, password });
                 alert(response.data.message);
             } else {
                 const response = await axios.post('/api/register', {

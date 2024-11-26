@@ -1,18 +1,8 @@
-import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Box, TextField, Button } from '@mui/material';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-function Navbar({ onSearch }) {
-    const [query, setQuery] = useState("");
-
-    const handleInputChange = (e) => {
-        setQuery(e.target.value);
-    };
-
-    const handleSearch = () => {
-        onSearch(query);
-    };
-
+function Navbar() {
     return (
         <AppBar position="static">
             <Toolbar>
@@ -24,25 +14,6 @@ function Navbar({ onSearch }) {
                 <Button color="inherit" component={Link} to="/cart">Cart</Button>
                 <Button color="inherit" component={Link} to="/login">Login</Button>
                 <Button color="inherit" component={Link} to="/admin">Admin</Button>
-
-                {/* 搜索栏部分 */}
-                <Box display="flex" alignItems="center" ml={2}>
-                    <TextField
-                        label="Search"
-                        variant="outlined"
-                        value={query}
-                        onChange={handleInputChange}
-                        size="small"
-                        sx={{ backgroundColor: 'white', borderRadius: 1, mr: 2 }}
-                    />
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        onClick={handleSearch}
-                    >
-                        Search
-                    </Button>
-                </Box>
             </Toolbar>
         </AppBar>
     );
