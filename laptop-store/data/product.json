@@ -1,0 +1,81 @@
+[
+    {
+        "name": "ASUS Vivobook S 15 OLED 15.6\" Copilot+ PC Laptop - Cool Silver",
+        "price": 1799.99,
+        "categoryId": "Copilot + PC Laptop",
+        "brand": "ASUS",
+        "sku": "1",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118_1.jpg"
+        ],
+        "specs": [
+            "Powered by Snapdragon X Elite X1E processor with Qualcomm Adreno Graphics",
+            "Ultra-vivid 15.6” 3K OLED display, 120Hz refresh rate"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-vivobook-s-15-oled-15-6-copilot-pc-laptop-cool-silver-snapdragon-x-elite-32gb-ram-1tb-ssd/17937118"
+    },
+    {
+        "name": "Samsung Galaxy Book4 Edge 16\" Touchscreen Copilot+ PC Laptop",
+        "price": 1999.99,
+        "categoryId": "Copilot + PC Laptop",
+        "brand": "Samsung",
+        "sku": "2",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937875.jpg"
+        ],
+        "specs": [
+            "Powered by Snapdragon X Elite processor",
+            "16\" AMOLED touchscreen display with Galaxy AI-powered features"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-512gb-ssd-windows-11/17937875"
+    },
+    {
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" Tablet",
+        "price": 1449.99,
+        "categoryId": "Copilot + PC Laptop",
+        "brand": "Microsoft",
+        "sku": "3",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921774.jpg"
+        ],
+        "specs": [
+            "Fastest, most intelligent Surface ever with Snapdragon X Plus",
+            "Industry-leading performance with AI features and enhanced battery life"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-256gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-platinum-device-only/17921774"
+    },
+    {
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" Tablet - Black",
+        "price": 1499.99,
+        "categoryId": "Copilot + PC Laptop",
+        "brand": "Microsoft",
+        "sku": "4",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776.jpg"
+        ],
+        "specs": [
+            "Snapdragon X Plus, 512GB SSD, 16GB RAM"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-black-device-only/17921776"
+    },
+    {
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" Tablet - Sapphire",
+        "price": 1499.99,
+        "categoryId": "Copilot + PC Laptop",
+        "brand": "Microsoft",
+        "sku": "5",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777.jpg"
+        ],
+        "specs": [
+            "Snapdragon X Plus, 512GB SSD, 16GB RAM"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-sapphire-device-only/17921777"
+    }
+]
