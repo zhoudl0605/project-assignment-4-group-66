@@ -39,14 +39,17 @@ const AddressSchema: Schema = new Schema({
     city: {
         type: String,
         required: true,
+        default: "",
     },
     province: {
         type: String,
         required: true,
+        default: "",
     },
     postalCode: {
         type: String,
         required: true,
+        default: "",
     },
 });
 
