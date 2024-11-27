@@ -5,6 +5,7 @@ import bodyParser from "koa-bodyparser";
 import { errorHandler } from "./middlewares/errorHandler";
 import { registerRoutes } from "./routes";
 import { DatabaseModule } from "./modules/db";
+import cors from "@koa/cors";
 
 async function main() {
     const app = new Koa();
@@ -14,6 +15,16 @@ async function main() {
     if (!(await db.testConnection())) {
         process.exit(1);
     }
+
+    // set up cors
+    app.use(
+        cors({
+            origin: "http://localhost:3000", // 允许的前端地址
+            credentials: true, // 是否允许携带 Cookie
+            allowMethods: ["GET", "POST", "PUT", "DELETE"], // 允许的 HTTP 方法
+            allowHeaders: ["Content-Type", "Authorization"], // 允许的 HTTP 头
+        })
+    );
 
     // Apply middlewares
     app.use(errorHandler); // Global error handler
