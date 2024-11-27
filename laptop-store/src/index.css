@@ -1,0 +1,124 @@
+
+/* 重置浏览器默认样式以确保一致性 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置全局字体 */
+body {
+    font-family: Arial, sans-serif;
+    /* 或者其他项目使用的字体 */
+    background-color: #f8f9fa;
+    /* 设置页面的背景颜色，通常为浅色 */
+    color: #333;
+    /* 全局字体颜色 */
+    line-height: 1.6;
+}
+
+/* 链接的默认样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+    /* 继承父元素的颜色，保持风格一致 */
+}
+
+/* 设置链接在悬停状态的样式 */
+a:hover {
+    color: #007bff;
+    /* 主色调，通常和 Material-UI 的 primary 配色一致 */
+    text-decoration: underline;
+}
+
+/* 导航栏的全局样式 */
+nav {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/* 导航栏的链接样式 */
+nav a {
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f50057;
+    /* 次色，悬停时改变颜色 */
+}
+
+/* 全局按钮样式（可以用于没有用 Material-UI 样式的按钮） */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* 鼠标悬停时按钮颜色变暗 */
+}
+
+/* 容器类，用于页面中的主要内容布局 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题的全局样式 */
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+/* 卡片样式（比如产品列表和详情页） */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* 鼠标悬停时，卡片略微上移以增加交互感 */
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* 响应式设计 - 适用于小屏幕设备 */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
