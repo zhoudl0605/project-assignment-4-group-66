@@ -31,3 +31,5 @@ productsRouter.get("/:sku", async (ctx) => {
 });
 
 export default productsRouter;
+
+const express = require('express');
