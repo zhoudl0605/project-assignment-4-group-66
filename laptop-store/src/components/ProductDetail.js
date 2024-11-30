@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Box, Typography, Button, Grid, Table, TableBody, TableCell, TableRow } from '@mui/material';
 import AppContext from './AppContext';
@@ -6,35 +6,29 @@ import AppContext from './AppContext';
 const ProductDetail = () => {
     const { id } = useParams();
     const { addToCart } = useContext(AppContext);
-    const [product, setProduct] = useState(null);
     const [quantity, setQuantity] = useState(1);
 
-    useEffect(() => {
-        // 使用 Fetch API 从后端获取产品详情
-        const fetchProduct = async () => {
-            try {
-                const response = await fetch(`http://localhost:5000/api/products/${id}`);
-                if (response.ok) {
-                    const productData = await response.json();
-                    setProduct(productData);
-                } else {
-                    console.error('Product not found');
-                }
-            } catch (error) {
-                console.error('Failed to fetch product:', error);
-            }
-        };
-
-        fetchProduct();
-    }, [id]);
+    // Hardcoded product data
+    const product = {
+        id: id,
+        name: 'Sample Product',
+        price: 99.99,
+        stock: 10,
+        medias: [
+            '/images/sample-product-1.jpg',
+            '/images/sample-product-2.jpg',
+            '/images/sample-product-3.jpg',
+        ],
+        specs: [
+            'Specification 1: Product feature description',
+            'Specification 2: Product function description',
+            'Specification 3: Other product information',
+        ],
+    };
 
     const handleQuantityChange = (change) => {
         setQuantity((prevQuantity) => Math.max(1, prevQuantity + change));
     };
-
-    if (!product) {
-        return <Typography>Loading...</Typography>;
-    }
 
     return (
         <Box padding={3}>
@@ -43,12 +37,12 @@ const ProductDetail = () => {
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
-                    {/* 产品图片 */}
-                    {product.medias.map((media, index) => (
+                    {/* Product images */}
+                    {product.medias && product.medias.map((media, index) => (
                         <Box key={index} mb={2}>
                             <img
                                 src={media}
-                                alt={product.name}
+                                alt={`${product.name} ${index + 1}`}
                                 style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }}
                             />
                         </Box>
@@ -77,14 +71,13 @@ const ProductDetail = () => {
                     </Button>
                     <Box mt={3}>
                         <Typography variant="h5" gutterBottom>
-                            Specification
+                            Specifications
                         </Typography>
                         <Table>
                             <TableBody>
-                                {product.specs.map((spec, index) => (
+                                {product.specs && product.specs.map((spec, index) => (
                                     <TableRow key={index}>
-                                        <TableCell><strong>{spec.name}</strong></TableCell>
-                                        <TableCell>{spec.value}</TableCell>
+                                        <TableCell>{spec}</TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>
