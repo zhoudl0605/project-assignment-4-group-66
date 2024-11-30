@@ -17,10 +17,10 @@ function ShoppingCart() {
     });
 
     useEffect(() => {
-        console.log('Cart Items updated:', cartItems); // 当 cartItems 变化时输出日志
+        console.log('Cart Items updated:', cartItems); // Log cart items whenever they are updated
     }, [cartItems]);
 
-    // 计算总价和税费
+    // Calculate total price and tax
     const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
     const tax = total * 0.13;
     const totalWithTax = total + tax;
@@ -79,7 +79,7 @@ function ShoppingCart() {
                                                     variant="contained"
                                                     color="secondary"
                                                     onClick={() => {
-                                                        console.log('Removing item with id:', item.id); // 添加日志来检查点击事件
+                                                        console.log('Removing item with id:', item.id); // Log item ID being removed
                                                         removeFromCart(item.id);
                                                     }}
                                                 >

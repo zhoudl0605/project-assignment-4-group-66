@@ -6,7 +6,7 @@ const AppContext = createContext();
 export const AppProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
 
-    // 从 localStorage 中恢复购物车数据
+    // Restore cart data from localStorage
     useEffect(() => {
         const storedCartItems = JSON.parse(localStorage.getItem('cartItems'));
         if (storedCartItems) {
@@ -14,12 +14,12 @@ export const AppProvider = ({ children }) => {
         }
     }, []);
 
-    // 将购物车数据保存到 localStorage
+    // Save cart data to localStorage whenever it changes
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }, [cartItems]);
 
-    // 添加商品到购物车
+    // Add a product to the cart
     const addToCart = (product) => {
         setCartItems((prevItems) => {
             const existingProduct = prevItems.find((item) => item.id === product.id);
@@ -39,16 +39,15 @@ export const AppProvider = ({ children }) => {
         });
     };
 
-    // 从购物车中移除商品
+    // Remove a product from the cart
     const removeFromCart = (productId) => {
         setCartItems((prevItems) => {
-            console.log('Removing product with id:', productId); // 添加日志
+            console.log('Removing product with id:', productId); // Log the ID of the product being removed
             const updatedItems = prevItems.filter((item) => item.id !== productId);
-            console.log('Updated Cart Items after removal:', updatedItems); // 添加日志
+            console.log('Updated Cart Items after removal:', updatedItems); // Log the cart contents after removal
             return updatedItems;
         });
     };
-
 
     return (
         <AppContext.Provider value={{ cartItems, addToCart, removeFromCart }}>

@@ -3,7 +3,7 @@ import { Box, Typography, Button, Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import bannerImage1 from '../images/banner1.png';
 import bannerImage2 from '../images/banner2.png';
-import Recommendations from './Recommendations'; // 导入 Recommendations 组件
+import Recommendations from './Recommendations'; // Import the Recommendations component
 
 function Home() {
     const items = [
@@ -41,7 +41,7 @@ function Home() {
                 ))}
             </Carousel>
 
-            {/* Main content */}
+            {/* Main content section */}
             <Box textAlign="center" mt={5} sx={{ width: '100%', px: 2 }}>
                 <Typography variant="h3" gutterBottom>
                     Welcome to the Laptop Store
@@ -67,7 +67,7 @@ function Home() {
 
             {/* Recommendations Section */}
             <Box mt={5} sx={{ px: 2 }}>
-                <Recommendations /> {/* 添加 Recommendations 组件 */}
+                <Recommendations /> {/* Add the Recommendations component */}
             </Box>
         </Box>
     );

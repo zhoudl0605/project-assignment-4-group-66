@@ -3,7 +3,7 @@ import AppContext from './AppContext';
 import { Box, Grid, Card, CardContent, Typography, Button, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-// 硬编码的产品数组
+// Hardcoded arrays of products
 const desktopProducts = Array.from({ length: 20 }, (_, i) => ({
     id: i + 1,
     sku: `SKU${i + 1}`,
@@ -29,7 +29,7 @@ const accessoryProducts = Array.from({ length: 20 }, (_, i) => ({
 }));
 
 function ProductList() {
-    const { addToCart } = useContext(AppContext); // 获取 addToCart 函数
+    const { addToCart } = useContext(AppContext); // Retrieve the addToCart function from the context
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearchChange = (event) => {
@@ -42,7 +42,7 @@ function ProductList() {
 
     return (
         <Box padding={3}>
-            {/* 搜索框 */}
+            {/* Search bar */}
             <Box mb={5} textAlign="center">
                 <TextField
                     label="Search Products"
@@ -53,7 +53,7 @@ function ProductList() {
                 />
             </Box>
 
-            {/* 产品展示 */}
+            {/* Product display */}
             <Grid container spacing={3} justifyContent="center">
                 {filteredProducts.map((product) => (
                     <Grid item xs={12} sm={6} md={4} lg={2} key={product.id}>
@@ -96,7 +96,7 @@ function ProductList() {
                                 variant="contained"
                                 color="primary"
                                 sx={{ marginTop: 2 }}
-                                onClick={() => addToCart(product)} // 添加到购物车
+                                onClick={() => addToCart(product)} // Add the product to the cart
                             >
                                 Add to Cart
                             </Button>
