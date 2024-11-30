@@ -7,17 +7,12 @@ import jwt from "jsonwebtoken";
  */
 
 export class auth {
-    public static async hashPassword(
+    public static hashPassword(
         password: string | Buffer,
         rounds: number = 10
-    ): Promise<string> {
+    ): string {
         // Generate a hash for the password
         return bcrypt.hashSync(password, rounds);
-    }
-
-    public static async generateSalt(rounds: number = 10): Promise<string> {
-        // Generate a random salt
-        return bcrypt.genSalt(rounds);
     }
 
     public static async comparePasswords(

@@ -84,22 +84,5 @@ const UserSchema: Schema = new Schema(
     }
 );
 
-// 在保存用户之前加密密码
-UserSchema.pre("save", async function (next) {
-    const user = this as any as IUser;
-    if (!user.isModified("password")) return next();
-
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password, salt);
-    next();
-});
-
-// 添加比较密码的方法
-UserSchema.methods.comparePassword = async function (
-    candidatePassword: string
-): Promise<boolean> {
-    return bcrypt.compare(candidatePassword, this.password);
-};
-
 // 创建并导出 User 模型
 export const UserModel = mongoose.model<IUser>("User", UserSchema);

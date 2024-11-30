@@ -19,6 +19,7 @@ export class AuthController {
                 role
             );
 
+            console.log(user);
             // create JWT token
             const token = await userService.generateToken(user);
 

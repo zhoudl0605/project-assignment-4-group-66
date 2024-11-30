@@ -18,13 +18,15 @@ export class UserService {
         role: string = "user"
     ): Promise<IUser> {
         try {
-            password = await auth.hashPassword(password);
+            const hashedPass = auth.hashPassword(password);
             const userData: IUser = new UserModel({
                 email,
                 name,
-                password,
+                password: hashedPass,
                 role,
             });
+
+            console.log(password, hashedPass);
 
             return await this.userDao.createUser(userData);
         } catch (error) {

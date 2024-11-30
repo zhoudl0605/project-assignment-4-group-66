@@ -4,9 +4,9 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "ts-node src/app.ts",
     "build": "tsc",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon src/app.ts"
   },
   "dependencies": {
     "@koa/cors": "^5.0.0",
