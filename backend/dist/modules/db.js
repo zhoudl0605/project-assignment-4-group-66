@@ -35,10 +35,10 @@ class DatabaseModule {
             if (mongoose_1.default.connection.readyState) {
                 return mongoose_1.default;
             }
-            const { host, port, username, password, database, options } = this.config;
+            const { host, port, username, password, database, options, authSource, } = this.config;
             const encodedUser = encodeURIComponent(username);
             const encodedPass = encodeURIComponent(password);
-            const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=ece9065`;
+            const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=${authSource}`;
             try {
                 yield mongoose_1.default.connect(uri, options);
                 console.log("Database connection established successfully");
@@ -95,6 +95,7 @@ class DatabaseModule {
             options: {
                 connectTimeoutMS: 5000,
             },
+            authSource: process.env.DB_AUTH_SOURCE || "admin",
         };
     }
 }
