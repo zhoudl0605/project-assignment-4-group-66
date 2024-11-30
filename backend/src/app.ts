@@ -1,4 +1,7 @@
 // Import necessary modules
+import dotenv from "dotenv";
+dotenv.config();
+
 import Koa from "koa";
 // import logger from "koa-logger";
 import bodyParser from "koa-bodyparser";
@@ -39,5 +42,11 @@ async function main() {
         console.log(`Server running on http://localhost:${PORT}`);
     });
 }
+
+// Run the application
+main().catch((err) => {
+    console.error("Error occurred:", err);
+    process.exit(1);
+});
 
 export default main;
