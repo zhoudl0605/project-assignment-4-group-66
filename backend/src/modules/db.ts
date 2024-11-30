@@ -7,6 +7,7 @@ type DatabaseConfig = {
     password: string;
     database: string;
     options?: ConnectOptions | undefined;
+    authSource: string;
 };
 
 export class DatabaseModule {
@@ -35,11 +36,18 @@ export class DatabaseModule {
             return mongoose;
         }
 
-        const { host, port, username, password, database, options } =
-            this.config;
+        const {
+            host,
+            port,
+            username,
+            password,
+            database,
+            options,
+            authSource,
+        } = this.config;
         const encodedUser = encodeURIComponent(username);
         const encodedPass = encodeURIComponent(password);
-        const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=admin`;
+        const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=${authSource}`;
 
         try {
             await mongoose.connect(uri, options);
@@ -93,6 +101,7 @@ export class DatabaseModule {
             options: {
                 connectTimeoutMS: 5000,
             },
+            authSource: process.env.DB_AUTH_SOURCE || "admin",
         };
     }
 }
