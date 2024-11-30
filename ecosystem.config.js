@@ -29,6 +29,6 @@ module.exports = {
                 PORT: "3030",
                 NODE_ENV: "production",
             },
-        },
+        }
     ],
 };
