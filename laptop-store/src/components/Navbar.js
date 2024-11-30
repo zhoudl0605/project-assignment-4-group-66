@@ -25,7 +25,7 @@ function Navbar({ onSearch }) {
                 <Button color="inherit" component={Link} to="/login">Login</Button>
                 <Button color="inherit" component={Link} to="/admin">Admin</Button>
 
-                {/* 搜索栏部分 */}
+                {/* Search bar section */}
                 <Box display="flex" alignItems="center" ml={2}>
                     <TextField
                         label="Search"

@@ -15,7 +15,7 @@ const Accessories = () => (
                 <p>Price: $35</p>
                 <button>Add to Cart</button>
             </div>
-            {/* 继续添加更多配件项 */}
+            {/* Continue to add more accessories */}
         </div>
     </div>
 );
