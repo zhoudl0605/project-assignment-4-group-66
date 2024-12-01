@@ -429,5 +429,156 @@
         ],
         "url":"https://www.bestbuy.ca/en-ca/product/msi-vector-16-series-16-gaming-laptop-cosmos-grey-intel-core-i9-13980hx-1tb-32gb-ram-geforce-rtx-4080/17685416"
     },
+    {
+        "name":"ASUS ROG Zephyrus G16 OLED Nebula 16\" Gaming Laptop -Eclipse Grey (Intel Core Ultra 9 185H/1TB SSD/32GB RAM/GeForce RTX 4060)",
+        "price":1999.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"ASUS",
+        "sku":"16",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717065.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717065_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_17.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_16.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_19.jpg"
+        ],
+        "specs":[
+            "Harness the power and precision needed to dominate the battlefield with the ASUS ROG Zephyrus G16 OLED Nebula 16\" gaming laptop. Equipped with Intel Core Ultra 9 185H processor, 32GB RAM, and a 1TB SSD, it ensures effortless multitasking and lightning-fast storage for your games and applications. The GeForce RTX 4060 GPU provides matchless graphics performance for immersive gaming.",            
+            "Intel Core Ultra 9 185H processor with 2.3GHz speed makes sure of swift and responsive performance for efficient task execution and smooth operation",
+            "Dedicated NPU cores efficiently handle AI tasks to reduce power consumption and extend battery life during sustained AI workloads",
+            "32GB LPDDR5X RAM supports lightning-fast data processing and empowers you to easily handle multiple applications simultaneously",
+            "1TB SSD offers ample space for storing your files, games, and applications while providing rapid data access and quicker boot times",
+            "NVIDIA GeForce RTX 4060 laptop GPU, with a max TGP of 100W delivers realistic visuals and smooth gaming experiences with high frame rates and immersive detail",
+            "Game-changing features like DLSS 3.5 and the ray tracing technology deliver lifelike graphics",
+            "NVIDIA Advanced Optimus guarantees smooth switching between low power and low latency modes for optimal performance",
+            "16-inch OLED Nebula display with rapid 0.2ms response times, vivid 2.5K resolution, and a smooth 240Hz refresh rate ensures stunning visuals, while the NVIDIA G-SYNC support guarantees tear-free gaming",
+            "Wi-Fi 6E (802.11ax) (Triple band) 2x2 and Bluetooth 5.3 wireless card enable faster and reliable wireless connectivity",
+            "90Wh battery offers reliable power for extended usage and prolonged gaming sessions",
+            "Ultra-slim 0.59-inch profile and lightweight 4lb. 16-inch chassis assure easy portability without compromising on performance",
+            "One Thunderbolt 4 support DisplayPort / power delivery, one USB 3.2 Gen 2 Type-C support DisplayPort / power delivery, two USB 3.2 Gen 2 Type-A, one HDMI 2.1 FRL, and one 3.5mm Combo Audio Jack offer versatile connectivity options",
+            "SD (UHS-II, 312MB/s) card reader for quick and efficient transfer of files, photos, and videos from your SD card to your device",
+            "ROG Intelligent Cooling significantly reduces CPU temperatures by up to 13 degrees to ensure optimal performance and stability during intense gaming sessions",
+            "Upgraded 2nd Gen Arc Flow Fans increase airflow by 11%, while the fibre and mesh pipes improve cooling efficiency by 26% compared to previous designs"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g16-oled-nebula-16-gaming-laptop-eclipse-grey-intel-core-ultra-9-185h-1tb-ssd-32gb-ram-geforce-rtx-4060/17717065"
+    },
+    {
+        "name":"ASUS ROG Zephyrus G14 OLED Nebula14\" Gaming Laptop -Eclipse Grey (AMD Ryzen 9 8945HS/1TB SSD/32GB RAM/GeForce RTX 4060)",
+        "price":2599.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"ASUS",
+        "sku":"17",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_10.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_13.jpg"
+        ],
+        "specs":[
+            "Redefine your whole gaming experience to the next level with this ASUS ROG Zephyrus G14 OLED Nebula 14\" gaming laptop. Featuring AMD Ryzen 9 8945HS processor, 32GB LPDDR5X RAM, and NVIDIA GeForce RTX 4060 laptop GPU, this portable machine delivers top-notch performance for fluid gameplay. ROG Nebula Display certified OLED display provides bright and clear images.",
+            "AMD Ryzen 9 8945HS processor and 32GB LPDDR5X RAM combine to make this laptop extremely powerful to smoothly handle sophisticated games",
+            "1TB solid state drive provides more storage space for your files, games, and media",
+            "NVIDIA GeForce RTX 4060 laptop GPU with dedicated 8GB video memory guarantees smooth and fluid videos for games and video playback",
+            "ROG Nebula Display certified 14-inch OLED display with 2880 x 1800 native screen resolution provides superior picture quality with bright images and crisp clarity",
+            "NVIDIA G-sync, 0.2ms response time, and 120Hz refresh rate allows the display to deliver super-smooth visuals",
+            "Integrated Wi-Fi 6E (802.11ax) (triple band) 2x2 and Bluetooth 5.3 wireless card provide reliable options for wireless connectivity",
+            "Battery capacity of 73Wh makes you worry less about recharging and related hassles",
+            "One Type C USB 4 support DisplayPort, Power Delivery, one USB 3.2 Gen 2 Type-C support DisplayPort, two USB 3.2 Gen 2 Type-A, one HDMI 2.1 FRL, one 3.5mm combo audio jack, and microSD (UHS-II) provide multiple options for connecting external devices",
+            "ROG intelligent cooling uses liquid metal and upgraded 2nd Gen Arc Flow fans for extraordinary cooling performance",
+            "VR-ready capability allows you to use virtual reality gears or goggles"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g14-oled-nebula14-gaming-laptop-eclipse-grey-amd-ryzen-9-8945hs-1tb-ssd-32gb-ram-geforce-rtx-4060/17717669"
+    },
+    {
+        "name":"Alienware 16\" Gaming Laptop - Dark Metallic Moon (Intel Core Ultra 7 155H/16GB RAM/1TB SSD/GeForce RTX 4060)",
+        "price":2199.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"Alienware",
+        "sku":"18",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_5.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_8.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_9.jpg"
+        ],
+        "specs":[
+            "Get the power you need, with the look you want, when you get the Alienware 16” gaming laptop. With a sleek, stylish design and an impressive 1TB solid state drive, this laptop has what you need and then some. The 16” screen features 2560 x 1600 resolution, offering clear and vibrant imaging for your favourite games.",
+            "Powerful Intel Core Ultra 7 processor 155H, with 16GB of DDR5 5600 MT/s RAM, ensures this laptop is fast",
+            "Impressive 1TB SSD capacity offers plenty of onboard storage",
+            "Large 16” screen, with a 2560 x 1600 resolution, makes viewing your content easy",
+            "Wi-Fi 7 and Bluetooth 5.4 connectivity ensure easy access the internet",
+            "Ports include: one Micro SD Card Reader, one USB 4 Gen 2 Type-C, one USB 3,2 Gen 2 Type-C, one USB 3.2 Gen 1 Type-A, one USB 3.2 Type-A, one HDMI 2.1, and one universal audio jack",
+            "Dual fans, with ultra-thin blades, increase airflow by 20.4%, while four heat pipes effectively disperse heat to prevent your laptop from overheating",
+            "Windows 11 Home comes preinstalled, but this device is backwards compatible"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/alienware-16-gaming-laptop-dark-metallic-moon-intel-core-ultra-7-155h-16gb-ram-1tb-ssd-geforce-rtx-4060/17914588"
+    },
+    {
+        "name":"Acer Predator Helios Neo 16\" Gaming Laptop (Intel Core i7-13700HX /1TB SSD/16GB RAM/GeForce RTX 4050)",
+        "price":1399.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"Acer",
+        "sku":"19",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_5.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_6.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_2.jpg"
+        ],
+        "specs":[
+            "Upgrade your gaming experience to a new level with this Acer Predator Helios Neo 16\" gaming laptop. Equipped with Intel Core i7-13700HX processor, 16GB DDR5 RAM, and NVIDIA GeForce RTX 4050 graphics card, this laptop lets you enjoy smooth and seamless gameplay. The 1TB solid state drive provides enough space for your files and games.",
+            "13th Generation Intel Core i7-13700HX processor and 16GB RAM combine to deliver exceptional performance to effortlessly run sophisticated games",
+            "1TB solid state drive provides more storage space for your files and media",
+            "NVIDIA GeForce RTX 4050 graphics card and dedicated 6GB video memory ensure buttery smooth visuals for games and video playback",
+            "16-inch LED display with 1920 x 1200 resolution lets you enjoy crisp and clear pictures",
+            "RJ45 Ethernet port, Killer Wireless Wi-Fi 6 1650i, and Bluetooth 5.1 provide efficient options for networking",
+            "Lithium-ion battery with 5,884mAh capacity provides up to (approximately) three and a half hours of battery life",
+            "Two USB Type-C ports (Thunderbolt 4), two USB 3.2 Gen 2 ports, one HDMI 2.1 port with HDCP support, Display Port through USB-C, and headphone/speaker jack provide multiple options for connecting external devices",
+            "VR ready capability lets you use virtual reality gears or goggles",
+            "Preinstalled with Windows 11 operating system that features easy user interface, enhanced performance, and improved security"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/acer-predator-helios-neo-16-gaming-laptop-intel-core-i7-13700hx-1tb-ssd-16gb-ram-geforce-rtx-4050/17717688"
+    },
+    {
+        "name":"ASUS ROG Strix G18 (2024) 18\" WQXGA 240Hz Gaming Laptop (Intel Core i9-14900HX/1TB SSD/32GB RAM/RTX 4060)",
+        "price":2699.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"ASUS",
+        "sku":"20",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_6.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_14.jpg"
+        ],
+        "specs":[
+            "Level-up your gameplay experience with this ASUS ROG Strix G16 18\" gaming laptop. Featuring an Intel Core i9 14900HX processor, 32GB DDR5 RAM, and NVIDIA GeForce RTX 4060 GPU, this machine can effortlessly handle sophisticated games and demanding software. The ROG Intelligent Cooling system ensures efficient and lasting cooling performance.",
+            "Intel Core i9 14900HX processor and 32GB DDR5 RAM make this laptop powerful enough to smoothly handle the most demanding games and video editing software",
+            "1TB solid state drive provides generous storage space for all your files, media, and games",
+            "NVIDIA GeForce RTX 4060 laptop GPU and dedicated 8GB video memory guarantee extremely fluid visuals for gaming and video playback",
+            "18-inch ROG Nebula display with 2560 x 1600 native resolution, 240Hz refresh rate, and 3ms response time delivers rich and super-smooth images",
+            "The 10/100/1000 Ethernet port, Wi-Fi 6E (802.11ax) (triple band) 2 x 2, and Bluetooth 5.3 wireless card provide reliable options for wireless connectivity",
+            "Battery capacity of 90Wh lets you enjoy of hours of uninterrupted gaming without worrying much about recharging and related hassles",
+            "One Thunderbolt 4 support DisplayPort, one USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC, two USB 3.2 Gen 2 Type-A, one HDMI 2.1 FRL, and one RJ45 LAN port, one 3.5mm combo audio jack offer multiple options for connecting external devices",
+            "ROG Intelligent Cooling system, featuring improved liquid metal on the CPU and Tri-Fan technology, provides superior cooling solution for lasting efficiency during gaming marathons",
+            "MUX Switch enhances the gaming performance by utilizing the frames directly from the discrete graphics to display, avoiding the integrated GPU. Advanced Optimus enables automatic switch between iGPU and dGPU based on the task, thereby improving battery life",
+            "VR capability allows you to use virtual reality gears or goggles"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-strix-g18-2024-18-wqxga-240hz-gaming-laptop-intel-core-i9-14900hx-1tb-ssd-32gb-ram-rtx-4060/17700713"
+    },
     
 ]
