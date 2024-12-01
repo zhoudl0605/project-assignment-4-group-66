@@ -275,5 +275,159 @@
         ],
         "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-1tb-ssd-windows-11/17937877"
     },
+    {
+        "name":"Lenovo LOQ 15IAX9I 15.6\" Gaming Laptop - Luna Grey (Intel Core i5-12450HX/512GB SSD/16GB RAM/Arc A530M)",
+        "price":799.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"Lenovo",
+        "sku":"11",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_7.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_8.jpg"
+        ],
+        "specs":[
+            "Suitable for gaming and school assignments, the Lenovo LOQ 15IAX9I 15.6\" laptop makes a valuable addition to your everyday routine. Equipped with Intel Core i5-12450HX processor and 16GB DDR5 RAM, it lets you manage daily tasks and offers unmatched gaming performance. The hyper chamber design keeps the device cool and safe, while the slim built improves portability.",
+            "Intel Core i5-12450HX processor and 16GB DDR5 RAM combine to deliver a highly efficient and reliable performance",
+            "512GB solid state drive provides more space for your files, media, and applications",
+            "15.6-inch touchscreen with 1920 x 1080 native screen resolution provides crisp and clear pictures",
+            "Wi-Fi 6 (802.11ax) 2 x 2 and Bluetooth 5.1 offer reliable options for wireless connectivity",
+            "Lithium-polymer battery with 60mAh capacity makes you worry less about frequent recharging and related hassles",
+            "Three USB 3.2 Gen 1 Type A ports, one USB 3.2 Gen 2 Type C (10Gbps, PD 140W, DP 1.4), and headphone/mic combo give you more options for connecting external devices",
+            "Hyper chamber design helps keep the laptop cool for sustained gaming performance",
+            "Slim profile improves portability",
+            "Tested to MIL-STD 810H standards for assured reliability and durability",
+            "Preinstalled with Windows 11 Home operating system that features easy user interface, enhanced performance, improved security"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-loq-15iax9i-15-6-gaming-laptop-luna-grey-intel-core-i5-12450hx-512gb-ssd-16gb-ram-arc-a530m/17732155"
+    },
+    {
+        "name":"ASUS TUF Gaming F17 17.3\" Gaming Laptop - Mecha Grey (Intel Core i5-12500H/1TB SSD/16GB RAM/GeForce RTX 3050)",
+        "price":1299.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"ASUS",
+        "sku":"12",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_8.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_12.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_16.jpg"
+        ],
+        "specs":[
+            "Enter the fray with confidence using the ASUS TUF Gaming F17 laptop. This laptop features a 12th Gen Intel Core i5-12500H processor and a 16GB of high-speed DDR4 RAM to ensure effortless streaming and multitasking capabilities. Its 1TB SSD speeds-up loading times and the GeForce RTX 30 Series GPU with a dedicated MUX Switch ensures optimal gaming performance.",
+            "12th Gen Intel Core i5-12500H processor with 2.5GHz speed ensures swift and responsive performance for enhanced gaming",
+            "16GB of DDR4-3,200MHz RAM guarantees improved multitasking capabilities and faster data processing",
+            "1TB of PCIe 3.0 solid state drive offers ample storage space, ensuring rapid access to data and faster loading times",
+            "NVIDIA GeForce RTX 3050 laptop GPU with a 95W Max TGP delivers smooth and immersive gaming experiences with high frame rates and stunning visual fidelity",
+            "17.3-inch FHD (1920 x 1080) 144Hz display with Adaptive-Sync synchronizes with the GPU's output to assure fast-paced gaming without any motion blur or stuttering",
+            "10/100/1000 Ethernet, Wi-Fi 6 (802.11ax) (dual band) 2x2 and Bluetooth 5.2 wireless card ensure lightning-fast and reliable connectivity to provide seamless internet access and enhanced device compatibility",
+            "One Thunderbolt 4 support DisplayPort, one USB 3.2 Gen 2 Type-C support DisplayPort / G-SYNC, two USB 3.2 Gen 1 Type-A, one HDMI 2.0b, one RJ45 LAN port, and one 3.5mm combo audio jack for versatile connectivity with a wide range of devices and peripherals",
+            "Upgraded pair of 84-blade Arc Flow Fans provide better heat dissipation and maintain optimal operating temperatures during intense gaming sessions",
+            "MUX Switch enhances laptop gaming performance by 5-10% by efficiently routing frames directly from the dedicated GPU to the display, bypassing the integrated GPU",
+            "Backlit keyboard enhances visibility, allowing you to type comfortably even in low-light conditions",
+            "720p HD camera allows for high-definition video calls and conferences",
+            "Meets the MIL-STD 810H military-grade standard for ensuring durability and reliability in challenging environments",
+            "Preloaded with Windows 11 Home that offers user-friendly interface, enhanced productivity tools, and robust security measures"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f17-17-3-gaming-laptop-mecha-grey-intel-core-i5-12500h-1tb-ssd-16gb-ram-geforce-rtx-3050/17687650"
+    },
+    {
+        "name":"ASUS TUF Gaming F15 15.6\" 144Hz Gaming Laptop (Intel Core i7-13620H/16GB RAM/512GB SSD/RTX 4050)",
+        "price":1049.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"ASUS",
+        "sku":"13",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_8.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_10.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_14.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_12.jpg"
+        ],
+        "specs":[
+            "Get ready to face tough challenges with this ASUS TUF Gaming F15 15.6\" laptop. Powered by Intel Core i7-13620H processor and 16GB DDR5 RAM, this device makes multitasking fast and efficient. The NVIDIA GeForce RTX 4050 graphics card with dedicated 6GB video memory enables buttery smooth visuals for video games and video playback.",
+            "Intel Core i7-13620H processor and 16GB DDR5 RAM guarantee smooth and seamless multitasking",
+            "512GB of solid state drive provides efficient storage space with faster read and write times",
+            "NVIDIA GeForce RTX 4050 graphics card with dedicated 6GB video memory enables fluid videos, even for fast-paced scenes",
+            "15.6-inch LED display with 1920 x 1080 resolution, 144Hz refresh rate, and Adaptive-sync tech let you enjoy superior and realistic images while gaming",
+            "10/100/1000 Ethernet port, Wi-Fi 6 (802.11ax) (dual band) 2 x 2, and Bluetooth 5.1 wireless card provide highly efficient connectivity options for networking tasks",
+            "One Thunderbolt 4 support DisplayPort, one USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC, two USB 3.2 Gen 1 Type-A ports, one HDMI 2.1 FRL port, one RJ45 LAN port, and one 3.5mm combo audio jack offer a wide range of options for connecting external devices",
+            "Arc Flow fans boost cooling performance without causing extra noise",
+            "MUX Switch significantly enhances gaming performance along with Advanced Optimus technology by automatically toggling between discrete GPU and integrated GPU based on tasks, improving battery life",
+            "VR Ready capability lets you use virtual reality gears or goggles",
+            "720p HD webcam lets you enjoy superior quality video calls",
+            "Backlit keyboard allows you to work conveniently in the dark",
+            "Meets MIL-STD-810H tests for military grade durability",
+            "Preinstalled with Windows 11 Home operating system that provides easy user interface, improved performance, and enhanced security"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f15-15-6-144hz-gaming-laptop-intel-core-i7-13620h-16gb-ram-512gb-ssd-rtx-4050/17697537"
+    },
+    {
+        "name":"Acer Nitro V 15 15.6\" Gaming Laptop - Black (Intel Core i5-13420H/512GB SSD/8GB RAM/RTX2050/Windows 11)",
+        "price":699.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"Acer",
+        "sku":"14",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_9.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_10.jpg"
+        ],
+        "specs":[
+            "Unleash your skills and creativity with this Acer Nitro V 15 15.6\" gaming laptop. Featuring Intel Ci5-13420H processor, 8GB DDR5 RAM, and NVIDIA GeForce RTX2050 graphics, this machine guarantees exceptionally smooth and seamless performance. The 512GB solid state drive offers good storage space for your files and apps.",
+            "13th Generation Intel Ci5-13420H processor and 8GB DDR5 RAM combine to deliver exceptional performance",
+            "512GB solid state drive provides more storage space with faster load time",
+            "NVIDIA GeForce RTX2050 graphics card and dedicated 4GB video memory ensure buttery smooth videos for games and playback",
+            "15.6\" LED display with 1920 x 1080 resolution delivers crisp and clear pictures",
+            "RJ45 Ethernet port, Wi-Fi 6 (802.11ax) featuring 2 x 2 MU-MIMO technology (dual-band 2.4GHz and 5GHz), and Bluetooth 5.1 technology offer reliable options for wired and wireless connectivity",
+            "Lithium-ion battery with approximately 5.5 hours of lifetime makes you worry less about recharging",
+            "One USB Type-C port - supporting USB4 (up to 40 Gbps), Thunderbolt 4, USB charging and power delivery (Up to 65W), two USB 3.2 Gen 1 ports (one with Power-off Charging), one HDMI 2.1 port with HDCP support, and headphone/speaker jack provide a wide range of options for connecting external devices",
+            "VR ready capability lets you use virtual reality gears or goggles",
+            "Preinstalled with Windows 11 operating system that features easy user interface, improved performance, and enhanced security"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/acer-nitro-v-15-15-6-gaming-laptop-black-intel-core-i5-13420h-512gb-ssd-8gb-ram-rtx2050-windows-11/17698610"
+    },
+    {
+        "name":"MSI Vector 16 Series 16\" Gaming Laptop- Cosmos Grey (Intel Core i9-13980HX /1TB/32GB RAM/GeForce RTX 4080)",
+        "price":2299.99,
+        "categoryId":"Gaming Laptops",
+        "brand":"MSI",
+        "sku":"15",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17685/17685416.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17685/17685416_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_7.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_8.jpg"
+        ],
+        "specs":[
+            "Get ready for the next level of portable gaming experience with this MSI Vector 16 Series 16\" gaming laptop. Featuring Intel Core i9-13980HX processor and 32GB DDR5 RAM, this laptop offers impressive speed and performance. The NVIDIA GeForce RTX 4080 graphics card and 12GB video memory ensure extremely fluid videos. The 1TB solid state drive provides more space for storage.",
+            "13th Generation Intel Core i9-13980HX processor and 32GB DDR5 RAM make this laptop fast and powerful",
+            "1TB solid state drive offers more space for storing your files and games",
+            "Dedicated NVIDIA GeForce RTX 4080 graphics card and 12GB video memory let you enjoy fluid videos while playing games or watching movies",
+            "16-inch screen with 1920 x 1200 screen resolution offers crisp and clear pictures",
+            "GB LAN Ethernet port, Intel Wi-Fi 6E AX211, and Bluetooth 5.3 provide multiple options for network connectivity",
+            "Li-polymer battery with 5675mAh capacity keeps the laptop running for hours for long and uninterrupted gaming experience",
+            "One Thunderbolt 4 with DP, one USB 3.2 Gen 2/DP, one USB 3.2 Gen 2/DP and PD, one USB 3.2 Gen 2, one USB 3.2 Gen 1, and one HDMI port offer a wide range of options for connecting external devices",
+            "VR-ready capability allows you to use virtual reality gears or goggles",
+            "Preinstalled with Windows 11 Home operating system that features easy user interface, enhanced performance, and improved security"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/msi-vector-16-series-16-gaming-laptop-cosmos-grey-intel-core-i9-13980hx-1tb-32gb-ram-geforce-rtx-4080/17685416"
+    },
     
 ]
