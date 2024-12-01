@@ -10,9 +10,9 @@ export interface IOrder extends Document {
         price: number;
     }[];
     status: OrderStatus;
-    subTotal?: number;
-    tax?: number;
-    total?: number; // 虚拟字段
+    subTotal: number; // 每次保存时动态计算
+    tax: number; // 每次保存时动态计算
+    total: number; // 虚拟字段
 }
 
 const OrderSchema: Schema = new Schema(
@@ -63,15 +63,22 @@ const OrderSchema: Schema = new Schema(
     }
 );
 
-// 虚拟字段：动态计算订单总金额
 OrderSchema.virtual("total").get(function (this: IOrder) {
+    return this.subTotal + this.tax;
+});
+
+OrderSchema.pre<IOrder>("save", function (next) {
     const subTotal = this.products.reduce(
-        (sum: number, product: { quantity: number; price: number }) => {
-            return sum + product.quantity * product.price;
-        },
+        (sum, product) => sum + product.quantity * product.price,
         0
     );
-    return subTotal + (this.tax || 0);
+
+    this.subTotal = subTotal;
+
+    const taxRate = 0.1;
+    this.tax = subTotal * taxRate;
+
+    next();
 });
 
 export const OrderModel = mongoose.model<IOrder>("Order", OrderSchema);

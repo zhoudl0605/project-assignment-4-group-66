@@ -42,6 +42,7 @@ const DashboardLayout = (props: any) => {
     const routers = [
         { name: "Users", path: "/users" },
         // { name: "Categories", path: "/categories" },
+        { name: "Payment Methods", path: "/payment-methods" },
         { name: "Products", path: "/products" },
         { name: "Orders", path: "/orders" },
         // { name: "Transactions", path: "/transactions" },

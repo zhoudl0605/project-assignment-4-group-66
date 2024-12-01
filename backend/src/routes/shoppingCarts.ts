@@ -2,27 +2,27 @@ import express from "express";
 import { ShoppingCartController } from "../controllers/shoppingCartController";
 import { authMiddleware } from "../middlewares/authMiddleware";
 
-const usersRouter = express.Router();
+const shoppingCartRouter = express.Router();
 // set current route level middleware
 // shoppingCartRouter.use(authMiddleware);
 
-usersRouter.get("/", authMiddleware, async (req, res, next) => {
+shoppingCartRouter.get("/", authMiddleware, async (req, res, next) => {
     ShoppingCartController.getShoppingCartController(req, res, next);
 });
 
-usersRouter.post("/:id", authMiddleware, async (req, res, next) => {
+shoppingCartRouter.post("/:id", authMiddleware, async (req, res, next) => {
     ShoppingCartController.postShoppingCartController(req, res, next);
 });
 
-usersRouter.put("/:id", authMiddleware, async (req, res, next) => {
+shoppingCartRouter.put("/:id", authMiddleware, async (req, res, next) => {
     ShoppingCartController.putShoppingCartController(req, res, next);
 });
 
-usersRouter.delete("/:id", authMiddleware, async (req, res, next) => {
+shoppingCartRouter.delete("/:id", authMiddleware, async (req, res, next) => {
     ShoppingCartController.clearShoppingCartController(req, res, next);
 });
 
-usersRouter.delete(
+shoppingCartRouter.delete(
     "/:id/:productId",
     authMiddleware,
     async (req, res, next) => {
@@ -30,4 +30,4 @@ usersRouter.delete(
     }
 );
 
-export default usersRouter;
+export default shoppingCartRouter;

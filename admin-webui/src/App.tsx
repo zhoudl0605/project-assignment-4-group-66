@@ -5,8 +5,7 @@ import Login from "./pages/Login";
 import Order from "./pages/Order";
 import Product from "./pages/Product";
 import User from "./pages/User";
-import Transaction from "./pages/Transaction";
-import Category from "./pages/Category";
+import PaymentMethod from "./pages/PaymentMethod";
 
 function App() {
     return (
@@ -33,6 +32,7 @@ function ProtectedRoutes() {
             <Route path="/orders" element={<Order />} />
             <Route path="/products" element={<Product />} />
             <Route path="/users" element={<User />} />
+            <Route path="/payment-methods" element={<PaymentMethod />} />
             {/* <Route path="/transactions" element={<Transaction />} /> */}
             {/* <Route path="/categories" element={<Category />} /> */}
         </Routes>

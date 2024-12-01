@@ -6,6 +6,7 @@ import shoppingCartRouter from "./shoppingCarts";
 import ordersRouter from "./orders";
 import productsRouter from "./products";
 import cateRouter from "./categories";
+import paymentMethodRouter from "./paymentMethods";
 import { Express } from "express-serve-static-core";
 
 export function registerRoutes(app: Express) {
@@ -15,4 +16,5 @@ export function registerRoutes(app: Express) {
     app.use("/orders", ordersRouter);
     app.use("/products", productsRouter);
     app.use("/categories", cateRouter);
+    app.use("/payment-methods", paymentMethodRouter);
 }

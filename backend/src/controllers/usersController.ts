@@ -44,13 +44,6 @@ export class UsersController {
             const userService = new UserService();
             const user = await userService.getUserById(id);
 
-            if (!user) {
-                return res.status(404).json({
-                    status: "fail",
-                    message: "User not found",
-                } as RequestErrorResponse);
-            }
-
             return res.status(200).json({
                 status: "success",
                 data: user,
