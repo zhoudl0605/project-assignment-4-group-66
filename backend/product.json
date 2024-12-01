@@ -1019,5 +1019,160 @@
         ],
         "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2023-space-grey-apple-m2-pro-512gb-ssd-16gb-ram-french/16670265"
     },
+    {
+        "name":"Apple MacBook Pro 13.3\" w/ Touch Bar (2022) - Silver (Apple M2 Chip / 256GB SSD / 8GB RAM) - French",
+        "price":1299.95,
+        "categoryId":"MacBook",
+        "brand":"Apple",
+        "sku":"36",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_6.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/162/16282/16282203_8.jpg"
+        ],
+        "specs":[
+            "Bring more power and enhanced performance on-the-go with the Apple MacBook Pro. Supercharged by the next-generation M2 chip, it’s Apple’s most portable pro laptop, with up to 20 hours of battery life. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it delivers game-changing performance to all your computing and entertainment tasks.",
+            "Apple M2 chip with next-generation CPU, GPU, and machine learning performance",
+            "8-core CPU and 10-core GPU to rip through intense workflows",
+            "16-core Neural Engine for advanced machine learning tasks",
+            "8GB of unified memory so everything you do is fast and fluid",
+            "256GB superfast SSD storage launches apps and opens files in an instant",
+            "Active cooling system sustains incredible performance",
+            "13.3-inch brilliant Retina display with 500 nits of brightness and P3 wide colour for vibrant images and incredible detail (Screen size is measured diagonally)",
+            "FaceTime HD camera with advanced image signal processor so you‘ll look great in video calls",
+            "Studio-quality three-microphone array captures your voice more clearly",
+            "Backlit Magic Keyboard delivers a comfortable, quiet, and responsive typing experience",
+            "Touch Bar puts the commands you need most right where you need them, saving time and keystrokes",
+            "Touch ID provides fast, easy authentication for secure logins and purchases",
+            "Go all day with up to 20 hours of battery life (Battery life varies by use and configuration. See apple.com/ca/batteries for more information)",
+            "Fast Wi-Fi 6 (802.11ac) wireless connectivity",
+            "Two Thunderbolt 3 (USB-C) ports and a headphone jack for all the charging and accessories",
+            "macOS Monterey lets you connect, share and create like never before—across all your Apple devices"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-13-3-w-touch-bar-2022-silver-apple-m2-chip-256gb-ssd-8gb-ram-french/16282203"
+    },
+    {
+        "name":"Apple MacBook Pro 16.2\" (Fall 2024) - Space Black (Apple M4 Pro / 24GB RAM / 512GB SSD) - English",
+        "price":3299.99,
+        "categoryId":"MacBook",
+        "brand":"Apple",
+        "sku":"37",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/186/18619/18619927_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/186/18619/18619927_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927_6.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927_8.jpg"
+        ],
+        "specs":[
+            "The Apple MacBook Pro 16.2\" (Fall 2024) takes its power and efficiency further than ever. Supercharged by M4 Pro, it delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need—this is a pro laptop without equal.",
+            "Apple-designed M4 Pro chip for a giant leap in CPU, GPU, and machine learning performance",
+            "Go longer than ever with up to 22 hours of battery life",
+            "14-core CPU",
+            "Studio-quality three-mic array with high signal-to-noise ratio and directional beamforming",
+            "ProMotion technology for adaptive refresh rates up to 120Hz",
+            "16.2-inch (diagonal) Liquid Retina XDR display, 3024-by-1964 native resolution at 254 pixels per inch",
+            "1080p FaceTime HD camera with advanced image signal processor for clearer, sharper video calls",
+            "High-fidelity six-speaker sound system with force-cancelling woofers",
+            "Next-generation Wi-Fi 6E for faster connectivity",
+            "Three Thunderbolt 5 ports, HDMI port, SDXC card slot, MagSafe 3 port, 3.5mm headphone jack",
+            "Backlit magic keyboard, ambient light sensor and Touch ID for secure unlock and payments",
+            "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing and Multi-Touch gestures"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2024-space-black-apple-m4-pro-24gb-ram-512gb-ssd-english/18619927"
+    },
+    {
+        "name":"",
+        "price":1969.99,
+        "categoryId":"MacBook",
+        "brand":"Apple",
+        "sku":"38",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/185/18522/18522202.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_1.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_2.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/185/18522/18522202_3.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_4.jpeg"
+        ],
+        "specs":[
+            "The first notebook of its kind, this Apple MacBook Pro is a beast. With the blazing-fast M1 Pro chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need.",
+            "Tech Nation sells computers with custom/upgraded configurations to enhance system performance. If the computer has modifications as listed above, the manufacturer's box was opened by our highly skilled technicians for testing, inspection, and installation of the upgrades according to the specifications advertised. All computers and components are brand new.",
+            "Display: 14\" Liquid Retina XDR ProMotion display with a resolution of 3024 x 1964, providing stunning visual clarity. Enjoy wide color (P3) support and industry-leading brightness levels with 1000 nits sustained brightness and up to 1600 nits peak brightness for HDR content.",
+            "Processor: Apple M1 Pro with 10-core CPU, designed for intense workflows, combining power efficiency with incredible performance. Ideal for creative professionals who work with high-resolution video, photo editing, and 3D applications.",
+            "Memory & Storage: 16GB LPDDR5-6400 high-bandwidth memory ensures smooth multitasking and fast performance. The 1TB SSD storage offers ample space for large files and fast access speeds for seamless operation.",
+            "Graphics: Equipped with a 16-core Apple GPU for advanced graphics performance, making it ideal for high-end gaming, creative tasks like video rendering, and graphic design.",
+            "Battery & Power: 70W power consumption, giving you hours of usage on a single charge while delivering powerful performance. This model ensures efficiency without compromising battery life.",
+            "Webcam: A 1080p FaceTime HD camera ensures clear video calls and streaming.",
+            "Connectivity: Includes multiple USB-C Thunderbolt 4 ports, an HDMI port, and an SD card slot, offering versatile connectivity options. Additionally, it supports Wi-Fi 6 and Bluetooth 5.0 for seamless wireless connections.",
+            "Design: Sleek, lightweight, and portable, with a durable Space Grey aluminum finish, this MacBook Pro weighs only 1.6 kg making it easy to carry on the go."
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2021-space-grey-apple-m1-pro-chip-1tb-ssd-16gb-ram/18522202"
+    },
+    {
+        "name":"Apple MacBook Air 13.6\" w/ Touch ID (2022) - Midnight (Apple M2 Chip / 256GB SSD / 8GB RAM) - English - Brand New",
+        "price":1099.97,
+        "categoryId":"MacBook",
+        "brand":"Apple",
+        "sku":"39",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/164/16480/16480352_1.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_2.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_3.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_4.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_5.jpeg"
+        ],
+        "specs":[
+            "Apple’s thinnest and lightest notebook gets supercharged with the Apple M2 chip. The M2 chip starts the next generation of Apple silicon, with even more of the speed and power efficiency of M1. So you can get more done faster with a more powerful 8‑core CPU. Create captivating images and animations with up to a 8-core GPU and work with more streams of 4K and 8K ProRes video.",
+            "Apple-designed M2 chip for a giant leap in CPU, GPU and machine learning performance",
+            "Go longer than ever with up to 18 hours of battery life (Battery life varies by use and configuration)",
+            "8-core CPU delivers up to 3.5x faster performance",
+            "8-core GPU cores with up to 5x faster graphics for graphics-intensive apps and games",
+            "16-core Neural Engine for advanced machine learning",
+            "8GB of unified memory so everything you do is fast and fluid",
+            "Superfast SSD storage launches apps and opens files in an instant",
+            "Fanless design for silent operation",
+            "13.6-inch Liquid Retina display (Screen size is measured diagonally)",
+            "FaceTime HD camera with advanced image signal processor for clearer, sharper video calls"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-6-w-touch-id-2022-midnight-apple-m2-chip-256gb-ssd-8gb-ram-english-brand-new/16480352"
+    },
+    {
+        "name":"Apple MacBook Pro 16.2\" (Fall 2023) - Space Black (Apple M3 Max / 1TB SDD / 36GB RAM) English - Brand NEW",
+        "price":4099.99,
+        "categoryId":"MacBook",
+        "brand":"Apple",
+        "sku":"40",
+        "stock":50,
+        "medias":[
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_1.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_2.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_3.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_1.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_2.jpeg"
+        ],
+        "specs":[
+            "Apple MacBook Pro 16.2\" (Fall 2023) - Space Black (Apple M3 Max / 1TB SDD / 36GB RAM) English - Brand NEW",
+            "Processor and Memory: Apple M3 Max chip, 14-core CPU, 36 GB RAM",
+            "Drives: 1 TB SSD, No optical drive, SD card reader",
+            "Graphics and Video: 16.2 in. Liquid Retina XDR display with True Tone (3456 × 2234), 30-core GPU",
+            "Refresh rate: up to 120Hz",
+            "Communications: Wi-Fi 6E + Bluetooth 5.3, FaceTime FHD camera",
+            "Ports and Slots: 3 x Thunderbolt™ 4, 1 x HDMI,1 x MagSafe 3, 1 x headphone jack",
+            "Keyboard: Backlit Magic keyboard, Force Touch trackpad, Touch ID fingerprint sensor",
+            "​Includes: 140W USB-C Power Adapter, USB-C to MagSafe 3 Cable",
+            "Operating System: macOS"
+        ],
+        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2023-space-black-apple-m3-max-1tb-sdd-36gb-ram-english-brand-new/17720831"
+    },
     
 ]
