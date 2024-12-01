@@ -25,7 +25,6 @@ const CategorySchema: Schema = new Schema(
         },
         image: {
             type: String,
-            required: true,
         },
     },
     {
@@ -33,4 +32,13 @@ const CategorySchema: Schema = new Schema(
     }
 );
 
-export default mongoose.model<ICategory>("Category", CategorySchema);
+CategorySchema.methods.toJSON = function () {
+    const obj = this.toObject();
+    obj.id = obj._id;
+    return obj;
+};
+
+export const CategoryModel = mongoose.model<ICategory>(
+    "Category",
+    CategorySchema
+);

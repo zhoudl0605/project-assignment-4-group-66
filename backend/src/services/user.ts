@@ -1,5 +1,5 @@
 import { UserDao } from "../dao/user";
-import { IUser, UserRole } from "../models/user";
+import { IUser, UserAddress, UserRole } from "../models/user";
 import { UserModel } from "../models/user";
 import { auth } from "../modules/auth";
 import { DbQueryResult } from "../types";
@@ -15,7 +15,13 @@ export class UserService {
         name: string,
         email: string,
         password: string,
-        role: string = "user"
+        role: string = "user",
+        address: UserAddress = {
+            address1: "",
+            city: "",
+            province: "",
+            postalCode: "",
+        }
     ): Promise<IUser> {
         try {
             const hashedPass = auth.hashPassword(password);
@@ -24,6 +30,7 @@ export class UserService {
                 name,
                 password: hashedPass,
                 role,
+                address,
             });
 
             console.log(password, hashedPass);
@@ -88,9 +95,15 @@ export class UserService {
     async getUsers(
         limit: number,
         skip: number
-    ): Promise<DbQueryResult<IUser[]>> {
+    ): Promise<DbQueryResult<Object[]>> {
         try {
-            return await this.userDao.getUsers(limit, skip);
+            const result = await this.userDao.getUsers(limit, skip);
+            return {
+                ...result,
+                data: result.data.map((user) => {
+                    return user.toJSON();
+                }),
+            };
         } catch (error) {
             if (error instanceof Error) {
                 throw new Error(error.message);
@@ -112,6 +125,18 @@ export class UserService {
     async updateUser(id: string, data: IUser): Promise<IUser | null> {
         try {
             return await this.userDao.updateUser(id, data);
+        } catch (error) {
+            if (error instanceof Error) {
+                throw new Error(error.message);
+            } else {
+                throw new Error(String(error));
+            }
+        }
+    }
+
+    async deleteUser(id: string): Promise<IUser> {
+        try {
+            return await this.userDao.deleteUser(id);
         } catch (error) {
             if (error instanceof Error) {
                 throw new Error(error.message);

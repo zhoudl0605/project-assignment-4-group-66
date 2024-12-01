@@ -1,13 +1,20 @@
-import Router from "koa-router";
+import express from "express";
 import { UsersController } from "../controllers/usersController";
 
-const usersRouter = new Router({
-    prefix: "/users",
-});
+const usersRouter = express.Router();
 
 // GET /users - List of users
-usersRouter.get("/", UsersController.getUsersController);
-usersRouter.get("/:id", UsersController.getUserController);
-usersRouter.put("/:id", UsersController.updateUserController);
+usersRouter.get("/", async (req, res, next) => {
+    UsersController.getUsersController(req, res, next);
+});
+usersRouter.get("/:id", async (req, res, next) => {
+    UsersController.getUserController(req, res, next);
+});
+usersRouter.put("/:id", async (req, res, next) => {
+    UsersController.updateUserController(req, res, next);
+});
+usersRouter.delete("/:id", async (req, res, next) => {
+    UsersController.deleteUserController(req, res, next);
+});
 
 export default usersRouter;

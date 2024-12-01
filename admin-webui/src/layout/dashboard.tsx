@@ -40,11 +40,11 @@ const DashboardLayout = (props: any) => {
     };
 
     const routers = [
-        { name: "Home", path: "/" },
         { name: "Users", path: "/users" },
+        // { name: "Categories", path: "/categories" },
         { name: "Products", path: "/products" },
         { name: "Orders", path: "/orders" },
-        { name: "Transactions", path: "/transactions" },
+        // { name: "Transactions", path: "/transactions" },
     ];
 
     const drawer = (

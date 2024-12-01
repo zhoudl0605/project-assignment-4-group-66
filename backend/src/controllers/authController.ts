@@ -1,91 +1,79 @@
+import { NextFunction, Request, Response } from "express";
 import { UserService } from "../services/user";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class AuthController {
-    public static async signupController(ctx: any) {
-        const body = ctx.request.body;
+    private static sendErrorResponse(
+        res: Response,
+        statusCode: number,
+        message: string
+    ) {
+        return res.status(statusCode).json({
+            status: "error",
+            message,
+        } as RequestErrorResponse);
+    }
 
-        const name = body.name;
-        const email = body.email;
-        const password = body.password;
-        const role = body.role || "user";
-
+    public static async signupController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
         try {
+            const { name, email, password, role = "user", address } = req.body;
             const userService = new UserService();
             const user = await userService.createUser(
                 name,
                 email,
                 password,
-                role
+                role,
+                address
             );
 
-            console.log(user);
-            // create JWT token
             const token = await userService.generateToken(user);
-
-            return (ctx.body = {
+            res.status(201).json({
                 status: "success",
-                data: {
-                    token,
-                },
-            } as RequestSuccessResponse);
+                data: { token },
+            });
         } catch (error: any) {
-            console.error("Error while creating user", error.toString());
-            // handle duplicate email error
+            console.error(`[AuthController][Signup] Error: ${error.message}`);
+
             if (error.message.includes("duplicate key error", "email")) {
-                ctx.status = 400;
-                ctx.body = {
-                    status: "error",
-                    message: "Email already exists",
-                } as RequestErrorResponse;
-                return;
+                return this.sendErrorResponse(res, 400, "Email already exists");
             }
 
-            ctx.status = 500;
-            ctx.body = {
-                status: "error",
-                message: "Internal server error",
-            } as RequestErrorResponse;
-
-            return;
+            return this.sendErrorResponse(res, 500, "Internal server error");
         }
     }
 
-    public static async loginController(ctx: any) {
-        const body = ctx.request.body;
-        const email = body.email;
-        const password = body.password;
-        const role = body.role || "user";
-
+    public static async loginController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
         try {
+            const { email, password, role = "user" } = req.body;
             const userService = new UserService();
             const user = await userService.userLogin(email, password, role);
 
             if (!user) {
-                ctx.status = 401;
-                ctx.body = {
+                return res.status(401).json({
                     status: "error",
                     message: "Invalid email or password",
-                } as RequestErrorResponse;
-                return;
+                });
             }
 
             const token = await userService.generateToken(user);
 
-            return (ctx.body = {
+            res.status(200);
+            res.setHeader("Authorization", `Bearer ${token}`);
+            res.json({
                 status: "success",
-                data: {
-                    token,
-                },
-            } as RequestSuccessResponse);
+                data: { token },
+            });
         } catch (error: any) {
-            console.error("Error while logging in user", error.toString());
-            ctx.status = 500;
-            ctx.body = {
-                status: "error",
-                message: "Internal server error",
-            } as RequestErrorResponse;
-            return;
+            console.error(`[AuthController][Login] Error: ${error.message}`);
+            return this.sendErrorResponse(res, 500, "Internal server error");
         }
     }
 }

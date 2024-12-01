@@ -21,4 +21,40 @@ export class ProductService {
         }
         throw new Error("Method not implemented");
     }
+
+    public async getProductById(id: string): Promise<IProduct | null> {
+        try {
+            const productDao = new ProductDao();
+            return await productDao.getProductById(id);
+        } catch (error: any) {
+            console.error("Error fetching product by ID:", error.message);
+            throw new Error(`Failed to fetch product by ID: ${error.message}`);
+        }
+    }
+
+    public async deleteProduct(id: string): Promise<IProduct | null> {
+        try {
+            const productDao = new ProductDao();
+            return await productDao.deleteProduct(id);
+        } catch (error: any) {
+            console.error("Error deleting product:", error.message);
+            throw new Error(`Failed to delete product: ${error.message}`);
+        }
+    }
+
+    public async updateProduct(
+        id: string,
+        data: Partial<IProduct>
+    ): Promise<IProduct | null> {
+        try {
+            console.log("id", id);
+            console.log("data", data);
+
+            const productDao = new ProductDao();
+            return await productDao.updateProduct(id, data);
+        } catch (error: any) {
+            console.error("Error updating product:", error.message);
+            throw new Error(`Failed to update product: ${error.message}`);
+        }
+    }
 }

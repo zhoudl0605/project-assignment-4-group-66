@@ -1,11 +1,15 @@
-import Router from "koa-router";
+import express from "express";
 import { AuthController } from "../controllers/authController";
 
-const authRouter = new Router({
-    prefix: "/auth",
+const authRouter = express.Router();
+// 登录路由
+authRouter.post("/login", (req, res, next) => {
+    AuthController.loginController(req, res, next);
 });
 
-authRouter.post("/login", AuthController.loginController);
-authRouter.post("/signup", AuthController.signupController);
+// 注册路由
+authRouter.post("/signup", (req, res, next) => {
+    AuthController.signupController(req, res, next);
+});
 
 export default authRouter;

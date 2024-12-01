@@ -4,7 +4,7 @@ import mongoose, { Schema, Document } from "mongoose";
 export interface IProduct extends Document {
     name: string;
     price: number;
-    categoryId: string;
+    category: "laptop" | "desktop" | "accessories";
     brand: string;
     sku: string;
     stock: number;
@@ -25,10 +25,10 @@ const ProductSchema: Schema = new Schema(
             type: String,
         },
         price: { type: Number, required: true, min: 0 },
-        categoryId: {
-            type: Schema.Types.ObjectId,
+        category: {
+            type: String,
             required: true,
-            ref: "Category",
+            enum: ["laptop", "desktop", "accessories"], // Allowed values
         },
         brand: {
             type: String,

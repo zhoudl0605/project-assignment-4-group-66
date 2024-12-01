@@ -70,7 +70,7 @@ export class ShoppingCartDao {
         return;
     }
 
-    public async clearShoppingCart(userId: number) {
+    public async clearShoppingCart(userId: String) {
         // clear shopping cart
         const opts = { new: true, runValidators: true };
         return ShoppingCartModel.findOneAndUpdate(

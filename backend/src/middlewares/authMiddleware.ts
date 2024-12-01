@@ -1,23 +1,19 @@
-import { Context, Next } from "koa";
 import { auth } from "../modules/auth";
+import { Request, Response, NextFunction } from "express";
 
-export async function authMiddleware(ctx: Context, next: Next) {
+export async function authMiddleware(
+    req: Request,
+    res: Response,
+    next: NextFunction
+) {
     // check if request has authorization header
-    if (!ctx.headers.authorization) {
-        ctx.status = 401;
-        ctx.body = {
+    if (!req.headers.authorization) {
+        res.status(401).json({
             status: "error",
             message: "Unauthorized",
-        };
+        });
         return;
     }
 
-    // get token from authorization header
-    const token = ctx.headers.authorization.split(" ")[1];
-    // verify token
-    const decodedToken = await auth.verifyToken(token);
-    // set user in context
-    ctx.user = decodedToken;
-
-    await next();
+    next();
 }

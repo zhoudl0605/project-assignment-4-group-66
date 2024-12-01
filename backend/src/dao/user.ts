@@ -47,8 +47,12 @@ export class UserDao {
      * delete user
      * @param id
      */
-    async deleteUser(id: string): Promise<void> {
-        await UserModel.findByIdAndDelete(id);
+    async deleteUser(id: string): Promise<IUser> {
+        const deletedUser = await UserModel.findByIdAndDelete(id);
+        if (!deletedUser) {
+            throw new Error(`User with id ${id} not found`);
+        }
+        return deletedUser;
     }
 
     /**
@@ -64,6 +68,11 @@ export class UserDao {
 
         const users = await query;
         const total = await UserModel.countDocuments();
+
+        // remove password field from users
+        users.forEach((user) => {
+            user.password = "";
+        });
 
         return {
             data: users,

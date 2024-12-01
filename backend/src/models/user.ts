@@ -84,5 +84,11 @@ const UserSchema: Schema = new Schema(
     }
 );
 
+UserSchema.methods.toJSON = function () {
+    const obj = this.toObject();
+    delete obj.password; // 删除 password 字段
+    return obj;
+};
+
 // 创建并导出 User 模型
 export const UserModel = mongoose.model<IUser>("User", UserSchema);

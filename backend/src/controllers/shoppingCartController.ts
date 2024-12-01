@@ -1,135 +1,218 @@
+import { NextFunction, Request, Response } from "express";
 import { ShoppingCartService } from "../services/shoppingCart";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class ShoppingCartController {
-    public static async getShoppingCartController(ctx: any) {
-        const id = ctx.params.id;
-
-        const shoppingCartService = new ShoppingCartService();
-        const shoppingCart = await shoppingCartService.getShoppingCartById(id);
-
-        return (ctx.body = {
-            status: "success",
-            data: shoppingCart,
-        });
-    }
-
-    public static async postShoppingCartController(ctx: any) {
-        const id = ctx.params.id;
-        const body = ctx.request.body;
-
-        const shoppingCartService = new ShoppingCartService();
-        let shoppingCart = await shoppingCartService.getShoppingCartById(id);
-        if (!shoppingCart) {
-            return (ctx.body = {
-                status: "fail",
-                message: "Shopping cart not found",
-            } as RequestErrorResponse);
-        }
-
-        const bodyProducts = body.products;
-        const result = await shoppingCartService.updateShoppingCartItems(
-            id,
-            bodyProducts
-        );
-        shoppingCart = result!;
-
-        return (ctx.body = {
-            status: "success",
-            data: shoppingCart,
-        });
-    }
-
-    public static async clearShoppingCartController(ctx: any) {
-        const id = ctx.params.id;
-
-        const shoppingCartService = new ShoppingCartService();
-        const shoppingCart = await shoppingCartService.getShoppingCartById(id);
-
-        if (!shoppingCart) {
-            return (ctx.body = {
-                status: "fail",
-                message: "Shopping cart not found",
-            } as RequestErrorResponse);
-        }
-
-        const result = await shoppingCartService.clearShoppingCart(id);
-
-        return (ctx.body = {
-            status: "success",
-            data: result,
-        } as RequestSuccessResponse);
-    }
-
-    public static async putShoppingCartController(ctx: any) {
-        const id = ctx.params.id;
-        const body = ctx.request.body;
-
-        const shoppingCartService = new ShoppingCartService();
-        let shoppingCart = await shoppingCartService.getShoppingCartById(id);
-
-        let newProducts = body.products;
-        // check if the new products are already in the shopping cart
-        for (const newProduct of newProducts) {
-            const existingProduct = shoppingCart.products.find(
-                (p: any) => p.productId === newProduct.productId
-            );
-
-            // if so, update the quantity
-            if (existingProduct) {
-                existingProduct.quantity = newProduct.quantity;
-            } else {
-                shoppingCart.products.push(newProduct);
-            }
-        }
+    // 获取购物车信息
+    public static async getShoppingCartController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
 
         try {
-            const shoppingCart =
-                await shoppingCartService.updateShoppingCartItems(
-                    id,
-                    newProducts
-                );
+            const shoppingCartService = new ShoppingCartService();
+            const shoppingCart = await shoppingCartService.getShoppingCartById(
+                id
+            );
 
-            return (ctx.body = {
+            return res.status(200).json({
                 status: "success",
                 data: shoppingCart,
             });
         } catch (error: any) {
-            ctx.status = 400;
-            return (ctx.body = {
+            console.error(
+                `[ShoppingCartController][getShoppingCart] Error: ${error}`
+            );
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            });
+        }
+    }
+
+    // 更新购物车
+    public static async postShoppingCartController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+        const body = req.body;
+
+        try {
+            const shoppingCartService = new ShoppingCartService();
+            let shoppingCart = await shoppingCartService.getShoppingCartById(
+                id
+            );
+
+            if (!shoppingCart) {
+                return res.status(404).json({
+                    status: "fail",
+                    message: "Shopping cart not found",
+                } as RequestErrorResponse);
+            }
+
+            const bodyProducts = body.products;
+            const result = await shoppingCartService.updateShoppingCartItems(
+                id,
+                bodyProducts
+            );
+            shoppingCart = result!;
+
+            return res.status(200).json({
+                status: "success",
+                data: shoppingCart,
+            });
+        } catch (error: any) {
+            console.error(
+                `[ShoppingCartController][postShoppingCart] Error: ${error}`
+            );
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            });
+        }
+    }
+
+    // 清空购物车
+    public static async clearShoppingCartController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+
+        try {
+            const shoppingCartService = new ShoppingCartService();
+            const shoppingCart = await shoppingCartService.getShoppingCartById(
+                id
+            );
+
+            if (!shoppingCart) {
+                return res.status(404).json({
+                    status: "fail",
+                    message: "Shopping cart not found",
+                } as RequestErrorResponse);
+            }
+
+            const result = await shoppingCartService.clearShoppingCart(id);
+
+            return res.status(200).json({
+                status: "success",
+                data: result,
+            } as RequestSuccessResponse);
+        } catch (error: any) {
+            console.error(
+                `[ShoppingCartController][clearShoppingCart] Error: ${error}`
+            );
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            });
+        }
+    }
+
+    // 添加/更新购物车商品
+    public static async putShoppingCartController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+        const body = req.body;
+
+        try {
+            const shoppingCartService = new ShoppingCartService();
+            let shoppingCart = await shoppingCartService.getShoppingCartById(
+                id
+            );
+
+            if (!shoppingCart) {
+                return res.status(404).json({
+                    status: "fail",
+                    message: "Shopping cart not found",
+                });
+            }
+
+            const newProducts = body.products;
+
+            // 更新或添加新商品
+            for (const newProduct of newProducts) {
+                const existingProduct = shoppingCart.products.find(
+                    (p: any) => p.productId === newProduct.productId
+                );
+
+                if (existingProduct) {
+                    existingProduct.quantity = newProduct.quantity;
+                } else {
+                    shoppingCart.products.push(newProduct);
+                }
+            }
+
+            const updatedCart =
+                await shoppingCartService.updateShoppingCartItems(
+                    id,
+                    shoppingCart.products
+                );
+
+            return res.status(200).json({
+                status: "success",
+                data: updatedCart,
+            });
+        } catch (error: any) {
+            console.error(
+                `[ShoppingCartController][putShoppingCart] Error: ${error}`
+            );
+            return res.status(400).json({
                 status: "fail",
                 message: error.toString(),
             } as RequestErrorResponse);
         }
     }
 
-    public static async deleteShoppingCartItemController(ctx: any) {
-        const id = ctx.params.id;
-        const productId = ctx.params.productId;
-
-        const shoppingCartService = new ShoppingCartService();
-        let shoppingCart = await shoppingCartService.getShoppingCartById(id);
-
-        const products = shoppingCart.products.find(
-            (p: any) => p.productId != productId
-        );
-
-        console.log(products);
+    // 删除购物车中指定商品
+    public static async deleteShoppingCartItemController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+        const productId = req.params.productId;
 
         try {
-            const result = await shoppingCartService.updateShoppingCartItems(
-                id,
-                products
+            const shoppingCartService = new ShoppingCartService();
+            const shoppingCart = await shoppingCartService.getShoppingCartById(
+                id
             );
-            shoppingCart = result!;
 
-            return (ctx.body = {
+            if (!shoppingCart) {
+                return res.status(404).json({
+                    status: "fail",
+                    message: "Shopping cart not found",
+                });
+            }
+
+            const updatedProducts = shoppingCart.products.filter(
+                (p: any) => p.productId !== productId
+            );
+
+            const updatedCart =
+                await shoppingCartService.updateShoppingCartItems(
+                    id,
+                    updatedProducts
+                );
+
+            return res.status(200).json({
                 status: "success",
-                data: shoppingCart,
+                data: updatedCart,
             });
         } catch (error: any) {
-            ctx.status = 400;
-            return (ctx.body = {
+            console.error(
+                `[ShoppingCartController][deleteShoppingCartItem] Error: ${error}`
+            );
+            return res.status(400).json({
                 status: "fail",
                 message: error.toString(),
             } as RequestErrorResponse);

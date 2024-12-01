@@ -1,42 +1,33 @@
-import Router from "koa-router";
+import express from "express";
 import { ShoppingCartController } from "../controllers/shoppingCartController";
 import { authMiddleware } from "../middlewares/authMiddleware";
 
-const shoppingCartRouter = new Router({
-    prefix: "/shopping-cart",
+const usersRouter = express.Router();
+// set current route level middleware
+// shoppingCartRouter.use(authMiddleware);
+
+usersRouter.get("/", authMiddleware, async (req, res, next) => {
+    ShoppingCartController.getShoppingCartController(req, res, next);
 });
 
-// set current route level middleware
-shoppingCartRouter.use(authMiddleware);
+usersRouter.post("/:id", authMiddleware, async (req, res, next) => {
+    ShoppingCartController.postShoppingCartController(req, res, next);
+});
 
-// get shopping cart
-shoppingCartRouter.get(
-    "/:id",
-    ShoppingCartController.getShoppingCartController
-);
+usersRouter.put("/:id", authMiddleware, async (req, res, next) => {
+    ShoppingCartController.putShoppingCartController(req, res, next);
+});
 
-// set shopping cart items
-shoppingCartRouter.post(
-    "/:id",
-    ShoppingCartController.postShoppingCartController
-);
+usersRouter.delete("/:id", authMiddleware, async (req, res, next) => {
+    ShoppingCartController.clearShoppingCartController(req, res, next);
+});
 
-// clear shopping cart
-shoppingCartRouter.delete(
-    "/:id",
-    ShoppingCartController.clearShoppingCartController
-);
-
-// add products to shopping cart
-shoppingCartRouter.put(
-    "/:id",
-    ShoppingCartController.putShoppingCartController
-);
-
-// delete product from shopping cart
-shoppingCartRouter.delete(
+usersRouter.delete(
     "/:id/:productId",
-    ShoppingCartController.deleteShoppingCartItemController
+    authMiddleware,
+    async (req, res, next) => {
+        ShoppingCartController.deleteShoppingCartItemController(req, res, next);
+    }
 );
 
-export default shoppingCartRouter;
+export default usersRouter;

@@ -31,7 +31,7 @@ export class ShoppingCartService {
         );
     }
 
-    async clearShoppingCart(userId: number) {
+    async clearShoppingCart(userId: String) {
         return await this.shoppingCartDao.clearShoppingCart(userId);
     }
 

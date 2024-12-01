@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ReactNode } from "react";
 import Login from "./pages/Login";
@@ -7,15 +6,13 @@ import Order from "./pages/Order";
 import Product from "./pages/Product";
 import User from "./pages/User";
 import Transaction from "./pages/Transaction";
+import Category from "./pages/Category";
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
-                {/* 登录页面 */}
                 <Route path="/login" element={<Login />} />
-
-                {/* 私有路由：保护所有其他路由 */}
                 <Route
                     path="*"
                     element={
@@ -32,13 +29,12 @@ function App() {
 function ProtectedRoutes() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<User />} />
             <Route path="/orders" element={<Order />} />
             <Route path="/products" element={<Product />} />
             <Route path="/users" element={<User />} />
-            <Route path="/transactions" element={<Transaction />} />
-
-            {/* 可以添加更多受保护的路由 */}
+            {/* <Route path="/transactions" element={<Transaction />} /> */}
+            {/* <Route path="/categories" element={<Category />} /> */}
         </Routes>
     );
 }
