@@ -8,6 +8,7 @@ import productsRouter from "./products";
 import cateRouter from "./categories";
 import paymentMethodRouter from "./paymentMethods";
 import { Express } from "express-serve-static-core";
+import testRouter from "./test";
 
 export function registerRoutes(app: Express) {
     app.use("/auth", authRouter);
@@ -17,4 +18,6 @@ export function registerRoutes(app: Express) {
     app.use("/products", productsRouter);
     app.use("/categories", cateRouter);
     app.use("/payment-methods", paymentMethodRouter);
+    app.use("/payment", paymentMethodRouter);
+    app.use("/test", testRouter);
 }

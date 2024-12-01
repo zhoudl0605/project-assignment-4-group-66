@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { UserService } from "../services/user";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
+import { UserDao } from "../dao/user";
 
 export class UsersController {
     // 获取用户列表

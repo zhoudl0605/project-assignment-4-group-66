@@ -6,19 +6,18 @@ import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 import { auth } from "../modules/auth";
 
 export class OrdersController {
-    // 获取订单
     public static async getOrdersController(
         req: Request,
         res: Response,
         next: NextFunction
     ) {
-        const body = req.body;
-        const limit = body.limit || 10;
-        const skip = body.skip || 0;
+        const query = req.query;
+        const limit = parseInt(query.limit as string) || 10;
+        const skip = parseInt(query.skip as string) || 0;
 
         const token = req.headers.authorization!;
         const user = await auth.verifyToken(token);
-        let userId = body.userId;
+        let userId = query.userId as string | null;
 
         if (user?.role !== UserRole.ADMIN) {
             userId = user?._id;
@@ -31,7 +30,7 @@ export class OrdersController {
 
             return res.status(200).json({
                 status: "success",
-                ...orders,
+                data: orders,
             } as RequestSuccessResponse);
         } catch (error: any) {
             console.error("Error while getting orders:", error.toString());
@@ -42,37 +41,48 @@ export class OrdersController {
         }
     }
 
-    // 创建订单
     public static async postOrderController(
         req: Request,
         res: Response,
         next: NextFunction
     ) {
-        const body = req.body;
-        const shoppingCartId = body.shoppingCartId;
-
+        const { products } = req.body; // 从客户端获取商品列表
         const token = req.headers.authorization!;
         const user = await auth.verifyToken(token);
 
+        if (!user) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
+        if (!Array.isArray(products) || products.length === 0) {
+            return res.status(400).json({
+                status: "error",
+                message: "Invalid or empty products array",
+            } as RequestErrorResponse);
+        }
+
         const orderService = new OrderService();
-        const shoppingCartService = new ShoppingCartService();
 
         try {
-            const shoppingCart = await shoppingCartService.getShoppingCartById(
-                shoppingCartId
-            );
-
-            if (!shoppingCart) {
-                return res.status(404).json({
-                    status: "error",
-                    message: "Shopping cart not found",
-                } as RequestErrorResponse);
+            for (const product of products) {
+                if (
+                    !product.productId ||
+                    typeof product.productId !== "string" ||
+                    !product.quantity ||
+                    typeof product.quantity !== "number" ||
+                    product.quantity <= 0
+                ) {
+                    return res.status(400).json({
+                        status: "error",
+                        message: "Invalid product data",
+                    } as RequestErrorResponse);
+                }
             }
 
-            const order = await orderService.createOrder(
-                user?._id,
-                body.products
-            );
+            const order = await orderService.createOrder(user._id, products);
 
             return res.status(201).json({
                 status: "success",
@@ -80,6 +90,167 @@ export class OrdersController {
             } as RequestSuccessResponse);
         } catch (error: any) {
             console.error("Error while creating order:", error.toString());
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            } as RequestErrorResponse);
+        }
+    }
+
+    public static async getOrderByIdController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+
+        const token = req.headers.authorization!;
+        const user = await auth.verifyToken(token);
+
+        if (!user) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
+        const orderService = new OrderService();
+
+        try {
+            const order = await orderService.getOrderById(id);
+
+            if (!order) {
+                return res.status(404).json({
+                    status: "error",
+                    message: "Order not found",
+                } as RequestErrorResponse);
+            }
+
+            if (
+                user.role !== UserRole.ADMIN &&
+                order.userId.toString() !== user._id.toString()
+            ) {
+                return res.status(403).json({
+                    status: "error",
+                    message: "Forbidden",
+                } as RequestErrorResponse);
+            }
+
+            return res.status(200).json({
+                status: "success",
+                data: order,
+            } as RequestSuccessResponse);
+        } catch (error: any) {
+            console.error("Error while fetching order:", error.toString());
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            } as RequestErrorResponse);
+        }
+    }
+
+    public static async updateOrderController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+        const body = req.body;
+
+        const token = req.headers.authorization!;
+        const user = await auth.verifyToken(token);
+
+        if (!user) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
+        const orderService = new OrderService();
+
+        try {
+            const order = await orderService.getOrderById(id);
+
+            if (!order) {
+                return res.status(404).json({
+                    status: "error",
+                    message: "Order not found",
+                } as RequestErrorResponse);
+            }
+
+            if (
+                user.role !== UserRole.ADMIN &&
+                order.userId.toString() !== user._id.toString()
+            ) {
+                return res.status(403).json({
+                    status: "error",
+                    message: "Forbidden",
+                } as RequestErrorResponse);
+            }
+
+            const updatedOrder = await orderService.updateOrder(id, body);
+
+            return res.status(200).json({
+                status: "success",
+                data: updatedOrder,
+            } as RequestSuccessResponse);
+        } catch (error: any) {
+            console.error("Error while updating order:", error.toString());
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            } as RequestErrorResponse);
+        }
+    }
+
+    public static async deleteOrderController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const id = req.params.id;
+
+        const token = req.headers.authorization!;
+        const user = await auth.verifyToken(token);
+
+        if (!user) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
+        const orderService = new OrderService();
+
+        try {
+            const order = await orderService.getOrderById(id);
+
+            if (!order) {
+                return res.status(404).json({
+                    status: "error",
+                    message: "Order not found",
+                } as RequestErrorResponse);
+            }
+
+            if (
+                user.role !== UserRole.ADMIN &&
+                order.userId.toString() !== user._id.toString()
+            ) {
+                return res.status(403).json({
+                    status: "error",
+                    message: "Forbidden",
+                } as RequestErrorResponse);
+            }
+
+            await orderService.deleteOrder(id);
+
+            return res.status(200).json({
+                status: "success",
+                message: "Order deleted successfully",
+            });
+        } catch (error: any) {
+            console.error("Error while deleting order:", error.toString());
             return res.status(500).json({
                 status: "error",
                 message: "Internal server error",

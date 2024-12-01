@@ -82,7 +82,7 @@ export class UserService {
 
     async getUserById(id: string): Promise<IUser | null> {
         try {
-            return await this.userDao.findUserById(id);
+            return await this.userDao.getUserById(id);
         } catch (error) {
             if (error instanceof Error) {
                 throw new Error(error.message);

@@ -1,5 +1,4 @@
 import { IOrder, OrderModel } from "../models/order";
-import { UserRole } from "../models/user";
 import { DbQueryResult } from "../types";
 
 export class OrderDao {
@@ -8,24 +7,44 @@ export class OrderDao {
         limit: number = 0,
         skip: number = 0
     ): Promise<DbQueryResult<IOrder[]>> {
-        const query = OrderModel.find({
-            userId,
-        });
-        if (limit) query.limit(limit);
-        if (skip) query.skip(skip);
+        const filter = userId ? { userId } : {};
+        const query = OrderModel.find(filter);
 
-        const orders = await query.exec();
+        if (limit > 0) query.limit(limit);
+        if (skip > 0) query.skip(skip);
+
+        const [orders, total] = await Promise.all([
+            query.exec(),
+            OrderModel.countDocuments(filter),
+        ]);
 
         return {
             data: orders,
             limit,
             skip,
-            total: orders.length,
+            total,
         };
     }
 
-    async createOrder(order: IOrder): Promise<IOrder> {
+    async createOrder(order: Partial<IOrder>): Promise<IOrder> {
         const newOrder = new OrderModel(order);
         return await newOrder.save();
+    }
+
+    async getOrderById(orderId: string): Promise<IOrder | null> {
+        return await OrderModel.findById(orderId).exec();
+    }
+
+    async updateOrder(
+        orderId: string,
+        updateData: Partial<IOrder>
+    ): Promise<IOrder | null> {
+        return await OrderModel.findByIdAndUpdate(orderId, updateData, {
+            new: true,
+        }).exec();
+    }
+
+    async deleteOrder(orderId: string): Promise<IOrder | null> {
+        return await OrderModel.findByIdAndDelete(orderId).exec();
     }
 }

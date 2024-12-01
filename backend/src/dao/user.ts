@@ -18,7 +18,7 @@ export class UserDao {
      * find user by id
      * @param id
      */
-    async findUserById(id: string): Promise<IUser | null> {
+    async getUserById(id: string): Promise<IUser | null> {
         return await UserModel.findById(id);
     }
 

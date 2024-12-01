@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document, Types } from "mongoose";
 
-export type OrderStatus = "pending" | "completed" | "cancelled";
+export type OrderStatus = "pending" | "processing" | "completed" | "cancelled";
 
 export interface IOrder extends Document {
     userId: Types.ObjectId;
@@ -43,7 +43,7 @@ const OrderSchema: Schema = new Schema(
         ],
         status: {
             type: String,
-            enum: ["pending", "completed", "cancelled"],
+            enum: ["pending", "processing", "completed", "cancelled"],
             required: true,
             default: "pending",
         },

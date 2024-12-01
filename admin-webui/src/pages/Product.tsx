@@ -15,7 +15,7 @@ import {
 import ProductDialog from "./product/ProductDialog";
 import Layout from "../layout/dashboard";
 
-interface ProductData {
+export interface ProductData {
     id: string;
     name: string;
     category: string;
