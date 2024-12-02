@@ -233,4 +233,46 @@ export class OrderService {
     public async getOrderById(orderId: string): Promise<IOrder | null> {
         return await this.orderDao.getOrderById(orderId);
     }
+
+    public async payOrder(orderId: string): Promise<IOrder | null> {
+        const existingOrder = await this.orderDao.getOrderById(orderId);
+
+        if (!existingOrder) {
+            throw new Error("Order not found.");
+        }
+
+        if (existingOrder.status !== "processing") {
+            throw new Error("Order is not in a valid state for payment.");
+        }
+
+        const updatedOrder = await this.orderDao.updateOrder(orderId, {
+            status: "completed",
+        });
+        const user = await new UserDao().getUserById(
+            existingOrder.userId.toString()
+        );
+        const emailContent = `
+            Dear ${user!.name},
+    
+            Your order has been successfully paid!
+            
+            Order Details:
+            Order ID: ${existingOrder._id}
+            SubTotal: ${existingOrder.subTotal}
+            Tax: ${existingOrder.tax}
+            Total: ${existingOrder.subTotal + existingOrder.tax}
+    
+            Thank you for shopping with us!
+    
+            Best Regards,
+            Your Store Team
+        `;
+        await emailModule.sendEmail({
+            to: user!.email,
+            subject: "Order Payment Confirmation",
+            text: emailContent,
+        });
+
+        return updatedOrder;
+    }
 }

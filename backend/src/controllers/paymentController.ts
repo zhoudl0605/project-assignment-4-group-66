@@ -1,10 +1,11 @@
 import { Request, Response, NextFunction } from "express";
 import { PaymentMethodService } from "../services/paymentMethodService";
 import { auth } from "../modules/auth";
+import { OrderService } from "../services/orderService";
 
 export class PaymentController {
     /**
-     * 创建支付方式
+     * 支付订单
      */
     static async postPaymentMethod(
         req: Request,
@@ -20,7 +21,6 @@ export class PaymentController {
                 });
             }
 
-            // 验证用户身份
             const user = await auth.verifyToken(token);
             if (!user) {
                 return res.status(401).json({
@@ -29,33 +29,46 @@ export class PaymentController {
                 });
             }
 
-            const {
+            let {
                 cardType,
                 cardNumber,
                 cardName,
                 expirationDate,
                 cvv,
                 paymentMethodId,
+                orderId,
             } = req.body;
 
-            // 数据校验
-            if (
-                !cardType ||
-                !cardNumber ||
-                !cardName ||
-                !expirationDate ||
-                !cvv
-            ) {
-                return res.status(400).json({
-                    status: "error",
-                    message: "Missing required fields",
-                });
-            }
+            let paymentMethod;
+            if (paymentMethodId) {
+                const paymentMethodService = new PaymentMethodService();
+                paymentMethod = await paymentMethodService.getPaymentMethodById(
+                    paymentMethodId
+                );
+                if (!paymentMethod) {
+                    return res.status(404).json({
+                        status: "error",
+                        message: "Payment method not found",
+                    });
+                }
+            } else {
+                // 数据校验
+                if (
+                    !cardType ||
+                    !cardNumber ||
+                    !cardName ||
+                    !expirationDate ||
+                    !cvv
+                ) {
+                    return res.status(400).json({
+                        status: "error",
+                        message: "Missing required fields",
+                    });
+                }
 
-            // 调用服务层
-            const paymentMethodService = new PaymentMethodService();
-            const newPaymentMethod =
-                await paymentMethodService.createPaymentMethod({
+                // 调用服务层
+                const paymentMethodService = new PaymentMethodService();
+                paymentMethod = await paymentMethodService.createPaymentMethod({
                     userId: user._id,
                     cardType,
                     cardNumber,
@@ -63,10 +76,29 @@ export class PaymentController {
                     expirationDate,
                     cvv,
                 });
+            }
+
+            let success = true; // simulate success payment
+            if (!success) {
+                return res.status(400).json({
+                    status: "error",
+                    message: "Payment failed",
+                });
+            }
+
+            const orderService = new OrderService();
+            const order = await orderService.getOrderById(orderId);
+            if (!order) {
+                return res.status(404).json({
+                    status: "error",
+                    message: "Order not found",
+                });
+            }
+            await orderService.payOrder(orderId);
 
             return res.status(201).json({
                 status: "success",
-                data: newPaymentMethod,
+                data: paymentMethod,
             });
         } catch (error: any) {
             console.error("Error in postPaymentMethod:", error.message);

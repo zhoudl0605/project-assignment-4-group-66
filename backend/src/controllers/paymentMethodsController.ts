@@ -27,7 +27,7 @@ export class PaymentMethodsController {
         let userId = query.userId;
 
         if (user?.role !== UserRole.ADMIN) {
-            userId = user?._id; // 普通用户只能获取自己的支付方式
+            userId = user?._id;
         }
 
         const paymentMethodService = new PaymentMethodService();
