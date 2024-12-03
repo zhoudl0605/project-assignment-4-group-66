@@ -3,35 +3,34 @@ import AppContext from './AppContext';
 import { Box, Grid, Card, CardContent, Typography, Button, TextField } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-// 假设每个区域有20个产品，每个产品有对应的图片
+// Hardcoded arrays of products
 const desktopProducts = Array.from({ length: 20 }, (_, i) => ({
     id: i + 1,
     sku: `SKU${i + 1}`,
     name: `Desktop Product ${i + 1}`,
     price: (i + 1) * 100,
-    image: `/images/desktop${i + 1}-1.png`
+    image: `/images/desktop${i + 1}-1.png`,
 }));
 
 const laptopProducts = Array.from({ length: 20 }, (_, i) => ({
     id: i + 21,
-    sku: `SKU${i + 1}`,
+    sku: `SKU${i + 21}`,
     name: `Laptop Product ${i + 1}`,
     price: (i + 1) * 150,
-    image: `/images/laptop${i + 1}-1.png`
+    image: `/images/laptop${i + 1}-1.png`,
 }));
 
 const accessoryProducts = Array.from({ length: 20 }, (_, i) => ({
     id: i + 41,
-    sku: `SKU${i + 1}`,
+    sku: `SKU${i + 41}`,
     name: `Accessory Product ${i + 1}`,
     price: (i + 1) * 20,
-    image: `/images/accessory${i + 1}-1.png`
+    image: `/images/accessory${i + 1}-1.png`,
 }));
 
 function ProductList() {
-    const { addToCart } = useContext(AppContext); // 获取 addToCart 函数
+    const { addToCart } = useContext(AppContext); // Retrieve the addToCart function from the context
     const [searchTerm, setSearchTerm] = useState('');
-
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
@@ -43,7 +42,7 @@ function ProductList() {
 
     return (
         <Box padding={3}>
-            {/* 搜索框 */}
+            {/* Search bar */}
             <Box mb={5} textAlign="center">
                 <TextField
                     label="Search Products"
@@ -54,12 +53,15 @@ function ProductList() {
                 />
             </Box>
 
-            {/* 产品展示 */}
+            {/* Product display */}
             <Grid container spacing={3} justifyContent="center">
                 {filteredProducts.map((product) => (
                     <Grid item xs={12} sm={6} md={4} lg={2} key={product.id}>
                         <Card sx={{ textAlign: 'center' }}>
-                            <Link to={`/products/${product.sku}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <Link
+                                to={`/products/${product.sku}`}
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                            >
                                 <Box
                                     sx={{
                                         width: 200,
@@ -94,7 +96,7 @@ function ProductList() {
                                 variant="contained"
                                 color="primary"
                                 sx={{ marginTop: 2 }}
-                                onClick={() => addToCart(product)} // 添加到购物车
+                                onClick={() => addToCart(product)} // Add the product to the cart
                             >
                                 Add to Cart
                             </Button>

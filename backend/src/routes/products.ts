@@ -22,3 +22,5 @@ productsRouter.delete("/:id", async (req, res, next) => {
 });
 
 export default productsRouter;
+
+const express = require('express');

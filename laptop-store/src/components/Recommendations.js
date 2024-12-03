@@ -3,7 +3,7 @@ import { Box, Card, CardContent, CardMedia, Typography, Button } from '@mui/mate
 import AppContext from './AppContext';
 
 function Recommendations() {
-    const { addToCart } = useContext(AppContext); // 获取 addToCart 函数
+    const { addToCart } = useContext(AppContext); // Retrieve the addToCart function from the context
 
     const recommendations = [
         { id: 1, name: 'Product 1', price: 100, img: 'https://via.placeholder.com/150' },
