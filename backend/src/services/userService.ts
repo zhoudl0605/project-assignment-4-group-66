@@ -122,7 +122,8 @@ export class UserService {
 
     async updateUser(id: string, data: IUser): Promise<IUser | null> {
         try {
-            data.password = auth.hashPassword(data.password);
+            if (data.password) data.password = auth.hashPassword(data.password);
+
             return await this.userDao.updateUser(id, data);
         } catch (error) {
             if (error instanceof Error) {

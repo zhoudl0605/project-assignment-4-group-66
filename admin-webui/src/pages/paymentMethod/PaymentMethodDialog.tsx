@@ -81,6 +81,9 @@ const PaymentMethodDialog: React.FC<PaymentMethodDialogProps> = ({
             label: "Card Number",
             type: "text",
             required: true,
+            pattern: /[^0-9]/g,
+            inputMode: "numeric",
+            maxLength: 16,
         },
         {
             name: "cardName",
@@ -93,8 +96,19 @@ const PaymentMethodDialog: React.FC<PaymentMethodDialogProps> = ({
             label: "Expiration Date",
             type: "text",
             required: true,
+            pattern: /[^0-9/]/g,
+            inputMode: "numeric",
+            maxLength: 4,
         },
-        { name: "cvv", label: "CVV", type: "text", required: true },
+        {
+            name: "cvv",
+            label: "CVV",
+            type: "text",
+            required: true,
+            pattern: /[^0-9]/g,
+            inputMode: "numeric",
+            maxLength: 3,
+        },
     ];
 
     const handleSubmit = (values: Record<string, any>) => {

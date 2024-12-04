@@ -1,5 +1,4 @@
 import mongoose, { Schema, Document } from "mongoose";
-import bcrypt from "bcrypt";
 
 export enum UserRole {
     USER = "user",
@@ -23,7 +22,6 @@ export interface IUser extends Document {
     address?: UserAddress;
     createdAt?: Date;
     updatedAt?: Date;
-    comparePassword(candidatePassword: string): Promise<boolean>;
 }
 
 // 定义 Address Schema

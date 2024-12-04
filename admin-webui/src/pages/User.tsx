@@ -19,6 +19,7 @@ interface UserData {
     id: string;
     name: string;
     email: string;
+    password?: string;
     role: string;
     address: {
         address1: string;
@@ -57,6 +58,7 @@ export default function UserPage() {
                 name: user.name,
                 email: user.email,
                 role: user.role,
+                password: "",
                 address: {
                     address1: user.address?.address1 || "",
                     address2: user.address?.address2 || "",
@@ -86,13 +88,13 @@ export default function UserPage() {
                 },
                 body: JSON.stringify(user),
             });
+
+            const body = await response.json();
             if (!response.ok) {
-                throw new Error("Failed to update user");
+                throw new Error(body.message ?? "Failed to update user");
             }
 
-            const data = await response.json();
-
-            return data.result;
+            return body.result;
         } catch (err: any) {
             throw new Error(err.message);
         }
@@ -120,8 +122,10 @@ export default function UserPage() {
                     },
                     body: JSON.stringify(updatedUser),
                 });
+
+                const body = await response.json();
                 if (!response.ok) {
-                    throw new Error("Failed to add user");
+                    throw new Error(body.message ?? "Failed to add user");
                 }
 
                 window.location.reload();
@@ -147,8 +151,10 @@ export default function UserPage() {
             const response = await fetch(url, {
                 method: "DELETE",
             });
+
+            const body = await response.json();
             if (!response.ok) {
-                throw new Error("Failed to delete user");
+                throw new Error(body.message ?? "Failed to add user");
             }
 
             window.location.reload();

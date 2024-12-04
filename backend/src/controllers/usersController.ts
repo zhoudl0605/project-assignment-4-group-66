@@ -16,7 +16,6 @@ export class UsersController {
             const userService = new UserService();
             const result = await userService.getUsers(limit, skip);
 
-            // 返回成功响应
             return res.status(200).json({
                 status: "success",
                 result,
@@ -24,7 +23,6 @@ export class UsersController {
         } catch (error: any) {
             console.error("Error while getting users:", error.toString());
 
-            // 返回错误响应
             return res.status(500).json({
                 status: "error",
                 message: "Internal server error",
@@ -139,13 +137,12 @@ export class UsersController {
                 address
             );
 
-            const token = await userService.generateToken(user);
             res.status(201).json({
                 status: "success",
-                data: { token },
+                data: { user },
             });
         } catch (error: any) {
-            console.error(`[UsersController][Signup] Error: ${error.message}`);
+            console.error(`[UsersController][Signup] Error: ${error}`);
 
             if (error.message.includes("duplicate key error", "email")) {
                 return res.status(400).json({

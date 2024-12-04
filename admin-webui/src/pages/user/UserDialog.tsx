@@ -63,6 +63,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
                 name: user.name,
                 email: user.email,
                 role: user.role,
+                password: "",
                 address1: user.address.address1,
                 address2: user.address.address2,
                 city: user.address.city,
@@ -75,7 +76,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
     const formFields: FormField[] = [
         { name: "name", label: "Name", type: "text", required: true },
         { name: "email", label: "Email", type: "email", required: true },
-        { name: "password", label: "Password", type: "password", required: true },
+        { name: "password", label: "Password", type: "password" },
         {
             name: "role",
             label: "Role",
@@ -102,6 +103,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
         const updatedUser: UserData = {
             id: user?.id || Date.now().toString(), // 新用户生成唯一 ID
             name: values.name,
+            password: values.password || "",
             email: values.email,
             role: values.role,
             address: {

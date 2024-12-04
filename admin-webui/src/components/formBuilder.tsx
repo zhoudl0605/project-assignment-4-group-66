@@ -22,6 +22,9 @@ export interface FormField {
         | "password";
     options?: { value: string | number; label: string }[];
     required?: boolean;
+    pattern?: RegExp;
+    inputMode?: "text" | "none" | "tel" | "url" | "email" | "numeric";
+    maxLength?: number;
 }
 
 interface FormBuilderProps {
@@ -128,6 +131,10 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         value={formValues[field.name] || ""}
                         onChange={handleChange(field.name)}
                         required={field.required}
+                        inputMode={field.inputMode}
+                        inputProps={{
+                            maxLength: field.maxLength, // 添加 maxLength 限制
+                        }}
                     />
                 );
             case "password":
@@ -139,6 +146,9 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         value={formValues[field.name] || ""}
                         onChange={handleChange(field.name)}
                         required={field.required}
+                        inputProps={{
+                            maxLength: field.maxLength, // 添加 maxLength 限制
+                        }}
                     />
                 );
             default:
@@ -148,8 +158,20 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         type={field.type}
                         label={field.label}
                         value={formValues[field.name] || ""}
-                        onChange={handleChange(field.name)}
+                        onChange={(event) => {
+                            if (field.pattern) {
+                                event.target.value = event.target.value.replace(
+                                    field.pattern,
+                                    ""
+                                );
+                            }
+                            handleChange(field.name)(event);
+                        }}
                         required={field.required}
+                        inputMode={field.inputMode}
+                        inputProps={{
+                            maxLength: field.maxLength, // 添加 maxLength 限制
+                        }}
                     />
                 );
         }

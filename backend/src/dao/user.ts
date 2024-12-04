@@ -32,15 +32,34 @@ export class UserDao {
 
     /**
      * update user
-     * @param id
+     * @param userId
      * @param updateData
      */
     async updateUser(
-        id: string,
+        userId: string,
         updateData: Partial<IUser>
     ): Promise<IUser | null> {
-        const opts = { runValidators: true, new: true };
-        return await UserModel.findByIdAndUpdate(id, updateData, opts);
+        try {
+            // 如果 password 为空，则不更新 password
+            if (!updateData.password) {
+                delete updateData.password;
+            }
+
+            const updatedUser = await UserModel.findByIdAndUpdate(
+                userId,
+                { $set: updateData }, // 使用 $set 只更新指定字段
+                { new: true, runValidators: true } // 返回更新后的文档并验证
+            );
+
+            if (!updatedUser) {
+                throw new Error("User not found");
+            }
+
+            return updatedUser;
+        } catch (error) {
+            console.error("Error updating user:", error);
+            throw error;
+        }
     }
 
     /**
