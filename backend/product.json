@@ -1,12 +1,12 @@
 [
     {
-        "name":"ASUS Vivobook S 15 OLED 15.6\" Copilot+ PC Laptop - Cool Silver (Snapdragon X Elite/32GB RAM/1TB SSD)",
-        "price":1799.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"ASUS",
-        "sku":"1",
-        "stock":50,
-        "medias":[
+        "name": "ASUS Vivobook S 15 OLED 15.6\" Copilot+ PC Laptop - Cool Silver (Snapdragon X Elite/32GB RAM/1TB SSD)",
+        "price": 1799.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "1",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118_2.jpg",
@@ -14,7 +14,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937118_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "Perfectly Built for AI, the ASUS Vivobook S 15 OLED delivers robust performance tailored for multitasking enthusiasts. It's powered by the Snapdragon X Elite X1E 78 100 processor with Qualcomm Adreno Graphics, exceptional AI capabilities boasting up to 75 total TOPs, and Wi-Fi 7 providing speeds up to 4.8 times faster than the previous generation.",
             "Microsoft Copilot in Windows 11 makes complex tasks simple. Get answers, generate images, summarize texts, and more! Unleash your creativity with the power of intelligent assistance. Featuring the ASUS Copilot key allows you dive into Windows AI-powered tools with just one press",
             "Experience unparalleled portability with a slim profile starting at just 14.7mm (0.58 inches) thin and a lightweight all-metal chassis weighing only 1.42 kg (3.13 lb). Keep your stress levels low with all-day battery life powered by Fast-Charge technology",
@@ -27,16 +27,16 @@
             "Single-zone RGB backlit keyboard subtly enhances your style, while the super-large touchpad improves mouse-free navigation and workspace efficiency.",
             "For an unrivaled input experience, it also featured an FHD infrared (IR) camera to unlock your laptop quickly and securely"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-vivobook-s-15-oled-15-6-copilot-pc-laptop-cool-silver-snapdragon-x-elite-32gb-ram-1tb-ssd/17937118"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-vivobook-s-15-oled-15-6-copilot-pc-laptop-cool-silver-snapdragon-x-elite-32gb-ram-1tb-ssd/17937118"
     },
     {
-        "name":"Samsung Galaxy Book4 Edge 16\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/512GB SSD/Windows 11)",
-        "price":1999.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Samsung",
-        "sku":"2",
-        "stock":50,
-        "medias":[
+        "name": "Samsung Galaxy Book4 Edge 16\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/512GB SSD/Windows 11)",
+        "price": 1999.99,
+        "category": "laptop",
+        "brand": "Samsung",
+        "sku": "2",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937875.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937875.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937875_2.jpg",
@@ -44,7 +44,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937875_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17937/17937875_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "Transform all you do — and how you do it — with Samsung Galaxy Book4 Edge. This first Galaxy AI-powered PC features an innovative Snapdragon X Elite processor that powers industry-leading intelligence. Unlock higher levels of productivity, communication, creativity, and more. Embrace the power and possibilities of Galaxy AI with Galaxy Book4 Edge.",
             "Galaxy Book4 Edge revolutionizes your PC experience with intuitive Galaxy AI-powered features right at your fingertips",
             "Seamlessly interact with your other compatible Galaxy devices using Magical Device Control to activate features like Second Screen and Multi Control with simple prompts",
@@ -53,16 +53,16 @@
             "From international webinars to chatting with others overseas, get accurate subtitles in real time with automatic Live Captions that translate 44 languages into English",
             "And when you’re feeling creative, light your spark with Paint Cocreator and amplify your artwork on the stunning 3K AMOLED touchscreen display"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-512gb-ssd-windows-11/17937875"
+        "url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-512gb-ssd-windows-11/17937875"
     },
     {
-        "name":"MicrosoftMicrosoft Surface Pro (LCD) Copilot+ PC 13\" 256GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Platinum - Device Only",
-        "price":1449.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"3",
-        "stock":50,
-        "medias":[
+        "name": "MicrosoftMicrosoft Surface Pro (LCD) Copilot+ PC 13\" 256GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Platinum - Device Only",
+        "price": 1449.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "3",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921774.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921774_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921774_2.jpg",
@@ -70,7 +70,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17921/17921774_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17921/17921774_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -81,16 +81,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-256gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-platinum-device-only/17921774"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-256gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-platinum-device-only/17921774"
     },
     {
-        "name":"Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Black - Device Only",
-        "price":1699.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"4",
-        "stock":50,
-        "medias":[
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Black - Device Only",
+        "price": 1699.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "4",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776_2.jpg",
@@ -98,7 +98,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921776_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -109,16 +109,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-black-device-only/17921776"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-black-device-only/17921776"
     },
     {
-        "name":"Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Sapphire - Device Only",
-        "price":1699.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"5",
-        "stock":50,
-        "medias":[
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Sapphire - Device Only",
+        "price": 1699.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "5",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777_2.jpg",
@@ -126,7 +126,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921777_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -137,16 +137,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-sapphire-device-only/17921777"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-sapphire-device-only/17921777"
     },
     {
-        "name":"Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Dune - Device Only",
-        "price":1699.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"6",
-        "stock":50,
-        "medias":[
+        "name": "Microsoft Surface Pro (LCD) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Plus/16GB RAM (2024) - Dune - Device Only",
+        "price": 1699.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "6",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921778.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921778_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921778_2.jpg",
@@ -154,7 +154,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921778_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921778_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -165,16 +165,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-dune-device-only/17921778"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-lcd-copilot-pc-13-512gb-tablet-with-snapdragon-x-plus-16gb-ram-2024-dune-device-only/17921778"
     },
     {
-        "name":"Microsoft Surface Pro (OLED) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Elite/16GB RAM (2024) - Platinum - Device Only",
-        "price":2149.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"7",
-        "stock":50,
-        "medias":[
+        "name": "Microsoft Surface Pro (OLED) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Elite/16GB RAM (2024) - Platinum - Device Only",
+        "price": 2149.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "7",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921779.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921779_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921779_2.jpg",
@@ -182,7 +182,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921779_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921779_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -193,16 +193,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-oled-copilot-pc-13-512gb-tablet-with-snapdragon-x-elite-16gb-ram-2024-platinum-device-only/17921779"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-oled-copilot-pc-13-512gb-tablet-with-snapdragon-x-elite-16gb-ram-2024-platinum-device-only/17921779"
     },
     {
-        "name":"Microsoft Surface Pro (OLED) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Elite/16GB RAM (2024) - Black - Device Only - Exclusive Retail Partner",
-        "price":2149.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Microsoft",
-        "sku":"8",
-        "stock":50,
-        "medias":[
+        "name": "Microsoft Surface Pro (OLED) Copilot+ PC 13\" 512GB Tablet with Snapdragon X Elite/16GB RAM (2024) - Black - Device Only - Exclusive Retail Partner",
+        "price": 2149.99,
+        "category": "laptop",
+        "brand": "Microsoft",
+        "sku": "8",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921780.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921780_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921780_2.jpg",
@@ -210,7 +210,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921780_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921780_5.jpg"
         ],
-        "specs":[
+        "specs": [
             "*Keyboard sold separately. The Microsoft Surface Pro unlocks a new way to think about a laptop. Get the most out of your day with accelerated performance that unlocks a new AI era to enable Copilot experiences, and battery life to keep you going all-day long. Ultra-portable design can replace your tablet, your laptop, and does more than you could ever imagine.",
             "Copilot+PC: A new era of AI. The fastest, most intelligent Surface ever",
             "Experience ultra-fast speeds and next-gen capabilities by a powerful AI accelerator and an all-new processor for ultimate multitasking",
@@ -221,16 +221,16 @@
             "AI-enhanced Studio Camera: HD front and rear cameras with AI-enhanced features for perfect lighting and clear sound",
             "Design for sustainability: 2-in-1 device available with recycled aluminum and more replaceable components"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-oled-copilot-pc-13-512gb-tablet-with-snapdragon-x-elite-16gb-ram-2024-black-device-only-exclusive-retail-partner/17921780"
+        "url": "https://www.bestbuy.ca/en-ca/product/microsoft-surface-pro-oled-copilot-pc-13-512gb-tablet-with-snapdragon-x-elite-16gb-ram-2024-black-device-only-exclusive-retail-partner/17921780"
     },
     {
-        "name":"Samsung Galaxy Book4 Edge 14\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/512GB SSD/Windows 11)",
-        "price":1849.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Samsung",
-        "sku":"9",
-        "stock":50,
-        "medias":[
+        "name": "Samsung Galaxy Book4 Edge 14\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/512GB SSD/Windows 11)",
+        "price": 1849.99,
+        "category": "laptop",
+        "brand": "Samsung",
+        "sku": "9",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937876.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937876_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937876_2.jpg",
@@ -238,7 +238,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937876_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937876_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "Transform all you do — and how you do it — with Samsung Galaxy Book4 Edge. This first Galaxy AI-powered PC features an innovative Snapdragon X Elite processor that powers industry-leading intelligence. Unlock higher levels of productivity, communication, creativity, and more. Embrace the power and possibilities of Galaxy AI with Galaxy Book4 Edge.",
             "Galaxy Book4 Edge revolutionizes your PC experience with intuitive Galaxy AI-powered features right at your fingertips",
             "Seamlessly interact with your other compatible Galaxy devices using Magical Device Control to activate features like Second Screen and Multi Control with simple prompts",
@@ -247,16 +247,16 @@
             "From international webinars to chatting with others overseas, get accurate subtitles in real time with automatic Live Captions that translate 44 languages into English",
             "And when you’re feeling creative, light your spark with Paint Cocreator and amplify your artwork on the stunning 3K AMOLED touchscreen display"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-14-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-512gb-ssd-windows-11/17937876"
+        "url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-14-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-512gb-ssd-windows-11/17937876"
     },
     {
-        "name":"Samsung Galaxy Book4 Edge 16\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/1TB SSD/Windows 11)",
-        "price":1899.99,
-        "categoryId":"Copilot + PC Laptop",
-        "brand":"Samsung",
-        "sku":"10",
-        "stock":50,
-        "medias":[
+        "name": "Samsung Galaxy Book4 Edge 16\" Touchscreen Copilot+ PC Laptop (Snapdragon X Elite/16GB RAM/1TB SSD/Windows 11)",
+        "price": 1899.99,
+        "category": "laptop",
+        "brand": "Samsung",
+        "sku": "10",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937877.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937877_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937877_2.jpg",
@@ -264,7 +264,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937877_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17937/17937877_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "Transform all you do — and how you do it — with Samsung Galaxy Book4 Edge. This first Galaxy AI-powered PC features an innovative Snapdragon X Elite processor that powers industry-leading intelligence. Unlock higher levels of productivity, communication, creativity, and more. Embrace the power and possibilities of Galaxy AI with Galaxy Book4 Edge.",
             "Galaxy Book4 Edge revolutionizes your PC experience with intuitive Galaxy AI-powered features right at your fingertips",
             "Seamlessly interact with your other compatible Galaxy devices using Magical Device Control to activate features like Second Screen and Multi Control with simple prompts",
@@ -273,16 +273,16 @@
             "From international webinars to chatting with others overseas, get accurate subtitles in real time with automatic Live Captions that translate 44 languages into English",
             "And when you’re feeling creative, light your spark with Paint Cocreator and amplify your artwork on the stunning 3K AMOLED touchscreen display"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-1tb-ssd-windows-11/17937877"
+        "url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-book4-edge-16-touchscreen-copilot-pc-laptop-snapdragon-x-elite-16gb-ram-1tb-ssd-windows-11/17937877"
     },
     {
-        "name":"Lenovo LOQ 15IAX9I 15.6\" Gaming Laptop - Luna Grey (Intel Core i5-12450HX/512GB SSD/16GB RAM/Arc A530M)",
-        "price":799.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"Lenovo",
-        "sku":"11",
-        "stock":50,
-        "medias":[
+        "name": "Lenovo LOQ 15IAX9I 15.6\" Gaming Laptop - Luna Grey (Intel Core i5-12450HX/512GB SSD/16GB RAM/Arc A530M)",
+        "price": 799.99,
+        "category": "laptop",
+        "brand": "Lenovo",
+        "sku": "11",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_3.jpg",
@@ -290,7 +290,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_7.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17732/17732155_8.jpg"
         ],
-        "specs":[
+        "specs": [
             "Suitable for gaming and school assignments, the Lenovo LOQ 15IAX9I 15.6\" laptop makes a valuable addition to your everyday routine. Equipped with Intel Core i5-12450HX processor and 16GB DDR5 RAM, it lets you manage daily tasks and offers unmatched gaming performance. The hyper chamber design keeps the device cool and safe, while the slim built improves portability.",
             "Intel Core i5-12450HX processor and 16GB DDR5 RAM combine to deliver a highly efficient and reliable performance",
             "512GB solid state drive provides more space for your files, media, and applications",
@@ -303,16 +303,16 @@
             "Tested to MIL-STD 810H standards for assured reliability and durability",
             "Preinstalled with Windows 11 Home operating system that features easy user interface, enhanced performance, improved security"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-loq-15iax9i-15-6-gaming-laptop-luna-grey-intel-core-i5-12450hx-512gb-ssd-16gb-ram-arc-a530m/17732155"
+        "url": "https://www.bestbuy.ca/en-ca/product/lenovo-loq-15iax9i-15-6-gaming-laptop-luna-grey-intel-core-i5-12450hx-512gb-ssd-16gb-ram-arc-a530m/17732155"
     },
     {
-        "name":"ASUS TUF Gaming F17 17.3\" Gaming Laptop - Mecha Grey (Intel Core i5-12500H/1TB SSD/16GB RAM/GeForce RTX 3050)",
-        "price":1299.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"ASUS",
-        "sku":"12",
-        "stock":50,
-        "medias":[
+        "name": "ASUS TUF Gaming F17 17.3\" Gaming Laptop - Mecha Grey (Intel Core i5-12500H/1TB SSD/16GB RAM/GeForce RTX 3050)",
+        "price": 1299.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "12",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_2.jpg",
@@ -320,7 +320,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_12.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17687/17687650_16.jpg"
         ],
-        "specs":[
+        "specs": [
             "Enter the fray with confidence using the ASUS TUF Gaming F17 laptop. This laptop features a 12th Gen Intel Core i5-12500H processor and a 16GB of high-speed DDR4 RAM to ensure effortless streaming and multitasking capabilities. Its 1TB SSD speeds-up loading times and the GeForce RTX 30 Series GPU with a dedicated MUX Switch ensures optimal gaming performance.",
             "12th Gen Intel Core i5-12500H processor with 2.5GHz speed ensures swift and responsive performance for enhanced gaming",
             "16GB of DDR4-3,200MHz RAM guarantees improved multitasking capabilities and faster data processing",
@@ -336,16 +336,16 @@
             "Meets the MIL-STD 810H military-grade standard for ensuring durability and reliability in challenging environments",
             "Preloaded with Windows 11 Home that offers user-friendly interface, enhanced productivity tools, and robust security measures"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f17-17-3-gaming-laptop-mecha-grey-intel-core-i5-12500h-1tb-ssd-16gb-ram-geforce-rtx-3050/17687650"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f17-17-3-gaming-laptop-mecha-grey-intel-core-i5-12500h-1tb-ssd-16gb-ram-geforce-rtx-3050/17687650"
     },
     {
-        "name":"ASUS TUF Gaming F15 15.6\" 144Hz Gaming Laptop (Intel Core i7-13620H/16GB RAM/512GB SSD/RTX 4050)",
-        "price":1049.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"ASUS",
-        "sku":"13",
-        "stock":50,
-        "medias":[
+        "name": "ASUS TUF Gaming F15 15.6\" 144Hz Gaming Laptop (Intel Core i7-13620H/16GB RAM/512GB SSD/RTX 4050)",
+        "price": 1049.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "13",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_8.jpg",
@@ -353,7 +353,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_14.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697537_12.jpg"
         ],
-        "specs":[
+        "specs": [
             "Get ready to face tough challenges with this ASUS TUF Gaming F15 15.6\" laptop. Powered by Intel Core i7-13620H processor and 16GB DDR5 RAM, this device makes multitasking fast and efficient. The NVIDIA GeForce RTX 4050 graphics card with dedicated 6GB video memory enables buttery smooth visuals for video games and video playback.",
             "Intel Core i7-13620H processor and 16GB DDR5 RAM guarantee smooth and seamless multitasking",
             "512GB of solid state drive provides efficient storage space with faster read and write times",
@@ -369,16 +369,16 @@
             "Meets MIL-STD-810H tests for military grade durability",
             "Preinstalled with Windows 11 Home operating system that provides easy user interface, improved performance, and enhanced security"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f15-15-6-144hz-gaming-laptop-intel-core-i7-13620h-16gb-ram-512gb-ssd-rtx-4050/17697537"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-tuf-gaming-f15-15-6-144hz-gaming-laptop-intel-core-i7-13620h-16gb-ram-512gb-ssd-rtx-4050/17697537"
     },
     {
-        "name":"Acer Nitro V 15 15.6\" Gaming Laptop - Black (Intel Core i5-13420H/512GB SSD/8GB RAM/RTX2050/Windows 11)",
-        "price":699.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"Acer",
-        "sku":"14",
-        "stock":50,
-        "medias":[
+        "name": "Acer Nitro V 15 15.6\" Gaming Laptop - Black (Intel Core i5-13420H/512GB SSD/8GB RAM/RTX2050/Windows 11)",
+        "price": 699.99,
+        "category": "laptop",
+        "brand": "Acer",
+        "sku": "14",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_3.jpg",
@@ -386,7 +386,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_9.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17698/17698610_10.jpg"
         ],
-        "specs":[
+        "specs": [
             "Unleash your skills and creativity with this Acer Nitro V 15 15.6\" gaming laptop. Featuring Intel Ci5-13420H processor, 8GB DDR5 RAM, and NVIDIA GeForce RTX2050 graphics, this machine guarantees exceptionally smooth and seamless performance. The 512GB solid state drive offers good storage space for your files and apps.",
             "13th Generation Intel Ci5-13420H processor and 8GB DDR5 RAM combine to deliver exceptional performance",
             "512GB solid state drive provides more storage space with faster load time",
@@ -398,16 +398,16 @@
             "VR ready capability lets you use virtual reality gears or goggles",
             "Preinstalled with Windows 11 operating system that features easy user interface, improved performance, and enhanced security"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/acer-nitro-v-15-15-6-gaming-laptop-black-intel-core-i5-13420h-512gb-ssd-8gb-ram-rtx2050-windows-11/17698610"
+        "url": "https://www.bestbuy.ca/en-ca/product/acer-nitro-v-15-15-6-gaming-laptop-black-intel-core-i5-13420h-512gb-ssd-8gb-ram-rtx2050-windows-11/17698610"
     },
     {
-        "name":"MSI Vector 16 Series 16\" Gaming Laptop- Cosmos Grey (Intel Core i9-13980HX /1TB/32GB RAM/GeForce RTX 4080)",
-        "price":2299.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"MSI",
-        "sku":"15",
-        "stock":50,
-        "medias":[
+        "name": "MSI Vector 16 Series 16\" Gaming Laptop- Cosmos Grey (Intel Core i9-13980HX /1TB/32GB RAM/GeForce RTX 4080)",
+        "price": 2299.99,
+        "category": "laptop",
+        "brand": "MSI",
+        "sku": "15",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17685/17685416.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17685/17685416_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_3.jpg",
@@ -415,7 +415,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_7.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/176/17685/17685416_8.jpg"
         ],
-        "specs":[
+        "specs": [
             "Get ready for the next level of portable gaming experience with this MSI Vector 16 Series 16\" gaming laptop. Featuring Intel Core i9-13980HX processor and 32GB DDR5 RAM, this laptop offers impressive speed and performance. The NVIDIA GeForce RTX 4080 graphics card and 12GB video memory ensure extremely fluid videos. The 1TB solid state drive provides more space for storage.",
             "13th Generation Intel Core i9-13980HX processor and 32GB DDR5 RAM make this laptop fast and powerful",
             "1TB solid state drive offers more space for storing your files and games",
@@ -427,16 +427,16 @@
             "VR-ready capability allows you to use virtual reality gears or goggles",
             "Preinstalled with Windows 11 Home operating system that features easy user interface, enhanced performance, and improved security"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/msi-vector-16-series-16-gaming-laptop-cosmos-grey-intel-core-i9-13980hx-1tb-32gb-ram-geforce-rtx-4080/17685416"
+        "url": "https://www.bestbuy.ca/en-ca/product/msi-vector-16-series-16-gaming-laptop-cosmos-grey-intel-core-i9-13980hx-1tb-32gb-ram-geforce-rtx-4080/17685416"
     },
     {
-        "name":"ASUS ROG Zephyrus G16 OLED Nebula 16\" Gaming Laptop -Eclipse Grey (Intel Core Ultra 9 185H/1TB SSD/32GB RAM/GeForce RTX 4060)",
-        "price":1999.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"ASUS",
-        "sku":"16",
-        "stock":50,
-        "medias":[
+        "name": "ASUS ROG Zephyrus G16 OLED Nebula 16\" Gaming Laptop -Eclipse Grey (Intel Core Ultra 9 185H/1TB SSD/32GB RAM/GeForce RTX 4060)",
+        "price": 1999.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "16",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717065.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717065_2.jpg",
@@ -444,8 +444,8 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_16.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17717/17717065_19.jpg"
         ],
-        "specs":[
-            "Harness the power and precision needed to dominate the battlefield with the ASUS ROG Zephyrus G16 OLED Nebula 16\" gaming laptop. Equipped with Intel Core Ultra 9 185H processor, 32GB RAM, and a 1TB SSD, it ensures effortless multitasking and lightning-fast storage for your games and applications. The GeForce RTX 4060 GPU provides matchless graphics performance for immersive gaming.",            
+        "specs": [
+            "Harness the power and precision needed to dominate the battlefield with the ASUS ROG Zephyrus G16 OLED Nebula 16\" gaming laptop. Equipped with Intel Core Ultra 9 185H processor, 32GB RAM, and a 1TB SSD, it ensures effortless multitasking and lightning-fast storage for your games and applications. The GeForce RTX 4060 GPU provides matchless graphics performance for immersive gaming.",
             "Intel Core Ultra 9 185H processor with 2.3GHz speed makes sure of swift and responsive performance for efficient task execution and smooth operation",
             "Dedicated NPU cores efficiently handle AI tasks to reduce power consumption and extend battery life during sustained AI workloads",
             "32GB LPDDR5X RAM supports lightning-fast data processing and empowers you to easily handle multiple applications simultaneously",
@@ -462,16 +462,16 @@
             "ROG Intelligent Cooling significantly reduces CPU temperatures by up to 13 degrees to ensure optimal performance and stability during intense gaming sessions",
             "Upgraded 2nd Gen Arc Flow Fans increase airflow by 11%, while the fibre and mesh pipes improve cooling efficiency by 26% compared to previous designs"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g16-oled-nebula-16-gaming-laptop-eclipse-grey-intel-core-ultra-9-185h-1tb-ssd-32gb-ram-geforce-rtx-4060/17717065"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g16-oled-nebula-16-gaming-laptop-eclipse-grey-intel-core-ultra-9-185h-1tb-ssd-32gb-ram-geforce-rtx-4060/17717065"
     },
     {
-        "name":"ASUS ROG Zephyrus G14 OLED Nebula14\" Gaming Laptop -Eclipse Grey (AMD Ryzen 9 8945HS/1TB SSD/32GB RAM/GeForce RTX 4060)",
-        "price":2599.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"ASUS",
-        "sku":"17",
-        "stock":50,
-        "medias":[
+        "name": "ASUS ROG Zephyrus G14 OLED Nebula14\" Gaming Laptop -Eclipse Grey (AMD Ryzen 9 8945HS/1TB SSD/32GB RAM/GeForce RTX 4060)",
+        "price": 2599.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "17",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_2.jpg",
@@ -479,7 +479,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_10.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717669_13.jpg"
         ],
-        "specs":[
+        "specs": [
             "Redefine your whole gaming experience to the next level with this ASUS ROG Zephyrus G14 OLED Nebula 14\" gaming laptop. Featuring AMD Ryzen 9 8945HS processor, 32GB LPDDR5X RAM, and NVIDIA GeForce RTX 4060 laptop GPU, this portable machine delivers top-notch performance for fluid gameplay. ROG Nebula Display certified OLED display provides bright and clear images.",
             "AMD Ryzen 9 8945HS processor and 32GB LPDDR5X RAM combine to make this laptop extremely powerful to smoothly handle sophisticated games",
             "1TB solid state drive provides more storage space for your files, games, and media",
@@ -492,16 +492,16 @@
             "ROG intelligent cooling uses liquid metal and upgraded 2nd Gen Arc Flow fans for extraordinary cooling performance",
             "VR-ready capability allows you to use virtual reality gears or goggles"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g14-oled-nebula14-gaming-laptop-eclipse-grey-amd-ryzen-9-8945hs-1tb-ssd-32gb-ram-geforce-rtx-4060/17717669"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-rog-zephyrus-g14-oled-nebula14-gaming-laptop-eclipse-grey-amd-ryzen-9-8945hs-1tb-ssd-32gb-ram-geforce-rtx-4060/17717669"
     },
     {
-        "name":"Alienware 16\" Gaming Laptop - Dark Metallic Moon (Intel Core Ultra 7 155H/16GB RAM/1TB SSD/GeForce RTX 4060)",
-        "price":2199.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"Alienware",
-        "sku":"18",
-        "stock":50,
-        "medias":[
+        "name": "Alienware 16\" Gaming Laptop - Dark Metallic Moon (Intel Core Ultra 7 155H/16GB RAM/1TB SSD/GeForce RTX 4060)",
+        "price": 2199.99,
+        "category": "laptop",
+        "brand": "Alienware",
+        "sku": "18",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_2.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_3.jpg",
@@ -509,7 +509,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_8.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17914/17914588_9.jpg"
         ],
-        "specs":[
+        "specs": [
             "Get the power you need, with the look you want, when you get the Alienware 16” gaming laptop. With a sleek, stylish design and an impressive 1TB solid state drive, this laptop has what you need and then some. The 16” screen features 2560 x 1600 resolution, offering clear and vibrant imaging for your favourite games.",
             "Powerful Intel Core Ultra 7 processor 155H, with 16GB of DDR5 5600 MT/s RAM, ensures this laptop is fast",
             "Impressive 1TB SSD capacity offers plenty of onboard storage",
@@ -519,16 +519,16 @@
             "Dual fans, with ultra-thin blades, increase airflow by 20.4%, while four heat pipes effectively disperse heat to prevent your laptop from overheating",
             "Windows 11 Home comes preinstalled, but this device is backwards compatible"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/alienware-16-gaming-laptop-dark-metallic-moon-intel-core-ultra-7-155h-16gb-ram-1tb-ssd-geforce-rtx-4060/17914588"
+        "url": "https://www.bestbuy.ca/en-ca/product/alienware-16-gaming-laptop-dark-metallic-moon-intel-core-ultra-7-155h-16gb-ram-1tb-ssd-geforce-rtx-4060/17914588"
     },
     {
-        "name":"Acer Predator Helios Neo 16\" Gaming Laptop (Intel Core i7-13700HX /1TB SSD/16GB RAM/GeForce RTX 4050)",
-        "price":1399.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"Acer",
-        "sku":"19",
-        "stock":50,
-        "medias":[
+        "name": "Acer Predator Helios Neo 16\" Gaming Laptop (Intel Core i7-13700HX /1TB SSD/16GB RAM/GeForce RTX 4050)",
+        "price": 1399.99,
+        "category": "laptop",
+        "brand": "Acer",
+        "sku": "19",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_3.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_4.jpg",
@@ -536,7 +536,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_6.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17717/17717688_2.jpg"
         ],
-        "specs":[
+        "specs": [
             "Upgrade your gaming experience to a new level with this Acer Predator Helios Neo 16\" gaming laptop. Equipped with Intel Core i7-13700HX processor, 16GB DDR5 RAM, and NVIDIA GeForce RTX 4050 graphics card, this laptop lets you enjoy smooth and seamless gameplay. The 1TB solid state drive provides enough space for your files and games.",
             "13th Generation Intel Core i7-13700HX processor and 16GB RAM combine to deliver exceptional performance to effortlessly run sophisticated games",
             "1TB solid state drive provides more storage space for your files and media",
@@ -548,16 +548,16 @@
             "VR ready capability lets you use virtual reality gears or goggles",
             "Preinstalled with Windows 11 operating system that features easy user interface, enhanced performance, and improved security"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/acer-predator-helios-neo-16-gaming-laptop-intel-core-i7-13700hx-1tb-ssd-16gb-ram-geforce-rtx-4050/17717688"
+        "url": "https://www.bestbuy.ca/en-ca/product/acer-predator-helios-neo-16-gaming-laptop-intel-core-i7-13700hx-1tb-ssd-16gb-ram-geforce-rtx-4050/17717688"
     },
     {
-        "name":"ASUS ROG Strix G18 (2024) 18\" WQXGA 240Hz Gaming Laptop (Intel Core i9-14900HX/1TB SSD/32GB RAM/RTX 4060)",
-        "price":2699.99,
-        "categoryId":"Gaming Laptops",
-        "brand":"ASUS",
-        "sku":"20",
-        "stock":50,
-        "medias":[
+        "name": "ASUS ROG Strix G18 (2024) 18\" WQXGA 240Hz Gaming Laptop (Intel Core i9-14900HX/1TB SSD/32GB RAM/RTX 4060)",
+        "price": 2699.99,
+        "category": "laptop",
+        "brand": "ASUS",
+        "sku": "20",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_3.jpg",
@@ -565,7 +565,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_6.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17700/17700713_14.jpg"
         ],
-        "specs":[
+        "specs": [
             "Level-up your gameplay experience with this ASUS ROG Strix G16 18\" gaming laptop. Featuring an Intel Core i9 14900HX processor, 32GB DDR5 RAM, and NVIDIA GeForce RTX 4060 GPU, this machine can effortlessly handle sophisticated games and demanding software. The ROG Intelligent Cooling system ensures efficient and lasting cooling performance.",
             "Intel Core i9 14900HX processor and 32GB DDR5 RAM make this laptop powerful enough to smoothly handle the most demanding games and video editing software",
             "1TB solid state drive provides generous storage space for all your files, media, and games",
@@ -578,308 +578,16 @@
             "MUX Switch enhances the gaming performance by utilizing the frames directly from the discrete graphics to display, avoiding the integrated GPU. Advanced Optimus enables automatic switch between iGPU and dGPU based on the task, thereby improving battery life",
             "VR capability allows you to use virtual reality gears or goggles"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/asus-rog-strix-g18-2024-18-wqxga-240hz-gaming-laptop-intel-core-i9-14900hx-1tb-ssd-32gb-ram-rtx-4060/17700713"
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-rog-strix-g18-2024-18-wqxga-240hz-gaming-laptop-intel-core-i9-14900hx-1tb-ssd-32gb-ram-rtx-4060/17700713"
     },
     {
-        "name":"Samsung Galaxy Tab S6 Lite 10.4\" 128GB Android Tablet with Exynos 1280 - Graphite",
-        "price":279.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Samsung",
-        "sku":"21",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811147_5.jpg"
-        ],
-        "specs":[
-            "The Samsung Galaxy Tab S6 Lite is your super carryable note-taking, go-getting companion. It features a large 10.4 inch display on a slim and light build, One UI on Android, and S Pen in box and ready to go. Whether you're drawing, learning, or gaming, this is the tablet made for all the things you enjoy.",
-            "10.4-inch touchscreen with minimal bezel and 2000 x 1200 WUXGA+ native resolution delivers next-level brilliance, crispness, and colour",
-            "Built-in 128GB of flash memory and built-in memory card reader with up to 1,000GB of capacity provide a great storage space",
-            "2GHz Exynos 1280 processor and 4GB of RAM boost your productivity so you can knock out projects at super speed",
-            "Integrated Wi-Fi 802.11 a/b/g/n/ac (2.4GHz+5GHz) VHT80 MIMO and Bluetooth allow for a reliable and efficient wireless connectivity",
-            "7,040mAh capacity battery provides long-lasting power for hours of productivity",
-            "8MP FHD rear camera and 5MP FHD front camera, both with 1920 x 1080 resolution, provide more options to record great videos, capture incredible photos, and to enjoy video calls with friends and family",
-            "Enjoy an impromptu private screening in the park or binge watch in bed with dual speakers in landscape orientation that deliver rich, 3D sound",
-            "Included S Pen stylus features low latency and impressive pressure sensitivity so you can control presentations, take note, and create drawings with that pen-on-paper feeling",
-            "When taking notes, you can jot first and change colours later. Quickly sort through memos when you save with searchable tags. Even write directly onto PDFs to cut the study clutter",
-            "Magnetic holder on the tablet holds the stylus securely so that there is no chance of S pen getting misplaced"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-tab-s6-lite-10-4-128gb-android-tablet-with-exynos-1280-graphite/17811147"
-    },
-    {
-        "name":"Apple iPad Pro 11\" 128GB with Wi-Fi (4th Generation) - Space Grey",
-        "price":899.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Apple",
-        "sku":"22",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/165/16567/16567276_5.jpg"
-        ],
-        "specs":[
-            "The Apple iPad Pro gives you the ultimate iPad experience. Featuring a powerful Apple M2 chip and 11-inch Liquid Retina display, it boasts astonishing performance and incredibly advanced displays, and superfast wireless connectivity. Powerful new features come with iPadOS 16.",
-            "Apple M2 chip can handle multiple applications at the same time so you can seamlessly accomplish your tasks",
-            "Face ID allows you to easily unlock your device, as well as enhances security and privacy",
-            "Dual Camera System with 10MP ultra wide camera and 12MP wide camera helps you take the exciting photos or videos",
-            "LiDAR Scanner takes augmented reality to the next level by creating depth mapping points that work with the cameras and motion sensors",
-            "4K video recording allows for vivid, stunning recordings",
-            "Five studio-quality microphones gives you quality sound recordings",
-            "Support for Apple Pencil 2nd generation (sold separately)",
-            "Support for Magic Keyboard with trackpad and Smart Keyboard Folio (sold separately)"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-ipad-pro-11-128gb-with-wi-fi-4th-generation-space-grey/16567276"
-    },
-    {
-        "name":"Apple iPad Air 11\" 128GB with Wi-Fi (6th Generation) - Purple",
-        "price":699.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Apple",
-        "sku":"23",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17933/17933201.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17933/17933201_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17933/17933201_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17933/17933201_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17933/17933201_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/179/17933/17933201_5.jpg"
-        ],
-        "specs":[
-            "The redesigned 11-inch Apple iPad Air is supercharged by the incredibly fast Apple M2 chip. It features a stunning Liquid Retina display, a new landscape camera perfect for FaceTime and video calls, and superfast Wi-Fi 6E. And it works with the new Apple Pencil Pro and Magic Keyboard (each sold separately), so you can multitask, study, work, play, and create from anywhere.",
-            "The gorgeous Liquid Retina display features advanced technologies like P3 wide colour, True Tone and ultralow reflectivity, which make everything look stunning",
-            "M2 chip lets you multitask smoothly between powerful apps and play graphics-intensive games",
-            "With all-day battery life, you can keep working and playing wherever you go",
-            "Get 128GB of storage for your apps, music, movies and more",
-            "iPadOS makes iPad more productive, intuitive and versatile. With iPadOS, run multiple apps at once, work alongside collaborators with Freeform, and edit and share photos",
-            "Stage Manager makes multitasking easy with resizable, overlapping apps and external display support",
-            "iPad Air comes with essential apps like Safari, Messages and Keynote, with over a million more apps available on the App Store",
-            "Apple Pencil Pro transforms iPad Air into an immersive drawing canvas and note‑taking device. Apple Pencil (USB-C) is also compatible with iPad Air",
-            "Magic Keyboard features a great typing experience and a built‑in trackpad, while doubling as a protective cover for iPad",
-            "Landscape 12MP Ultra Wide front camera supports Center Stage for videoconferencing or epic Portrait mode selfies"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-ipad-air-11-128gb-with-wi-fi-6th-generation-purple/17933201"
-    },
-    {
-        "name":"Samsung Galaxy Tab S9 FE+ 12.4\" 128GB Android Tablet with Exynos 1380 - Grey",
-        "price":549.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Samsung",
-        "sku":"24",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17307/17307090.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/173/17307/17307090_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17307/17307090_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17307/17307090_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/173/17307/17307090_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17307/17307090_5.jpg"
-        ],
-        "specs":[
-            "A universe of possibilities awaits with the Samsung Galaxy Tab S9 FE+ tablet. Conquer every task, from your passion project to your to-do list, with a powerful processor and an expansive 12.4\" screen. Let your imagination run loose with the included S Pen that allows you to draw and write by hand with that pen-on-paper feeling. Plus, the powerful battery charges fast and keeps you going.",
-            "With a large 12.4\" screen, there’s plenty of room to follow your passions, whether you're taking an online photography class, unwinding with cat videos or playing your favourite word game (Actual viewable area is 12.3\" due to the rounded corners)",
-            "Dual speakers make everything sound amazing",
-            "Collaborate easily with a camera that automatically adjusts to keep the focus on you",
-            "With a large display that can open up to three apps at once, you can multitask while you video chat (Only in 16:9 FHD resolution)",
-            "An IP68 rating makes S9 FE+ tablet one of the only water-and dustresistant Galaxy tablet (Consistent with IP68 rating, water resistant in up to 5 feet of water for up to 30 minutes. Rinse residue / dry after wet)",
-            "Built to last wherever you use it, making it a great choice for first-time tablet buyers",
-            "With a tablet this powerful, portable and fun, you’ll want to go for hours and hours with a longlasting battery (Requires 45W wall charger (sold separately))",
-            "Get a full charge in less than an hour and a half with Super Fast Charging",
-            "With included S Pen, write notes by hand, draw a comicstrip, or mark up a document",
-            "S Pen features a responsive design that feels like you’re writing on actual paper so nothing gets in your way when your imagination is flowing"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-tab-s9-fe-12-4-128gb-android-tablet-with-exynos-1380-grey/17307090"
-    },
-    {
-        "name":"Apple iPad Air 11\" 128GB with Wi-Fi (6th Generation) - Starlight",
-        "price":699.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Apple",
-        "sku":"25",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17933/17933200.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17933/17933200_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17933/17933200_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17933/17933200_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17933/17933200_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17933/17933200_11.jpg"
-        ],
-        "specs":[
-            "The redesigned 11-inch Apple iPad Air is supercharged by the incredibly fast Apple M2 chip. It features a stunning Liquid Retina display, a new landscape camera perfect for FaceTime and video calls, and superfast Wi-Fi 6E. And it works with the new Apple Pencil Pro and Magic Keyboard (each sold separately), so you can multitask, study, work, play, and create from anywhere.",
-            "The gorgeous Liquid Retina display features advanced technologies like P3 wide colour, True Tone and ultralow reflectivity, which make everything look stunning",
-            "M2 chip lets you multitask smoothly between powerful apps and play graphics-intensive games",
-            "With all-day battery life, you can keep working and playing wherever you go",
-            "Get 128GB of storage for your apps, music, movies and more",
-            "iPadOS makes iPad more productive, intuitive and versatile. With iPadOS, run multiple apps at once, work alongside collaborators with Freeform, and edit and share photos",
-            "Stage Manager makes multitasking easy with resizable, overlapping apps and external display support",
-            "iPad Air comes with essential apps like Safari, Messages and Keynote, with over a million more apps available on the App Store",
-            "Apple Pencil Pro transforms iPad Air into an immersive drawing canvas and note‑taking device. Apple Pencil (USB-C) is also compatible with iPad Air",
-            "Magic Keyboard features a great typing experience and a built‑in trackpad, while doubling as a protective cover for iPad",
-            "Landscape 12MP Ultra Wide front camera supports Center Stage for videoconferencing or epic Portrait mode selfies"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-ipad-air-11-128gb-with-wi-fi-6th-generation-starlight/17933200"
-    },
-    {
-        "name":"Lenovo Tab M8 (4th Gen) 8\" 32GB Android 12 Tablet w/ MediaTek Helio A22 4-Core Processor - Arctic Grey - Only at Best Buy",
-        "price":149.99
-        ,
-        "categoryId":"Tablets & iPads",
-        "brand":"Lenovo",
-        "sku":"26",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646_5.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/169/16945/16945646_6.jpg"
-        ],
-        "specs":[
-            "Get yourself the Lenovo Tab M8 (4th Gen) for ultimate entertainment while on the go. It packs an 8\" IPS display for viewing crisp and vibrant visuals, and powered by a MediaTek processor that delivers speedy performance in everyday tasks. Thanks to its durable battery, this tablet will keep you connected and entertained during long journeys and road trips.",
-            "Eight-inch IPS touchscreen display with native resolution of 1280 x 800 pixels and narrow bezels on two sides captures your gaze with vibrant and crystal-clear visuals",
-            "32GB internal flash storage can be increased up to 128GB with an external microSD card for storing images, videos, documents, and other data",
-            "2.0GHz MediaTek Helio A22 quad-core processor with 2GB LPDDR4x RAM provides smooth and responsive performance for completing all your tasks in time",
-            "Integrated (802.11ac) Wi-Fi and Bluetooth 5.0 for connecting to high-speed networks and pairing with compatible Bluetooth devices for file sharing and audio streaming",
-            "One USB-C port for charging and data transfer, and one 3.5mm headphone/mic combo jack for connecting to a speaker or wired headphones",
-            "5100mAh battery provides up to nine hours of entertainment and productivity without needing to recharge",
-            "Preinstalled with bilingual Android 12 (Go Edition) operating system, which provides access to a wide range of apps on its Google Play Store",
-            "5MP rear autofocus camera and 2MP front camera provide excellent image clarity for shooting video content, capturing memorable moments, or making video calls",
-            "Built-in speaker gives you crisp and rich audio while playing games, communicating on calls, or watching videos"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-tab-m8-4th-gen-8-32gb-android-12-tablet-w-mediatek-helio-a22-4-core-processor-arctic-grey-only-at-best-buy/16945646"
-    },
-    {
-        "name":"Samsung Galaxy Tab S6 Lite 10.4\" 64GB Android Tablet with Exynos 1280 - Graphite",
-        "price":229.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Samsung",
-        "sku":"27",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811149.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811149_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811149_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/178/17811/17811149_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/178/17811/17811149_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17811/17811149_5.jpg"
-        ],
-        "specs":[
-            "The Samsung Galaxy Tab S6 Lite is your super carryable note-taking, go-getting companion. It features a large 10.4 inch display on a slim and light build, One UI on Android, and S Pen in box and ready to go. Whether you're drawing, learning, or gaming, this is the tablet made for all the things you enjoy.",
-            "10.4-inch touchscreen with minimal bezel and 2000 x 1200 WUXGA+ native resolution delivers next-level brilliance, crispness, and colour",
-            "Built-in 64GB of flash memory and built-in memory card reader with up to 1,000GB of capacity provide a great storage space",
-            "2GHz Exynos 1280 processor and 4GB of RAM boost your productivity so you can knock out projects at super speed",
-            "Integrated Wi-Fi 802.11 a/b/g/n/ac (2.4GHz+5GHz) VHT80 MIMO and Bluetooth allow for a reliable and efficient wireless connectivity",
-            "7,040mAh capacity battery provides long-lasting power for hours of productivity",
-            "8MP FHD rear camera and 5MP FHD front camera, both with 1920 x 1080 resolution, provide more options to record great videos, capture incredible photos, and to enjoy video calls with friends and family",
-            "Enjoy an impromptu private screening in the park or binge watch in bed with dual speakers in landscape orientation that deliver rich, 3D sound",
-            "Included S Pen stylus features low latency and impressive pressure sensitivity so you can control presentations, take note, and create drawings with that pen-on-paper feeling",
-            "When taking notes, you can jot first and change colours later. Quickly sort through memos when you save with searchable tags. Even write directly onto PDFs to cut the study clutter",
-            "Magnetic holder on the tablet holds the stylus securely so that there is no chance of S pen getting misplaced"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-tab-s6-lite-10-4-64gb-android-tablet-with-exynos-1280-graphite/17811149"
-    },
-    {
-        "name":"Lenovo Tab M11 11\" 64GB Android 13 Tablet with MediaTek Helio G88 8-Core Processor - Luna Grey",
-        "price":249.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Lenovo",
-        "sku":"28",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744707.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17744/17744707_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744707_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744707_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744707_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744707_5.jpg"
-        ],
-        "specs":[
-            "Unlock a new level of mobile productivity and entertainment with the Lenovo Tab M11 64GB Android 13 tablet. Featuring a MediaTek Helio G88 octa-core processor and 4GB LPDDR4x RAM, this tablet delivers smooth multitasking and responsive performance. The integrated ARM Mali-G52 MC2 GPU ensures stunning visuals and immersive streaming on the 11-inch IPS display.",
-            "11-inch IPS display with 1900 x 1200 native screen resolution makes sure that every image and video is presented with stunning precision and vibrancy",
-            "64GB of built-in storage offers ample space for all your apps, games, and media",
-            "microSD compatibility supports cards with a maximum capacity of 1,000GB to allow storage of more of your favourite content on-the-go",
-            "MediaTek Helio G88 octa-core processor and 4GB LPDDR4x RAM deliver seamless performance and lightning-fast responsiveness for multitasking, gaming, and more",
-            "Wi-Fi 5 (802.11ac) 1 x 1 and Bluetooth 5.1 ensure fast and reliable wireless connections for seamless browsing, streaming, and connectivity to other devices",
-            "Headphone jack allows you to connect your headphones or earphones for private listening pleasure anytime, anywhere",
-            "Two-cell 7,040mAh battery guarantees 10-hour battery life for uninterrupted entertainment or productivity",
-            "Android 13 operating system offers enhanced features, improved performance, and a seamless user experience",
-            "8MP front camera and 8MP rear camera ensure sharp and detailed selfies, video calls, and photos wherever you go",
-            "Features Accelerometer (G) sensor, Ambient Light Sensor (ALS), Gyroscope sensor, and Hall sensor for enhanced functionality and intuitive interaction"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-tab-m11-11-64gb-android-13-tablet-with-mediatek-helio-g88-8-core-processor-luna-grey/17744707"
-    },
-    {
-        "name":"Lenovo Tab M10 10.6\" 64GB Android 12 Tablet with MediaTek Helio G80 8-Core Processor w/ Case - Storm Grey - Only at Best Buy",
-        "price":149.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Lenovo",
-        "sku":"29",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706_5.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17744/17744706_6.jpg"
-        ],
-        "specs":[
-            "Stay equipped and entertained anywhere, anytime with this Lenovo Tab M10 10.61-inch tablet. It is powered by MediaTek Helio G80 processor and 4GB LPDDR4x RAM for highly efficient performance. The 64GB built-in storage capacity and up to 1,000GB of maximum memory card capacity help to meet all your file storage needs. The tablet is preinstalled with Android 12 operating system.",
-            "10.61-inch screen with 2000 x 1200 native resolution provides clear and bright pictures",
-            "Built-in 64GB flash memory and built-in microSD memory card reader (up to 1,000GB of maximum capacity) offer plenty of space for storing files and media",
-            "2.0GHz, eight-core MediaTek Helio G80 processor and 4GB LPDDR4x RAM combine to deliver efficient performance",
-            "Wi-Fi 802.11ac 1 x 1 and Bluetooth 5.0 provide reliable options for wireless connectivity",
-            "Up to 12 hours of approximate battery life makes you worry less about recharging and related hassles",
-            "Preinstalled with Android 12 that features easy user interface and enhanced system performance",
-            "8MP rear and front camera let you capture good quality shots",
-            "Built-in speaker provides great sound quality",
-            "Headphone jack and integrated microphone let you have a clear, hassle-free conversations",
-            "Optional pen lets you easily write or draw on the screen (sold separately)"
-        ],
-        "url":"https://bestbuy.ca/en-ca/product/lenovo-tab-m10-10-6-64gb-android-12-tablet-with-mediatek-helio-g80-8-core-processor-w-case-storm-grey-only-at-best-buy/17744706"
-    },
-    {
-        "name":"Lenovo IdeaPad Duet 3 128GB ChromeOS Tablet w/ Keyboard (SnapDragon 7c 8-Core) - Storm Grey - Only at Best Buy",
-        "price":299.99,
-        "categoryId":"Tablets & iPads",
-        "brand":"Lenovo",
-        "sku":"30",
-        "stock":50,
-        "medias":[
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343_1.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343_2.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343_3.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343_4.jpg",
-            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17158/17158343_5.jpg"
-        ],
-        "specs":[
-            "The Lenovo IdeaPad Duet 3 tablet is the ideal device for everyday work and play. With a larger 11-inch 2K nearly borderless display and faster connectivity, you'll have an all-day battery life and access to everything you need right there in a neat little package. This Chromebook is made to be on the move with you!",
-            "The 11\" 2K near-borderless display offers a sleek design you'll love",
-            "The Snapdragon 7c is fanless and powerful, offering an all-day battery",
-            "Get everything you need to do while on the go with the Gen 2 Compute Platform",
-            "Take notes and sketch using the optional stylus pen or work on the detachable keyboard, making this super convenient for work and school"
-        ],
-        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-ideapad-duet-3-128gb-chromeos-tablet-w-keyboard-snapdragon-7c-8-core-storm-grey-only-at-best-buy/17158343"
-    },
-    {
-        "name":"Apple MacBook Air 13.3\" w/ Touch ID (Fall 2020) - Silver (Apple M1 Chip / 256GB SSD / 8GB RAM) - En",
-        "price":899.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"31",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Air 13.3\" w/ Touch ID (Fall 2020) - Silver (Apple M1 Chip / 256GB SSD / 8GB RAM) - En",
+        "price": 899.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "31",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/151/15136/15136915.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/151/15136/15136915_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/151/15136/15136915_3.jpg",
@@ -887,7 +595,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/151/15136/15136915_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/151/15136/15136915_2.jpg"
         ],
-        "specs":[
+        "specs": [
             "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with a 7-core GPU. Accelerate machine-learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever -- up to 18 hours.",
             "Apple-designed M1 chip for a giant leap in CPU, GPU, and machine-learning performance",
             "8-core CPU delivers up to 3.5 times faster performance to tackle projects faster than ever",
@@ -900,16 +608,16 @@
             "Go longer than ever with up to 18 hours of battery life",
             "Two Thunderbolt/USB 4 ports for charging and accessories"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-3-w-touch-id-fall-2020-silver-apple-m1-chip-256gb-ssd-8gb-ram-en/15136915"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-3-w-touch-id-fall-2020-silver-apple-m1-chip-256gb-ssd-8gb-ram-en/15136915"
     },
     {
-        "name":"Apple MacBook Air 13.6\" w/ Touch ID (Fall 2024) - Midnight (Apple M2 / 16GB RAM / 256GB SSD) - English",
-        "price":1099.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"32",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Air 13.6\" w/ Touch ID (Fall 2024) - Midnight (Apple M2 / 16GB RAM / 256GB SSD) - English",
+        "price": 1099.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "32",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18620/18620064.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18620/18620064_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18620/18620064_2.jpg",
@@ -917,22 +625,22 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18620/18620064_7.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18620/18620064_9.jpg"
         ],
-        "specs":[
+        "specs": [
             "The Apple MacBook Air (Fall 2024) is supercharged with the Apple M2 chip. You can work with more streams of 4K and 8K ProRes video with the high‑performance media engine, and keep working — or playing — all day and into the night with up to 18 hours of battery life.",
             "Supercharged with the Apple M2 chip",
             "Work with more streams of 4K and 8K ProRes video with the high‑performance media engine",
             "Keep working — or playing — all day and into the night with up to 18 hours of battery life"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-6-w-touch-id-fall-2024-midnight-apple-m2-16gb-ram-256gb-ssd-english/18620064"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-6-w-touch-id-fall-2024-midnight-apple-m2-16gb-ram-256gb-ssd-english/18620064"
     },
     {
-        "name":"Apple MacBook Air 13\" w/ Touch ID (2024) - Space Grey (Apple M3 Chip / 512GB SSD / 16GB RAM) - English",
-        "price":1449.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"33",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Air 13\" w/ Touch ID (2024) - Space Grey (Apple M3 Chip / 512GB SSD / 16GB RAM) - English",
+        "price": 1449.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "33",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755710.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755710_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17755/17755710_2.jpg",
@@ -940,7 +648,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755710_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755710_7.jpg"
         ],
-        "specs":[
+        "specs": [
             "Apple’s thinnest and lightest notebook gets supercharged with the Apple M3 chip, which brings even greater capabilities to the super portable 13-inch Apple MacBook Air. With up to 18 hours of battery life, you can take it anywhere and blaze through work and play.",
             "8-core Apple M3 chip along with 16GB of RAM keep things running smoothly through work and play",
             "512GB solid state drive (SSD) offers plenty of storage for all your files, photos, videos, and games",
@@ -952,16 +660,16 @@
             "Features two Thunderbolt ports, a headphone jack, Wi-Fi 6E, Bluetooth 5.3 and a MagSafe charging port. And connect up to two external displays with the laptop lid closed (Wi-Fi 6E available in countries and regions where supported)",
             "Works like magic with your other Apple devices. Start an email on your iPhone and finish it on your Mac. Send text messages from your Mac. And much more (Requires iCloud and internet connection)"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-w-touch-id-2024-space-grey-apple-m3-chip-512gb-ssd-16gb-ram-english/17755710"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-w-touch-id-2024-space-grey-apple-m3-chip-512gb-ssd-16gb-ram-english/17755710"
     },
     {
-        "name":"Apple MacBook Air 15\" w/ Touch ID (2024) - Starlight (Apple M3 Chip / 512GB SSD / 16GB RAM) - English",
-        "price":1699.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"34",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Air 15\" w/ Touch ID (2024) - Starlight (Apple M3 Chip / 512GB SSD / 16GB RAM) - English",
+        "price": 1699.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "34",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755721.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755721_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755721_2.jpg",
@@ -969,7 +677,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755721_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17755/17755721_7.jpg"
         ],
-        "specs":[
+        "specs": [
             "Experience the ultimate blend of power and portability with Apple's 15-inch MacBook Air. The powerful 8-core CPU and up to 10-core GPU of the Apple M3 chip keep things running smoothly. The spacious Liquid Retina display gives you more space onscreen for multitasking. With up to 18 hours of battery life, you can take it anywhere and blaze through work and play.",
             "Lightweight and under half an inch thin, so you can take MacBook Air anywhere you go",
             "Blazing-fast 8-core Apple M3 chip along with 16GB of RAM offer the power to tackle complex tasks",
@@ -982,16 +690,16 @@
             "Features two Thunderbolt ports, a headphone jack, Wi-Fi 6E, Bluetooth 5.3 and a MagSafe charging port. And connect up to two external displays with the laptop lid closed (Wi-Fi 6E available in countries and regions where supported)",
             "Works like magic with your other Apple devices. Start an email on your iPhone and finish it on your Mac. Send text messages from your Mac. And much more (Requires iCloud and internet connection)"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-15-w-touch-id-2024-starlight-apple-m3-chip-512gb-ssd-16gb-ram-english/17755721"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-air-15-w-touch-id-2024-starlight-apple-m3-chip-512gb-ssd-16gb-ram-english/17755721"
     },
     {
-        "name":"Apple MacBook Pro 14\" (2023) - Space Grey (Apple M2 Pro/ 512GB SSD / 16GB RAM) - French",
-        "price":1999.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"35",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Pro 14\" (2023) - Space Grey (Apple M2 Pro/ 512GB SSD / 16GB RAM) - French",
+        "price": 1999.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "35",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16670/16670265.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16670/16670265_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16670/16670265_2.jpg",
@@ -999,7 +707,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16670/16670265_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16670/16670265_7.jpg"
         ],
-        "specs":[
+        "specs": [
             "Taking power and efficiency further than ever, Apple MacBook Pro delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Supercharged by M2 Pro, combined with a stunning Liquid Retina XDR display and all the ports you need — this is a pro laptop without equal.",
             "Apple-designed M2 Pro chip for a giant leap in CPU, GPU and machine learning performance",
             "Go longer than ever with up to 18 hours of battery life",
@@ -1017,16 +725,16 @@
             "Backlit Magic Keyboard, ambient light sensor, and Touch ID for secure unlock and payments",
             "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing and Multi-Touch gestures"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2023-space-grey-apple-m2-pro-512gb-ssd-16gb-ram-french/16670265"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2023-space-grey-apple-m2-pro-512gb-ssd-16gb-ram-french/16670265"
     },
     {
-        "name":"Apple MacBook Pro 13.3\" w/ Touch Bar (2022) - Silver (Apple M2 Chip / 256GB SSD / 8GB RAM) - French",
-        "price":1299.95,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"36",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Pro 13.3\" w/ Touch Bar (2022) - Silver (Apple M2 Chip / 256GB SSD / 8GB RAM) - French",
+        "price": 1299.95,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "36",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_2.jpg",
@@ -1034,7 +742,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16282/16282203_6.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/162/16282/16282203_8.jpg"
         ],
-        "specs":[
+        "specs": [
             "Bring more power and enhanced performance on-the-go with the Apple MacBook Pro. Supercharged by the next-generation M2 chip, it’s Apple’s most portable pro laptop, with up to 20 hours of battery life. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it delivers game-changing performance to all your computing and entertainment tasks.",
             "Apple M2 chip with next-generation CPU, GPU, and machine learning performance",
             "8-core CPU and 10-core GPU to rip through intense workflows",
@@ -1053,16 +761,16 @@
             "Two Thunderbolt 3 (USB-C) ports and a headphone jack for all the charging and accessories",
             "macOS Monterey lets you connect, share and create like never before—across all your Apple devices"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-13-3-w-touch-bar-2022-silver-apple-m2-chip-256gb-ssd-8gb-ram-french/16282203"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-13-3-w-touch-bar-2022-silver-apple-m2-chip-256gb-ssd-8gb-ram-french/16282203"
     },
     {
-        "name":"Apple MacBook Pro 16.2\" (Fall 2024) - Space Black (Apple M4 Pro / 24GB RAM / 512GB SSD) - English",
-        "price":3299.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"37",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Pro 16.2\" (Fall 2024) - Space Black (Apple M4 Pro / 24GB RAM / 512GB SSD) - English",
+        "price": 3299.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "37",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/186/18619/18619927_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/186/18619/18619927_2.jpg",
@@ -1070,7 +778,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927_6.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/186/18619/18619927_8.jpg"
         ],
-        "specs":[
+        "specs": [
             "The Apple MacBook Pro 16.2\" (Fall 2024) takes its power and efficiency further than ever. Supercharged by M4 Pro, it delivers exceptional performance whether it’s plugged in or not, and now has even longer battery life. Combined with a stunning Liquid Retina XDR display and all the ports you need—this is a pro laptop without equal.",
             "Apple-designed M4 Pro chip for a giant leap in CPU, GPU, and machine learning performance",
             "Go longer than ever with up to 22 hours of battery life",
@@ -1085,23 +793,23 @@
             "Backlit magic keyboard, ambient light sensor and Touch ID for secure unlock and payments",
             "Force Touch trackpad for precise cursor control and pressure-sensing capabilities; enables Force clicks, accelerators, pressure-sensitive drawing and Multi-Touch gestures"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2024-space-black-apple-m4-pro-24gb-ram-512gb-ssd-english/18619927"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2024-space-black-apple-m4-pro-24gb-ram-512gb-ssd-english/18619927"
     },
     {
-        "name":"",
-        "price":1969.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"38",
-        "stock":50,
-        "medias":[
+        "name": "",
+        "price": 1969.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "38",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/185/18522/18522202.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_2.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/185/18522/18522202_3.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/185/18522/18522202_4.jpeg"
         ],
-        "specs":[
+        "specs": [
             "The first notebook of its kind, this Apple MacBook Pro is a beast. With the blazing-fast M1 Pro chip — the first Apple silicon designed for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR display, the best camera and audio ever in a Mac notebook, and all the ports you need.",
             "Tech Nation sells computers with custom/upgraded configurations to enhance system performance. If the computer has modifications as listed above, the manufacturer's box was opened by our highly skilled technicians for testing, inspection, and installation of the upgrades according to the specifications advertised. All computers and components are brand new.",
             "Display: 14\" Liquid Retina XDR ProMotion display with a resolution of 3024 x 1964, providing stunning visual clarity. Enjoy wide color (P3) support and industry-leading brightness levels with 1000 nits sustained brightness and up to 1600 nits peak brightness for HDR content.",
@@ -1113,16 +821,16 @@
             "Connectivity: Includes multiple USB-C Thunderbolt 4 ports, an HDMI port, and an SD card slot, offering versatile connectivity options. Additionally, it supports Wi-Fi 6 and Bluetooth 5.0 for seamless wireless connections.",
             "Design: Sleek, lightweight, and portable, with a durable Space Grey aluminum finish, this MacBook Pro weighs only 1.6 kg making it easy to carry on the go."
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2021-space-grey-apple-m1-pro-chip-1tb-ssd-16gb-ram/18522202"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-14-2021-space-grey-apple-m1-pro-chip-1tb-ssd-16gb-ram/18522202"
     },
     {
-        "name":"Apple MacBook Air 13.6\" w/ Touch ID (2022) - Midnight (Apple M2 Chip / 256GB SSD / 8GB RAM) - English - Brand New",
-        "price":1099.97,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"39",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Air 13.6\" w/ Touch ID (2022) - Midnight (Apple M2 Chip / 256GB SSD / 8GB RAM) - English - Brand New",
+        "price": 1099.97,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "39",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/164/16480/16480352_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_2.jpeg",
@@ -1130,7 +838,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_4.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16480/16480352_5.jpeg"
         ],
-        "specs":[
+        "specs": [
             "Apple’s thinnest and lightest notebook gets supercharged with the Apple M2 chip. The M2 chip starts the next generation of Apple silicon, with even more of the speed and power efficiency of M1. So you can get more done faster with a more powerful 8‑core CPU. Create captivating images and animations with up to a 8-core GPU and work with more streams of 4K and 8K ProRes video.",
             "Apple-designed M2 chip for a giant leap in CPU, GPU and machine learning performance",
             "Go longer than ever with up to 18 hours of battery life (Battery life varies by use and configuration)",
@@ -1143,16 +851,16 @@
             "13.6-inch Liquid Retina display (Screen size is measured diagonally)",
             "FaceTime HD camera with advanced image signal processor for clearer, sharper video calls"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-6-w-touch-id-2022-midnight-apple-m2-chip-256gb-ssd-8gb-ram-english-brand-new/16480352"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-air-13-6-w-touch-id-2022-midnight-apple-m2-chip-256gb-ssd-8gb-ram-english-brand-new/16480352"
     },
     {
-        "name":"Apple MacBook Pro 16.2\" (Fall 2023) - Space Black (Apple M3 Max / 1TB SDD / 36GB RAM) English - Brand NEW",
-        "price":4099.99,
-        "categoryId":"MacBook",
-        "brand":"Apple",
-        "sku":"40",
-        "stock":50,
-        "medias":[
+        "name": "Apple MacBook Pro 16.2\" (Fall 2023) - Space Black (Apple M3 Max / 1TB SDD / 36GB RAM) English - Brand NEW",
+        "price": 4099.99,
+        "category": "laptop",
+        "brand": "Apple",
+        "sku": "40",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_2.jpeg",
@@ -1160,7 +868,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17720/17720831_2.jpeg"
         ],
-        "specs":[
+        "specs": [
             "Apple MacBook Pro 16.2\" (Fall 2023) - Space Black (Apple M3 Max / 1TB SDD / 36GB RAM) English - Brand NEW",
             "Processor and Memory: Apple M3 Max chip, 14-core CPU, 36 GB RAM",
             "Drives: 1 TB SSD, No optical drive, SD card reader",
@@ -1172,19 +880,19 @@
             "​Includes: 140W USB-C Power Adapter, USB-C to MagSafe 3 Cable",
             "Operating System: macOS"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2023-space-black-apple-m3-max-1tb-sdd-36gb-ram-english-brand-new/17720831"
+        "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2023-space-black-apple-m3-max-1tb-sdd-36gb-ram-english-brand-new/17720831"
     },
     {
-        "name":"j5create USB-C 4K HDMI Docking Station (JCD533)",
-        "price":74.98,
-        "categoryId":"Associators",
-        "brand":"j5create",
-        "sku":"41",
-        "stock":50,
-        "medias":[
+        "name": "j5create USB-C 4K HDMI Docking Station (JCD533)",
+        "price": 74.98,
+        "category": "associators",
+        "brand": "j5create",
+        "sku": "41",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/158/15847/15847371.jpg"
         ],
-        "specs":[
+        "specs": [
             "Connect all your cables with ease with the help of this j5create USB-C docking station. It's equipped with a 4K HDMI output and a USB-C Power Delivery port that supports up to 100W pass-through so you can stay productive. It also includes a gigabit ethernet port, memory card reader and writer, combo audio jack, and three SuperSpeed USB 5Gbps ports for all your connectivity needs.",
             "Features a 4K HDMI output and USB-C Power Delivery port that supports up to 100W pass-through to stay connected and productive",
             "Included Gigabit Ethernet port, memory card reader/writer, combo audio jack, and three SuperSpeed USB 5Gbps ports for multiple connectivity options",
@@ -1198,16 +906,16 @@
             "Elevated design to prevent heat build-up",
             "Works well with Macbook, Dell XPS, or any other USB-C laptops that need additional ports"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/j5create-usb-c-4k-hdmi-docking-station-jcd533/15847371"
+        "url": "https://www.bestbuy.ca/en-ca/product/j5create-usb-c-4k-hdmi-docking-station-jcd533/15847371"
     },
     {
-        "name":"Dell WD22TB4 Thunderbolt 4 Dock",
-        "price":219.99,
-        "categoryId":"Associators",
-        "brand":"Dell",
-        "sku":"42",
-        "stock":50,
-        "medias":[
+        "name": "Dell WD22TB4 Thunderbolt 4 Dock",
+        "price": 219.99,
+        "category": "associators",
+        "brand": "Dell",
+        "sku": "42",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_2.jpeg",
@@ -1215,19 +923,19 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_4.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_5.jpeg"
         ],
-        "specs":[
+        "specs": [
             "Dell WD22TB4 Thunderbolt 4 Dock"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/dell-wd22tb4-thunderbolt-4-dock/17358456"
+        "url": "https://www.bestbuy.ca/en-ca/product/dell-wd22tb4-thunderbolt-4-dock/17358456"
     },
     {
-        "name":"Kensington Universal Tabletop Laptop Riser",
-        "price":39.99,
-        "categoryId":"Associators",
-        "brand":"Kensington",
-        "sku":"43",
-        "stock":50,
-        "medias":[
+        "name": "Kensington Universal Tabletop Laptop Riser",
+        "price": 39.99,
+        "category": "associators",
+        "brand": "Kensington",
+        "sku": "43",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_2.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_3.jpg",
@@ -1235,7 +943,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_7.jpg"
         ],
-        "specs":[
+        "specs": [
             "Get the Kensington Universal tabletop laptop riser for enhanced ergonomics and healthier lifestyle. The elevated design of the laptop riser promotes better posture and reduces strain on the neck and back. This tabletop stand has a tiltable laptop tray that offers convenience and optimal viewing angle, and boasts an open design for increased heat dissipation.",
             "Supports maximum screen size of up to 16\" and is ideal for professionals, students, and avid gamers",
             "Large and sturdy laptop stand supports your laptop, an external keyboard, input devices or other work supplies for an organized and clutter-free desktop space",
@@ -1247,16 +955,16 @@
             "Laptop tray is tiltable by 0-45-degrees",
             "Solid build with weight capacity up to 22lb. (10kg)"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/kensington-universal-tabletop-laptop-riser/17302139"
+        "url": "https://www.bestbuy.ca/en-ca/product/kensington-universal-tabletop-laptop-riser/17302139"
     },
     {
-        "name":"Logitech Casa Pop-Up Desk Kit - Bohemian Blush",
-        "price":199.99,
-        "categoryId":"Associators",
-        "brand":"Logitech",
-        "sku":"44",
-        "stock":50,
-        "medias":[
+        "name": "Logitech Casa Pop-Up Desk Kit - Bohemian Blush",
+        "price": 199.99,
+        "category": "associators",
+        "brand": "Logitech",
+        "sku": "44",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_3.jpg",
@@ -1264,7 +972,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_7.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_9.jpg"
         ],
-        "specs":[
+        "specs": [
             "Revolutionize the way you work with the Logitech Casa Pop-Up desk kit. This compact kit lets you create a comfortable and organized workspace. It includes a wireless keyboard, wireless touchpad, and laptop riser, which can be folded and stored away after use. Place it on your dining table, high countertop, or any a corner for a versatile work experience.",
             "Pop-up desk kit includes a wireless keyboard, wireless touchpad, and a book-like case that transforms into a laptop stand",
             "Casa Keys, the minimalist wireless keyboard and Casa Touch, the smooth wireless touchpad give you laptop-like feel when you work",
@@ -1274,20 +982,20 @@
             "Book-like laptop case unfolds into a laptop stand, raising your screen to eye level for an ergonomic posture",
             "Plastic parts in Casa Pop-up desk include certified post-consumer recycled plastic (Touchpad: minimum 62%; Keyboard: minimum 47%; Book: minimum 44%) for eco-friendly use"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/logitech-casa-pop-up-desk-kit-bohemian-blush/17726284"
+        "url": "https://www.bestbuy.ca/en-ca/product/logitech-casa-pop-up-desk-kit-bohemian-blush/17726284"
     },
     {
-        "name":"Targus Strata II 15.6\" Laptop Sleeve - Grey/Brown",
-        "price":24.99,
-        "categoryId":"Associators",
-        "brand":"Targus",
-        "sku":"45",
-        "stock":50,
-        "medias":[
+        "name": "Targus Strata II 15.6\" Laptop Sleeve - Grey/Brown",
+        "price": 24.99,
+        "category": "associators",
+        "brand": "Targus",
+        "sku": "45",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/115/11530/11530800.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/115/11530/11530800_1.jpg"
         ],
-        "specs":[
+        "specs": [
             "Slim and easy to carry, the Targus Strata II 15.6\" laptop sleeve is convenient for taking your laptop on the go. Its plush interior protects your laptop from scratches, ideal if you have a 2-in-1 device with an exposed screen. Stash away accessories in the front zippered pocket, and carry the sleeve by its handles.",
             "Fits a laptop up to 15.6\"",
             "Made of lightweight materials with soft-touch leatherette accents for style and functionality",
@@ -1295,16 +1003,16 @@
             "Front zippered pocket provides space for accessories",
             "Carry handles make it easy to take the laptop sleeve anywhere"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/targus-strata-ii-15-6-laptop-sleeve-grey-brown/11530800"
+        "url": "https://www.bestbuy.ca/en-ca/product/targus-strata-ii-15-6-laptop-sleeve-grey-brown/11530800"
     },
     {
-        "name":"Lenovo ThinkPad Essential 16\" Laptop Messenger Bag - Black - (4X41C12469)",
-        "price":20.99,
-        "categoryId":"Associators",
-        "brand":"Lenovo",
-        "sku":"46",
-        "stock":50,
-        "medias":[
+        "name": "Lenovo ThinkPad Essential 16\" Laptop Messenger Bag - Black - (4X41C12469)",
+        "price": 20.99,
+        "category": "associators",
+        "brand": "Lenovo",
+        "sku": "46",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/156/15634/15634436.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/156/15634/15634436_1.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/156/15634/15634436_3.jpeg",
@@ -1312,7 +1020,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/156/15634/15634436_5.jpeg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/156/15634/15634436_6.jpeg"
         ],
-        "specs":[
+        "specs": [
             "The ThinkPad Essential 16-Inch Topload (Eco) comes with all the perks you’d expect from a well-designed toploader case. Pack and unpack on the fly. And move from office to cafe and back without a hitch thanks to the padded, organized interior storage, easy-grip zippers, adjustable shoulder strap, and 16-inch notebook compartment. Get it all for a great price, and guilt-free too.",
             "Two main compartments, including a dedicated padded PC pocket, designed to fit Lenovo ThinkPad laptops up to 16”",
             "Two additional front zip pockets for quick accessory access",
@@ -1322,16 +1030,16 @@
             "Classic black nylon exterior, grey interior lining, with splashes of classic red accents",
             "Each bag contains the equivalent of at least two recycled plastic bottles"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/lenovo-thinkpad-essential-16-laptop-messenger-bag-black-4x41c12469/15634436"
+        "url": "https://www.bestbuy.ca/en-ca/product/lenovo-thinkpad-essential-16-laptop-messenger-bag-black-4x41c12469/15634436"
     },
     {
-        "name":"Sony WH-1000XM4 Over-Ear Noise Cancelling Bluetooth Headphones - Black",
-        "price":279.99,
-        "categoryId":"Associators",
-        "brand":"Sony",
-        "sku":"47",
-        "stock":50,
-        "medias":[
+        "name": "Sony WH-1000XM4 Over-Ear Noise Cancelling Bluetooth Headphones - Black",
+        "price": 279.99,
+        "category": "associators",
+        "brand": "Sony",
+        "sku": "47",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/147/14777/14777258.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/147/14777/14777258_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/147/14777/14777258_2.jpg",
@@ -1339,7 +1047,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/147/14777/14777258_5.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/147/14777/14777258_11.jpg"
         ],
-        "specs":[
+        "specs": [
             "Get the personalised listening experience you deserve with the Sony WH-1000XM4 over-ear Bluetooth headphones. Adaptive noise cancellation with Dual Noise Sensor and powerful Edge-AI technology combine to bring you an intelligent, premium audio experience. The built-in Google Assistant and Amazon Alexa let you control your music hands-free with voice controls.",
             "Over-ear design relieves pressure for long-lasting comfort",
             "Bluetooth technology seamlessly pairs with multiple devices and allows you to rock out without wires",
@@ -1352,16 +1060,16 @@
             "Edge-AI, co-developed with Sony Music Entertainment, delivers next-level music that harnesses the power of artificial intelligence",
             "Adaptive Sound Control lets you play your music the way you want to hear it"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/sony-wh-1000xm4-over-ear-noise-cancelling-bluetooth-headphones-black/14777258"
+        "url": "https://www.bestbuy.ca/en-ca/product/sony-wh-1000xm4-over-ear-noise-cancelling-bluetooth-headphones-black/14777258"
     },
     {
-        "name":"Samsung Galaxy Buds3 Pro In-Ear Noise Cancelling True Wireless Earbuds - Silver",
-        "price":229.99,
-        "categoryId":"Associators",
-        "brand":"Samsung",
-        "sku":"48",
-        "stock":50,
-        "medias":[
+        "name": "Samsung Galaxy Buds3 Pro In-Ear Noise Cancelling True Wireless Earbuds - Silver",
+        "price": 229.99,
+        "category": "associators",
+        "brand": "Samsung",
+        "sku": "48",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984587.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984587_3.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984587_4.jpg",
@@ -1369,7 +1077,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984587_6.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984587_7.jpg"
         ],
-        "specs":[
+        "specs": [
             "Enjoy the new shape of sound with the Samsung Galaxy Buds3 Pro. These true wireless earbuds adapt to how you wear them, so you get a personalized listening experience that suits you. Plus, they optimize sound based on your surroudings, thanks to Adaptive Noise Cancellation and Adaptive Noise Control. Its all-day comfort design lets you listen for hours.",
             "In-ear true wireless headphones offer quality sound and comfort that's great for all-day use",
             "Adaptive Noise Cancellation and Adaptive Noise Control let you immerse in your favourite audio content, while staying alert with your surroundings. If someone starts speaking to you, your Buds will automatically adapt to help you hear what matters",
@@ -1380,16 +1088,16 @@
             "Need a translation while on calls? Over the phone live translate lets you hear live translations instantly",
             "Pause music, skip songs, and accept calls easily. Intuitive Touch Control lets you personalize the way you use the Buds3 Pro"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-buds3-pro-in-ear-noise-cancelling-true-wireless-earbuds-silver/17984587"
+        "url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-buds3-pro-in-ear-noise-cancelling-true-wireless-earbuds-silver/17984587"
     },
     {
-        "name":"JBL PartyBox On-The-Go Essential Splashproof Bluetooth Wireless Speaker - Black",
-        "price":349.99,
-        "categoryId":"Associators",
-        "brand":"JBL",
-        "sku":"49",
-        "stock":50,
-        "medias":[
+        "name": "JBL PartyBox On-The-Go Essential Splashproof Bluetooth Wireless Speaker - Black",
+        "price": 349.99,
+        "category": "associators",
+        "brand": "JBL",
+        "sku": "49",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17827/17827548.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/100x100/178/17827/17827548_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17827/17827548_2.jpg",
@@ -1397,7 +1105,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17827/17827548_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/178/17827/17827548_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "Turn up the beat and ignite the party vibe with the JBL PartyBox On-The-Go Essential splashproof Bluetooth speaker. With 100W powerful JBL Pro Sound synced to a dazzling light show, this speaker creates an electrifying atmosphere that keeps the party going all night long. Thanks to Bluetooth, USB, AUX, and TWS connectivity, accessing your favourite tunes is a breeze.",
             "100W powerful, booming JBL Pro Sound delivers crisp highs, pure mids, and heavy bass for an unparalleled listening experience whether you're indoors or outdoors",
             "Fine-tune your vocal performance with precision by adjusting the bass, treble, and echo settings to achieve the perfect vocal effect",
@@ -1410,16 +1118,16 @@
             "Select from an array of preset patterns for a mesmerizing light show that syncs to the music, captivating your guests, and enhancing the atmosphere",
             "Includes a JBL wireless microphone with a 10-metre range for effortless karaoke sessions and engaging performances"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/jbl-partybox-on-the-go-essential-splashproof-bluetooth-wireless-speaker-black/17827548"
+        "url": "https://www.bestbuy.ca/en-ca/product/jbl-partybox-on-the-go-essential-splashproof-bluetooth-wireless-speaker-black/17827548"
     },
     {
-        "name":"Bose SoundLink Flex Waterproof Bluetooth Wireless Speaker - Chilled Lilac",
-        "price":149.99,
-        "categoryId":"Associators",
-        "brand":"Bose",
-        "sku":"50",
-        "stock":50,
-        "medias":[
+        "name": "Bose SoundLink Flex Waterproof Bluetooth Wireless Speaker - Chilled Lilac",
+        "price": 149.99,
+        "category": "associators",
+        "brand": "Bose",
+        "sku": "50",
+        "stock": 50,
+        "medias": [
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697642.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697642_1.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697642_2.jpg",
@@ -1427,7 +1135,7 @@
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697642_4.jpg",
             "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17697/17697642_6.jpg"
         ],
-        "specs":[
+        "specs": [
             "Experience superior sound with a Bose SoundLink Flex waterproof Bluetooth wireless speaker. This speaker is the ideal companion on all of life's adventures and is easy to pack along, thanks to its portable size and durable design. With this speaker's crisp sound quality, you'll be able to hear the nuances of all that you listen to, offering you an immersive experience.",
             "This speaker's portable design makes it the perfect companion for almost anywhere life takes you",
             "The SoundLink Flex Bluetooth speaker plays crisp, clear sounds, no matter where you happen to be. With its PositionIQ technology, this speaker automatically adapts to multiple orientations, which means you get the best sound quality, no matter what position the speaker is in",
@@ -1436,6 +1144,6 @@
             "Thanks to this speaker's durable, waterproof, splash-proof, and dust-proof design, it's perfect for both indoor and outdoor use, so stick it in your backpack and enjoy your adventure with some music at your side",
             "Stereo/party mode allows for the pairing of two similar speakers, thanks to SympleSync"
         ],
-        "url":"https://www.bestbuy.ca/en-ca/product/bose-soundlink-flex-waterproof-bluetooth-wireless-speaker-chilled-lilac/17697642"
+        "url": "https://www.bestbuy.ca/en-ca/product/bose-soundlink-flex-waterproof-bluetooth-wireless-speaker-chilled-lilac/17697642"
     }
 ]
