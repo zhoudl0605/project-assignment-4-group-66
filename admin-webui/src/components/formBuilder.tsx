@@ -12,7 +12,14 @@ import Grid from "@mui/material/Grid2"; // 引入 Grid v2
 export interface FormField {
     name: string;
     label: string;
-    type: "text" | "email" | "select" | "number" | "textarea" | "stringArray";
+    type:
+        | "text"
+        | "email"
+        | "select"
+        | "number"
+        | "textarea"
+        | "stringArray"
+        | "password";
     options?: { value: string | number; label: string }[];
     required?: boolean;
 }
@@ -117,6 +124,17 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         fullWidth
                         multiline
                         rows={4} // 默认显示行数，可以根据需要调整
+                        label={field.label}
+                        value={formValues[field.name] || ""}
+                        onChange={handleChange(field.name)}
+                        required={field.required}
+                    />
+                );
+            case "password":
+                return (
+                    <TextField
+                        fullWidth
+                        type="password"
                         label={field.label}
                         value={formValues[field.name] || ""}
                         onChange={handleChange(field.name)}

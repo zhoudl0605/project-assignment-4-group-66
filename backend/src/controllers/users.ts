@@ -3,14 +3,13 @@ import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class UsersController {
     public static async getUsersController(ctx: any) {
-        const limit = parseInt(ctx.query.limit) || 10; // 从查询参数中获取limit，默认为10
-        const skip = parseInt(ctx.query.skip) || 0; // 从查询参数中获取skip，默认为0
+        const limit = parseInt(ctx.query.limit) || 100; 
+        const skip = parseInt(ctx.query.skip) || 0; 
 
         try {
             const userService = new UserService();
             const result = await userService.getUsers(limit, skip);
 
-            // 返回成功响应
             ctx.status = 200;
             ctx.body = {
                 status: "success",
@@ -19,7 +18,6 @@ export class UsersController {
         } catch (error: any) {
             console.error("Error while getting users:", error.toString());
 
-            // 返回错误响应
             ctx.status = 500;
             ctx.body = {
                 status: "error",

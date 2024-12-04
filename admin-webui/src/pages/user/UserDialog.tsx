@@ -10,6 +10,7 @@ import FormBuilder, { FormField } from "../../components/formBuilder";
 
 interface UserData {
     id: string;
+    password?: string;
     name: string;
     email: string;
     role: string;
@@ -35,6 +36,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
     const [initialValues, setInitialValues] = useState<Record<string, any>>({
         name: "",
         email: "",
+        password: "",
         role: "user",
         address1: "",
         address2: "",
@@ -48,6 +50,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
             setInitialValues({
                 name: "",
                 email: "",
+                password: "",
                 role: "user",
                 address1: "",
                 address2: "",
@@ -72,6 +75,7 @@ const UserDialog: React.FC<UserDialogProps> = ({ open, user, onClose }) => {
     const formFields: FormField[] = [
         { name: "name", label: "Name", type: "text", required: true },
         { name: "email", label: "Email", type: "email", required: true },
+        { name: "password", label: "Password", type: "password", required: true },
         {
             name: "role",
             label: "Role",

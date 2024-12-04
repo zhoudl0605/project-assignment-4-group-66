@@ -4,14 +4,13 @@ import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 import { UserDao } from "../dao/user";
 
 export class UsersController {
-    // 获取用户列表
     public static async getUsersController(
         req: Request,
         res: Response,
         next: NextFunction
     ) {
-        const limit = parseInt(req.query.limit as string) || 10; // 从查询参数中获取 limit，默认为10
-        const skip = parseInt(req.query.skip as string) || 0; // 从查询参数中获取 skip，默认为0
+        const limit = parseInt(req.query.limit as string) || 10;
+        const skip = parseInt(req.query.skip as string) || 0;
 
         try {
             const userService = new UserService();
@@ -33,7 +32,6 @@ export class UsersController {
         }
     }
 
-    // 根据 ID 获取用户
     public static async getUserController(
         req: Request,
         res: Response,
@@ -59,7 +57,6 @@ export class UsersController {
         }
     }
 
-    // 更新用户信息
     public static async updateUserController(
         req: Request,
         res: Response,
@@ -122,6 +119,45 @@ export class UsersController {
                 status: "error",
                 message: "Internal server error",
             } as RequestErrorResponse);
+        }
+    }
+
+    public static async postUsersController(
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ) {
+        const { name, email, password, role = "user", address } = req.body;
+
+        try {
+            const userService = new UserService();
+            const user = await userService.createUser(
+                name,
+                email,
+                password,
+                role,
+                address
+            );
+
+            const token = await userService.generateToken(user);
+            res.status(201).json({
+                status: "success",
+                data: { token },
+            });
+        } catch (error: any) {
+            console.error(`[UsersController][Signup] Error: ${error.message}`);
+
+            if (error.message.includes("duplicate key error", "email")) {
+                return res.status(400).json({
+                    status: "error",
+                    message: "Email already exists",
+                });
+            }
+
+            return res.status(500).json({
+                status: "error",
+                message: "Internal server error",
+            });
         }
     }
 }

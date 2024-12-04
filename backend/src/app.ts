@@ -1,12 +1,13 @@
 // Import necessary modules
 import dotenv from "dotenv";
 dotenv.config();
+console.log(process.env.DATABASE_HOST);
 
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import fs from "fs";
-import { errorHandler } from "./middlewares/errorHandler"; // 保留自定义错误处理中间件
+import { errorHandler } from "./middlewares/errorHandler";
 import { DatabaseModule } from "./modules/db";
 import { Context, Next } from "koa";
 import { registerRoutes } from "./routes";
@@ -29,20 +30,20 @@ async function main() {
                     origin.startsWith("http://localhost") ||
                     origin.startsWith("http://127.0.0.1")
                 ) {
-                    callback(null, true); // 允许请求
+                    callback(null, true);
                 } else {
-                    callback(new Error("Not allowed by CORS")); // 拒绝请求
+                    callback(new Error("Not allowed by CORS"));
                 }
             },
-            credentials: true, // 是否允许携带 Cookie
-            methods: ["GET", "POST", "PUT", "DELETE"], // 允许的 HTTP 方法
-            allowedHeaders: ["Content-Type", "Authorization"], // 允许的 HTTP 头
+            credentials: true,
+            methods: ["GET", "POST", "PUT", "DELETE"],
+            allowedHeaders: ["Content-Type", "Authorization"],
         })
     );
 
     // Parse request bodies
-    app.use(bodyParser.json()); // JSON 解析
-    app.use(bodyParser.urlencoded({ extended: true })); // URL 编码解析
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
 
     // SSL configuration
     let server;
@@ -70,7 +71,7 @@ async function main() {
 
     app.use(express.json());
     // Register routes
-    registerRoutes(app); // 假设 `registerRoutes` 会根据 Express 注册路由
+    registerRoutes(app);
 
     // Start the server
     const PORT = process.env.PORT || 3000;

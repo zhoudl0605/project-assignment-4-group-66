@@ -48,6 +48,7 @@ export class DatabaseModule {
         const encodedUser = encodeURIComponent(username);
         const encodedPass = encodeURIComponent(password);
         const uri = `mongodb://${encodedUser}:${encodedPass}@${host}:${port}/${database}?authSource=${authSource}`;
+        console.log("Connecting to the database: " + uri);
 
         try {
             await mongoose.connect(uri, options);
@@ -93,11 +94,11 @@ export class DatabaseModule {
      */
     public static getConfig(): DatabaseConfig {
         return {
-            host: process.env.DB_HOST || "localhost",
-            port: parseInt(process.env.DB_PORT || "27017"),
-            username: process.env.DB_USER || "",
-            password: process.env.DB_PASSWORD || "",
-            database: process.env.DB_DATABASE || "test",
+            host: process.env.DATABASE_HOST || "localhost",
+            port: parseInt(process.env.DATABASE_PORT || "27017"),
+            username: process.env.DATABASE_USER || "",
+            password: process.env.DATABASE_PASSWORD || "",
+            database: process.env.DATABASE_NAME || "test",
             options: {
                 connectTimeoutMS: 5000,
             },
