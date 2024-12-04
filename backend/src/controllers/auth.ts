@@ -1,4 +1,4 @@
-import { UserService } from "../services/user";
+import { UserService } from "../services/userService";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class AuthController {

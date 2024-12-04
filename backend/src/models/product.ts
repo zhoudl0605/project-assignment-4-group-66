@@ -55,4 +55,15 @@ const ProductSchema: Schema = new Schema(
     }
 );
 
+ProductSchema.pre("save", async function (next) {
+    const existingProduct = await ProductModel.findOne({ sku: this.sku });
+    if (
+        existingProduct &&
+        existingProduct._id?.toString() !== this._id?.toString()
+    ) {
+        throw new Error("SKU must be unique.");
+    }
+    next();
+});
+
 export const ProductModel = mongoose.model<IProduct>("Product", ProductSchema);

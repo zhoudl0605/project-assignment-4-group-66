@@ -16,23 +16,6 @@ export class ProductsController {
         try {
             const product = await productService.createProduct(body);
 
-            // 运行验证
-            const errors = product.validateSync();
-            if (errors) {
-                console.error(
-                    "Error while validating product:",
-                    errors.message
-                );
-
-                return res.status(400).json({
-                    status: "error",
-                    message: errors.message,
-                } as RequestErrorResponse);
-            }
-
-            // 保存产品
-            await product.save();
-
             return res.status(201).json({
                 status: "success",
                 data: product,

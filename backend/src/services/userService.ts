@@ -33,8 +33,6 @@ export class UserService {
                 address,
             });
 
-            console.log(password, hashedPass);
-
             return await this.userDao.createUser(userData);
         } catch (error) {
             if (error instanceof Error) {
