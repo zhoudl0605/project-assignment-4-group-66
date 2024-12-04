@@ -105,21 +105,28 @@ function LoginPage() {
 
 async function loginAction(email: string, password: string) {
     let url = process.env.REACT_APP_API_BASE_URL + "/auth/login";
-    const res = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password, role: "admin" }),
-    });
 
-    if (res.ok) {
-        const data = await res.json();
-        console.log("Login response:", data);
-        const token = data.data.token;
-        sessionStorage.setItem("token", token);
-        window.location.href = "/"; // 重定向到首页
-    } else {
-        console.error("Login failed:", res.statusText);
-        alert("Login failed: " + res.statusText);
+    try {
+        const res = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password, role: "admin" }),
+        });
+
+        if (res.ok) {
+            const data = await res.json();
+            console.log("Login response:", data);
+            const token = data.data.token;
+            sessionStorage.setItem("token", token);
+            window.location.href = "/"; // 重定向到首页
+        } else {
+            const errorData = await res.json();
+            console.error("Login failed:", errorData.message || res.statusText);
+            alert("Login failed: " + (errorData.message || res.statusText));
+        }
+    } catch (error) {
+        console.error("An error occurred:", error);
+        alert("An error occurred during login. Please try again later.");
     }
 }
 

@@ -24,8 +24,11 @@ function LoginRegister() {
         try {
             setIsSubmitting(true);
             if (isLogin) {
-                const response = await axios.post('/api/login', { email, password });
-                alert(response.data.message);
+                const baseUrl = process.env.REACT_APP_API_BASE_URL || 'localhost:3000';
+                const response = await axios.post(baseUrl + '/auth/login', { email, password });
+
+                console.log(response);
+                alert(response.data);
             } else {
                 const response = await axios.post('/api/register', {
                     name,

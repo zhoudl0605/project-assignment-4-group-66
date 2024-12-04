@@ -23,7 +23,17 @@ async function main() {
     // Set up CORS
     app.use(
         cors({
-            origin: "http://localhost:3000", // 允许的前端地址
+            origin: (origin, callback) => {
+                if (
+                    !origin ||
+                    origin.startsWith("http://localhost") ||
+                    origin.startsWith("http://127.0.0.1")
+                ) {
+                    callback(null, true); // 允许请求
+                } else {
+                    callback(new Error("Not allowed by CORS")); // 拒绝请求
+                }
+            },
             credentials: true, // 是否允许携带 Cookie
             methods: ["GET", "POST", "PUT", "DELETE"], // 允许的 HTTP 方法
             allowedHeaders: ["Content-Type", "Authorization"], // 允许的 HTTP 头
