@@ -31,7 +31,8 @@ module.exports = {
                 SMTP_HOST: "smtp.gmail.com",
 		SMTP_PORT: 587,
 		SMTP_USER: "alex.zhou0605@gmail.com",
-		SMTP_PASSWORD: "sgmr rcal tlpq zlsd"
+		SMTP_PASSWORD: "sgmr rcal tlpq zlsd",
+		ALLOWED_ORIGINS: "http://localhost,http://127.0.0.1,http://example.com,https://149.248.55.157:8080,https://149.248.55.157:8081"
             },
         }
     ],
