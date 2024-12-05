@@ -7,6 +7,7 @@ function Navbar({ onSearch }) {
     const [query, setQuery] = useState("");
     const token = localStorage.getItem('token');
     const { clearCart } = useContext(AppContext); // Retrieve the addToCart function from the context
+    const adminUrl = process.env.REACT_APP_ADMIN_URL || 'http://localhost:3001';
 
     const handleInputChange = (e) => {
         setQuery(e.target.value);
@@ -37,11 +38,11 @@ function Navbar({ onSearch }) {
                 ) : (
                     <Button color="inherit" component={Link} to="/login">Login</Button>
                 )}
-                <Button color="inherit" component={Link} to="/admin">Admin</Button>
+                <Button color="inherit" component={Link} to={adminUrl}>Admin</Button>
 
                 {/* Search bar section */}
                 <Box display="flex" alignItems="center" ml={2}>
-                    
+
                 </Box>
             </Toolbar>
         </AppBar>
