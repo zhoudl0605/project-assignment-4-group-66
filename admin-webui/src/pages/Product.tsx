@@ -19,6 +19,7 @@ import {
 } from "@mui/material";
 import ProductDialog from "./product/ProductDialog";
 import Layout from "../layout/dashboard";
+import useCsrfToken from "../hooks/useCsrfToken";
 
 export interface ProductData {
     id: string;
@@ -47,6 +48,7 @@ export default function ProductPage() {
         0,
         Infinity,
     ]);
+    const csrfToken = useCsrfToken();
 
     useEffect(() => {
         fetchProducts();
@@ -85,13 +87,17 @@ export default function ProductPage() {
 
     const updateProduct = async (product: ProductData) => {
         try {
+            const token = sessionStorage.getItem("token");
             const url = `${process.env.REACT_APP_API_BASE_URL}/products/${product.id}`;
             const response = await fetch(url, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
+                    "CSRF-Token": csrfToken,
+                    Authorization: `Bearer ${token}`,
                 },
                 body: JSON.stringify(product),
+                credentials: "include",
             });
 
             if (!response.ok) {
@@ -113,13 +119,17 @@ export default function ProductPage() {
         if (action === "add" && updatedProduct) {
             // Add product logic
             try {
+                const token = sessionStorage.getItem("token");
                 const url = `${process.env.REACT_APP_API_BASE_URL}/products`;
                 const response = await fetch(url, {
                     method: "POST",
                     headers: {
+                        "CSRF-Token": csrfToken,
                         "Content-Type": "application/json",
+                        Authorization: `Bearer ${token}`,
                     },
                     body: JSON.stringify(updatedProduct),
+                    credentials: "include",
                 });
                 if (!response.ok) {
                     throw new Error("Failed to add product");
@@ -148,6 +158,12 @@ export default function ProductPage() {
             const url = `${process.env.REACT_APP_API_BASE_URL}/products/${productId}`;
             const response = await fetch(url, {
                 method: "DELETE",
+                headers: {
+                    "CSRF-Token": csrfToken,
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+                },
+                credentials: "include",
             });
             if (!response.ok) {
                 throw new Error("Failed to delete product");

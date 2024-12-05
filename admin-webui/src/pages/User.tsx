@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import UserDialog from "./user/UserDialog";
 import Layout from "../layout/dashboard";
+import useCsrfToken from "../hooks/useCsrfToken";
 
 export interface UserData {
     id: string;
@@ -36,6 +37,7 @@ export default function UserPage() {
     const [dialogOpen, setDialogOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const csrfToken = useCsrfToken();
 
     // Fetch users from API
     useEffect(() => {
@@ -77,13 +79,17 @@ export default function UserPage() {
 
     const updateUser = async (user: UserData) => {
         try {
+            const token = sessionStorage.getItem("token");
             const url = `${process.env.REACT_APP_API_BASE_URL}/users/${user.id}`;
             const response = await fetch(url, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
+                    "CSRF-Token": csrfToken,
+                    Authorization: `${token}`,
                 },
                 body: JSON.stringify(user),
+                credentials: "include",
             });
 
             const body = await response.json();
@@ -111,11 +117,14 @@ export default function UserPage() {
         if (action === "add" && updatedUser) {
             // 新增用户逻辑
             try {
+                const token = sessionStorage.getItem("token");
                 const url = `${process.env.REACT_APP_API_BASE_URL}/users`;
                 const response = await fetch(url, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
+                        "CSRF-Token": csrfToken,
+                        Authorization: `${token}`,
                     },
                     body: JSON.stringify(updatedUser),
                 });
@@ -147,6 +156,12 @@ export default function UserPage() {
             const url = `${process.env.REACT_APP_API_BASE_URL}/users/${userId}`;
             const response = await fetch(url, {
                 method: "DELETE",
+                headers: {
+                    "CSRF-Token": csrfToken,
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+                },
+                credentials: "include",
             });
 
             const body = await response.json();

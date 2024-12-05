@@ -27,6 +27,7 @@ function Recommendations() {
             }
 
             const data = await response.json();
+            console.log(response);
 
             const formattedProducts = data.data.map((product) => ({
                 id: product._id,

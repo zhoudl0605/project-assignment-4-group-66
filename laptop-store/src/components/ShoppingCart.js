@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState, useMemo } from 'react';
 import AppContext from './AppContext';
 import { jwtDecode } from 'jwt-decode';
+import useCsrfToken from './useCsrfToken';
 import {
     Box,
     Table,
@@ -31,9 +32,11 @@ function ShoppingCart() {
     });
     const [message, setMessage] = useState();
     const [order, setOrder] = useState({});
+    const csrfToken = useCsrfToken();
 
     useEffect(() => {
         fetchUserProfile();
+
     }, []);
 
     const total = useMemo(
@@ -93,15 +96,16 @@ function ShoppingCart() {
             })),
             userId: payload.id,
         };
-
         try {
             const response = await fetch(`${baseUrl}/orders`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: `Bearer ${token}`,
+                    'Authorization': `Bearer ${token}`,
+                    'CSRF-Token': csrfToken,
                 },
                 body: JSON.stringify(orderData),
+                credentials: 'include',
             });
 
             if (response.ok) {
@@ -144,7 +148,9 @@ function ShoppingCart() {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                'CSRF-Token': csrfToken,
             },
+            credentials: 'include',
             body: JSON.stringify(payment),
         });
 

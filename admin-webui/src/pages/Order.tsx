@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import Layout from "../layout/dashboard";
 import OrderDialog from "./order/OrderDialog";
+import useCsrfToken from "../hooks/useCsrfToken";
 
 export interface ProductData {
     productId: string;
@@ -47,6 +48,7 @@ export default function OrderPage() {
     const [dialogOpen, setDialogOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const csrfToken = useCsrfToken();
 
     // Fetch orders and product list
     useEffect(() => {
@@ -167,8 +169,10 @@ export default function OrderPage() {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `${token}`,
+                    "CSRF-Token": csrfToken,
                 },
                 body: JSON.stringify(order),
+                credentials: "include",
             });
 
             if (!response.ok) {
@@ -190,7 +194,9 @@ export default function OrderPage() {
                 method: "DELETE",
                 headers: {
                     Authorization: `${token}`,
+                    "CSRF-Token": csrfToken,
                 },
+                credentials: "include",
             });
             if (!response.ok) {
                 throw new Error("Failed to delete order");
@@ -221,10 +227,12 @@ export default function OrderPage() {
                 const response = await fetch(url, {
                     method: "POST",
                     headers: {
+                        "CSRF-Token": csrfToken,
                         "Content-Type": "application/json",
                         Authorization: `${token}`,
                     },
                     body: JSON.stringify(updatedOrder),
+                    credentials: "include",
                 });
                 if (!response.ok) {
                     throw new Error("Failed to add order");

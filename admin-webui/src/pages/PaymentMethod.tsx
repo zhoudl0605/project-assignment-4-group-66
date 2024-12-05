@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import Layout from "../layout/dashboard";
 import PaymentMethodDialog from "./paymentMethod/PaymentMethodDialog";
+import useCsrfToken from "../hooks/useCsrfToken";
 
 interface PaymentMethodData {
     id: string;
@@ -35,6 +36,7 @@ export default function PaymentMethodPage() {
     const [dialogOpen, setDialogOpen] = useState(false);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const csrfToken = useCsrfToken();
 
     // Fetch payment methods from API
     useEffect(() => {
@@ -84,8 +86,10 @@ export default function PaymentMethodPage() {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `${token}`,
+                    "CSRF-Token": csrfToken,
                 },
                 body: JSON.stringify(paymentMethod),
+                credentials: "include",
             });
 
             if (!response.ok) {
@@ -107,7 +111,10 @@ export default function PaymentMethodPage() {
                 method: "DELETE",
                 headers: {
                     Authorization: `${token}`,
+                    "Content-Type": "application/json",
+                    "CSRF-Token": csrfToken,
                 },
+                credentials: "include",
             });
             if (!response.ok) {
                 throw new Error("Failed to delete payment method");
@@ -140,8 +147,10 @@ export default function PaymentMethodPage() {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `${token}`,
+                        "CSRF-Token": csrfToken,
                     },
                     body: JSON.stringify(updatedPaymentMethod),
+                    credentials: "include",
                 });
                 if (!response.ok) {
                     throw new Error("Failed to add payment method");

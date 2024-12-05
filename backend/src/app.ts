@@ -1,27 +1,28 @@
-// Import necessary modules
 import dotenv from "dotenv";
 dotenv.config();
-console.log(process.env.DATABASE_HOST);
-
-import express from "express";
+import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import fs from "fs";
+import cookieParser from "cookie-parser";
+// @ts-ignore
+import xssClean from "xss-clean";
+// @ts-ignore
+import csrf from "csurf";
 import { errorHandler } from "./middlewares/errorHandler";
 import { DatabaseModule } from "./modules/db";
-import { Context, Next } from "koa";
 import { registerRoutes } from "./routes";
 
 async function main() {
     const app = express();
 
-    // Set up database connection
+    // Database Connection
     const db = DatabaseModule.getInstance();
     if (!(await db.testConnection())) {
         process.exit(1);
     }
 
-    // Set up CORS
+    // CORS
     app.use(
         cors({
             origin: (origin, callback) => {
@@ -37,15 +38,32 @@ async function main() {
             },
             credentials: true,
             methods: ["GET", "POST", "PUT", "DELETE"],
-            allowedHeaders: ["Content-Type", "Authorization"],
+            allowedHeaders: ["Content-Type", "Authorization", "CSRF-Token"],
         })
     );
 
-    // Parse request bodies
-    app.use(bodyParser.json());
+    // XSS Protection
+    app.use(xssClean());
+
+    // Body Parsers
+    app.use(express.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
-    // SSL configuration
+    // Cookie Parser & CSRF Protection
+    app.use(cookieParser());
+    app.use(csrf({ cookie: true }));
+    app.use((req: any, res: any, next: any) => {
+        res.cookie("XSRF-TOKEN", req.csrfToken()); // CSRF Token in cookie
+        res.locals.csrfToken = req.csrfToken(); // CSRF Token for views
+        next();
+    });
+
+    // Example route to get CSRF Token
+    app.get("/csrf-token", (req: any, res: Response) => {
+        res.json({ csrfToken: req.csrfToken() });
+    });
+
+    // SSL Configuration (Production)
     let server;
     if (process.env.NODE_ENV === "production") {
         const options = {
@@ -57,30 +75,25 @@ async function main() {
         server = require("http").createServer(app);
     }
 
-    // Apply custom error handler
-    app.use(
-        (
-            err: any,
-            req: express.Request,
-            res: express.Response,
-            next: express.NextFunction
-        ) => {
-            errorHandler(err, req, res, next);
-        }
-    );
-
-    app.use(express.json());
-    // Register routes
+    // Register Routes
     registerRoutes(app);
 
-    // Start the server
+    // Global Error Handler
+    app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+        if (err.code === "EBADCSRFTOKEN") {
+            res.status(403).json({ message: "Invalid CSRF Token" });
+        } else {
+            errorHandler(err, req, res, next);
+        }
+    });
+
+    // Start Server
     const PORT = process.env.PORT || 3000;
     server.listen(PORT, () => {
         console.log(`Server running on http://localhost:${PORT}`);
     });
 }
 
-// Run the application
 main().catch((err) => {
     console.error("Error occurred:", err);
     process.exit(1);

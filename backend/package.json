@@ -16,7 +16,9 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/mongoose": "^5.11.97",
     "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "csurf": "^1.11.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
@@ -24,9 +26,11 @@
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
     "mongoose": "^8.8.3",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "xss-clean": "^0.1.4"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
     "@types/jest": "^29.5.14",
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './LoginRegister.css';
+import useCsrfToken from './useCsrfToken';
 
 function LoginRegister() {
     const [name, setName] = useState('');
@@ -17,6 +18,7 @@ function LoginRegister() {
     const [isLogin, setIsLogin] = useState(true);
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const csrfToken = useCsrfToken();
 
     const handleAddressChange = (field, value) => {
         setAddress((prevAddress) => ({
@@ -52,10 +54,15 @@ function LoginRegister() {
 
         try {
             setIsSubmitting(true);
-            
+
             const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3000';
             if (isLogin) {
-                const response = await axios.post(`${baseUrl}/auth/login`, { email, password });
+                const response = await axios.post(`${baseUrl}/auth/login`, { email, password }, {
+                    headers: {
+                        'CSRF-Token': csrfToken,
+                    },
+                    withCredentials: true,
+                });
                 localStorage.setItem('token', response.data.data.token);
                 window.location.href = '/';
             } else {
@@ -64,6 +71,11 @@ function LoginRegister() {
                     email,
                     password,
                     address,
+                }, {
+                    headers: {
+                        'CSRF-Token': csrfToken,
+                    },
+                    withCredentials: true,
                 });
 
                 localStorage.setItem('token', response.data.data.token);

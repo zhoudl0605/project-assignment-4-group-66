@@ -1,10 +1,12 @@
 import { Box, Container, TextField, Button, Typography } from "@mui/material";
 import { useState } from "react";
+import useCsrfToken from "../hooks/useCsrfToken";
 
 function LoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const csrfToken = useCsrfToken();
 
     const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault(); // 阻止表单默认提交行为
@@ -21,7 +23,7 @@ function LoginPage() {
         }
 
         setError(""); // 清空错误
-        await loginAction(email, password);
+        await loginAction(email, password, csrfToken);
     };
 
     // check if user is already logged in
@@ -103,20 +105,24 @@ function LoginPage() {
     );
 }
 
-async function loginAction(email: string, password: string) {
+async function loginAction(email: string, password: string, csrfToken: string) {
     let url = process.env.REACT_APP_API_BASE_URL + "/auth/login";
 
     try {
         const res = await fetch(url, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+                "Content-Type": "application/json",
+                "CSRF-Token": csrfToken,
+            },
             body: JSON.stringify({ email, password, role: "admin" }),
+            credentials: "include",
         });
 
         if (res.ok) {
             const data = await res.json();
             const token = data.data.token;
-            sessionStorage.setItem("token", "Bearer " +  token);
+            sessionStorage.setItem("token", "Bearer " + token);
             window.location.href = "/"; // 重定向到首页
         } else {
             const errorData = await res.json();
