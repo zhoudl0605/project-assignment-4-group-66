@@ -1575,5 +1575,152 @@
             "Preinstalled with bilingual Windows 11 Home operating system that comes with intuitive user interface, faster performance, and tougher security features"
         ],
         "url": "https://www.bestbuy.ca/en-ca/product/bose-soundlink-flex-waterproof-bluetooth-wireless-speaker-chilled-lilac/17697642"
+    },
+    {
+        "name": "MSI Codex R Gaming PC - Black (Intel Core i5-12400F/16GB RAM/1TB SSD/GeForce RTX 4060/Windows 11)",
+        "price": 1099.99,
+        "category": "desktop",
+        "brand": "MSI",
+        "sku": "56",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17921/17921527.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921527_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921527_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921527_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921527_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/179/17921/17921527_5.jpg"
+        ],
+        "specs": [
+            "Effortlessly beat your opponents with this MSI Codex R2 gaming PC. Equipped with Intel Core i5-12400F processor and 16GB RAM, this machine delivers smooth and seamless performance for gaming and multitasking. Plus, the GeForce RTX 4060 graphics card further enhances your gaming experience with fluid visuals. The 1TB solid state drive offers ample storage space.",
+            "Intel Core i5-12400F processor and 16GB RAM enable enhanced multitasking capabilities and improved overall system performance",
+            "1TB solid state drive provides reliable and efficient storage space",
+            "NVIDIA GeForce RTX 4060 graphics card with 8GB video memory guarantees buttery smooth visuals",
+            "One RJ45 (2.5Gbps) port, Intel Wi-Fi 6E, and Bluetooth 5.2 provide high-speed connectivity options for networking tasks",
+            "One USB 3.2 Gen 1 Type A (5Gbps), one USB 3.2 Gen 1 Type C (5Gbps), one USB 3.2 Gen 1 Type-A (5Gbps ), four USB 2.0 (Rear) ports offer a wide range of options for connecting external devices",
+            "VR Ready capability allows you to use virtual reality gears or goggles",
+            "Air cooling system keeps the internal components at optimal temperature to minimize the risk of heat buildup and related damages",
+            "PC uses standardized components for easy upgrades",
+            "MSI's LED button lets you customize lighting effects for interesting gaming setup",
+            "Preinstalled with Windows 11 home operating system that features easy user interface, enhanced performance, and improved security"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/msi-codex-r-gaming-pc-black-intel-core-i5-12400f-16gb-ram-1tb-ssd-geforce-rtx-4060-windows-11/17921527"
+    },
+    {
+        "name": "Lenovo Legion Tower 7i Gaming PC - Storm Grey (Intel Core i7 14700KF/32GB RAM/1TB SSD/RTX 4070 Ti Super)",
+        "price": 2799.99,
+        "category": "desktop",
+        "brand": "Lenovo",
+        "sku": "57",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17745/17745162.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17745/17745162_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17745/17745162_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17745/17745162_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17745/17745162_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/177/17745/17745162_5.jpg"
+        ],
+        "specs": [
+            "Enjoy your gaming sessions and outplay your opponents easily with the Lenovo Legion Tower 7i gaming PC. Featuring Intel Core i7 processor 14700KF processor and 32GB DDR5 RAM, it provides lightning-fast performance for seamless gaming and multitasking. The 1TB SSD offer quick responsiveness and ample storage space for your files and applications.",
+            "Intel Core i7 processor 14700KF processor with 2.5GHz speed and 32GB DDR5 RAM provide ample processing power to effortlessly handle graphic-heavy games and video editing software",
+            "1TB SSD offers quick load times and system responsiveness",
+            "NVIDIA GeForce RTX 4070 Ti SUPER graphics card with 16GB video memory offers excellent visual quality and improved gaming performance",
+            "Integrated Wi-Fi 6E (802.11AX) 2x2, 2 2.5GbE, Realtek RTL8125BG gaming Ethernet, and integrated Bluetooth 5.2 offer various options for high-speed connectivity for networking tasks",
+            "Four USB 2.0 Type A, six USB 3.2 Gen 1 Type A, one USB 3.2 Gen 2 Type A, one USB 3.2 Gen 2 Type C and one HDMI 2.1 FRL through GPU3 x DP 1.4a through GPU ports provide multiple options to connect external devices",
+            "180W air cooling system prevents overheating and keeps the temperature of the internal components within optimal heating limits for improved performance",
+            "Enmeshed front bezel provides better airflow and enhances the look of the PC",
+            "Pre-loaded with Windows 11 Home operating system that comes with an user-friendly interface, improved performance, and advanced security features",
+            "Wired keyboard and mouse are included for easy installation"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/lenovo-legion-tower-7i-gaming-pc-storm-grey-intel-core-i7-14700kf-32gb-ram-1tb-ssd-rtx-4070-ti-super/17745162"
+    },
+    {
+        "name": "MSI Aegis R Gaming PC (AMD Ryzen R7-8700F/32GB RAM/1TB SSD/RTX 4070/Windows 11)",
+        "price": 1799.99,
+        "category": "desktop",
+        "brand": "MSI",
+        "sku": "58",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/184/18475/18475093.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/184/18475/18475093_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/184/18475/18475093_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/184/18475/18475093_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/184/18475/18475093_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/184/18475/18475093_4.jpg"
+        ],
+        "specs": [
+            "Turbocharge your gameplay with the MSI Aegis R gaming PC. Powered by an AMD Ryzen R7-8700F processor, this PC delivers lightning-fast performance. With 32GB of RAM, multitasking becomes a breeze, letting you conquer any game without lag. The 1TB SSD ensures ample storage for games and files, while the NVIDIA GeForce RTX 4070 graphics card brings stunning visuals to life.",
+            "AMD R7-8700F processor and 32GB DDR5 RAM ensure lightning-fast multitasking and seamless gameplay",
+            "1TB solid state drive offers rapid load times and ample storage for all your favourite games and files",
+            "NVIDIA GeForce RTX 4070 graphics card with 12GB video memory delivers stunning visuals and smooth performance for an immersive gaming experience",
+            "Integrated AMD Wi-Fi 6E and Bluetooth 5.3 ensure fast, reliable connections for seamless online gaming and device pairing",
+            "Three USB 3.2 Gen 1 Type-A (5Gbps), four USB 2.0 (Rear), one USB 3.2 Gen 1 Type A (5Gbps), one USB 3.2 Gen 1 Type C (5Gbps), one RJ45 (2.5GbE) Realtek RTL8125B, one mic-in, and one headphone-out offer versatile connectivity options for all your peripherals",
+            "Air cooling system ensures efficient temperature management to keep your system running smoothly during intense gaming sessions",
+            "VR-ready design allows you to explore virtual world with stunning realism and responsiveness",
+            "Pre-loaded with Windows 11 operating system for a modern interface and access to the latest features and gaming enhancements",
+            "Comes with keyboard and mouse"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/msi-aegis-r-gaming-pc-amd-ryzen-r7-8700f-32gb-ram-1tb-ssd-rtx-4070-windows-11/18475093"
+    },
+    {
+        "name": "ASUS ROG G22CHR Gaming PC - Grey (Intel Core i7-14700F/2TB SSD/32GB RAM/RTX 4070/Win 11)",
+        "price": 2999.99,
+        "category": "desktop",
+        "brand": "ASUS",
+        "sku": "59",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/176/17685/17685913.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/176/17685/17685913_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/176/17685/17685913_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/176/17685/17685913_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/176/17685/17685913_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/176/17685/17685913_5.jpg"
+        ],
+        "specs": [
+            "Powerful build in a compact size, the ASUS ROG G22CHR gaming PC easily fits in limited spaces. Equipped with Intel Core i7-14700F processor, 32GB DDR5 RAM, and NVIDIA GeForce RTX4070 graphics card, this machine delivers extremely powerful performance for smooth gaming and multitasking. With 2TB solid state drive, you will have more space for your storage needs.",
+            "14th Generation Intel Core i7-14700F processor and 32GB DDR5 RAM make this gaming machine very powerful",
+            "1TB PCIe 4.0 solid state drive and 1TB PCIe 4.0 performance solid state drive combine to provide ample and efficient storage space for your files, games, and media",
+            "Dedicated NVIDIA GeForce RTX4070 GPU and dual 12GB GDDR6X video memory guarantee extremely smooth videos for games and playback",
+            "Realtek RTL8125BG 10/100/1000/2500GbE Ethernet port, integrated Wi-Fi 6 (802.11ax) (dual band) 2x2, and Bluetooth 5.2 wireless card offer multiple options for efficient networking",
+            "One 3.5mm combo audio jack, one USB 3.2 Gen 2 Type-C, two USB 3.2 Gen 2 Type-A port at the front, and one RJ45 Gigabit Ethernet, one HDMI 2.0a, three audio jacks, two USB 2.0 Type-A, and two USB 3.2 Gen 1 Type-A at the rear provide a wide range of options for connecting external devices",
+            "Compact size measuring just 4.53\" wide and 11.3\" tall, makes this PC ideal for small spaces",
+            "Air cooling system keeps the components at optimal temperature to prevent overheating and related impact on performance",
+            "VR-ready capability lets you use virtual reality gears or goggles",
+            "RGB lighting simply enhances the aesthetics of your gaming setup",
+            "Dolby Atmos audio support makes it possible for you to enjoy rich audio"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-rog-g22chr-gaming-pc-grey-intel-core-i7-14700f-2tb-ssd-32gb-ram-rtx-4070-win-11-only-at-best-buy/17685913"
+    },
+    {
+        "name": "ASUS 27\" All-in-One PC - White (AMD Ryzen 5 7520U/512GB SSD/16GB RAM/Win 11)",
+        "price": 1299.99,
+        "category": "desktop",
+        "brand": "ASUS",
+        "sku": "60",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/171/17197/17197496.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/171/17197/17197496_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/171/17197/17197496_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/171/17197/17197496_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/171/17197/17197496_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/100x100/171/17197/17197496_5.jpg"
+        ],
+        "specs": [
+            "Step into a new era of simplicity and performance with the ASUS 27\" All-in-One PC. Backed by an AMD Ryzen 5 7520U processor, 16GB LPDDR5 RAM, and 512GB SSD, it can keep up with all your demanding tasks. Its 27\" NanoEdge display and ASUS SonicMaster Premium audio make a great combo to elevate your entertainment experience.",
+            "2.8GHz AMD Ryzen 5 7520U processor combined with 16GB LPDDR5 RAM ensures swift performance, handling multitasking with ease",
+            "512GB M.2 NVMe PCIe 3.0 solid state drive provides ample storage space and enables fast data access and quicker boot times",
+            "27-inch Full HD (1920x1080) NanoEdge anti-glare display, with a 100% sRGB colour gamut, provides a visually immersive viewing experience",
+            "Realtek RTL8111H 10/100/1000 GbE ensures a stable and high-speed wired network connection",
+            "Wi-Fi 6E (802.11ax) for lightning-fast wireless internet and Bluetooth 5.3 for seamless device pairing and data transfer",
+            "One USB 2.0 Type A port, three USB 3.2 Gen 1 ports, one USB 2.0 port, one USB 3.2 Type C Gen 1 port, one microphone/headphone combo jack, one Kensington lock, one HDMI-in 1.4 port, one HDMI-out 1.4 port, and one RJ45 LAN port offer versatility for connecting all your devices and peripherals",
+            "720p HD camera with shutter guarantees crisp and secure video calls, protecting your privacy when not in use",
+            "Windows 11 Home comes pre-installed, providing access to the latest features and handy tools in a user-friendly interface",
+            "A wireless keyboard and a wireless optical mouse are included for easy setup"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/asus-27-all-in-one-pc-white-amd-ryzen-5-7520u-512gb-ssd-16gb-ram-win-11-only-at-best-buy/17197496"
     }
 ]
