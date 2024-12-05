@@ -22,14 +22,17 @@ async function main() {
         process.exit(1);
     }
 
+    const allowedOrigins = process.env.ALLOWED_ORIGINS
+        ? process.env.ALLOWED_ORIGINS.split(",")
+        : ["http://localhost", "http://127.0.0.1"];
+
     // CORS
     app.use(
         cors({
             origin: (origin, callback) => {
                 if (
                     !origin ||
-                    origin.startsWith("http://localhost") ||
-                    origin.startsWith("http://127.0.0.1")
+                    allowedOrigins.some((allowed) => origin.startsWith(allowed))
                 ) {
                     callback(null, true);
                 } else {
