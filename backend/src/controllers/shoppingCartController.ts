@@ -3,7 +3,6 @@ import { ShoppingCartService } from "../services/shoppingCart";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class ShoppingCartController {
-    // 获取购物车信息
     public static async getShoppingCartController(
         req: Request,
         res: Response,
@@ -32,7 +31,6 @@ export class ShoppingCartController {
         }
     }
 
-    // 更新购物车
     public static async postShoppingCartController(
         req: Request,
         res: Response,
@@ -76,7 +74,6 @@ export class ShoppingCartController {
         }
     }
 
-    // 清空购物车
     public static async clearShoppingCartController(
         req: Request,
         res: Response,
@@ -114,7 +111,6 @@ export class ShoppingCartController {
         }
     }
 
-    // 添加/更新购物车商品
     public static async putShoppingCartController(
         req: Request,
         res: Response,
@@ -138,7 +134,6 @@ export class ShoppingCartController {
 
             const newProducts = body.products;
 
-            // 更新或添加新商品
             for (const newProduct of newProducts) {
                 const existingProduct = shoppingCart.products.find(
                     (p: any) => p.productId === newProduct.productId
@@ -172,7 +167,6 @@ export class ShoppingCartController {
         }
     }
 
-    // 删除购物车中指定商品
     public static async deleteShoppingCartItemController(
         req: Request,
         res: Response,

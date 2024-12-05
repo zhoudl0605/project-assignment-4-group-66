@@ -1,10 +1,10 @@
 module.exports = {
     preset: 'ts-jest',
-    testEnvironment: 'node', // 或 'jsdom'，根据测试目标选择
+    testEnvironment: 'node',
     moduleFileExtensions: ['ts', 'js'],
-    testMatch: ['**/__tests__/**/*.test.ts',], // 匹配测试文件
+    testMatch: ['**/__tests__/**/*.test.ts',],
     transform: {
-        '^.+\\.ts$': 'ts-jest', // 转换 TypeScript
+        '^.+\\.ts$': 'ts-jest',
     },
-    testPathIgnorePatterns: ['/node_modules/', '/dist/'], // 忽略这些路径
+    testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };

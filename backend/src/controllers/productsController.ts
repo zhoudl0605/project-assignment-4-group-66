@@ -3,7 +3,6 @@ import { ProductService } from "../services/productService";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class ProductsController {
-    // 创建产品
     public static async postProductsController(
         req: Request,
         res: Response,
@@ -29,7 +28,6 @@ export class ProductsController {
         }
     }
 
-    // 获取产品列表
     public static async getProductsController(
         req: Request,
         res: Response,

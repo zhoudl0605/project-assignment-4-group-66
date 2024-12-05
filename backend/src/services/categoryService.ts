@@ -2,7 +2,6 @@ import { CategoryDao } from "../dao/categoryDao";
 import { ICategory, CategoryModel } from "../models/category";
 
 export class CategoryService {
-    // 创建分类
     public async createCategory(params: {}): Promise<ICategory> {
         try {
             return new CategoryModel(params);
@@ -12,7 +11,6 @@ export class CategoryService {
         }
     }
 
-    // 获取分类列表
     public async getCategories(query: {}): Promise<ICategory[]> {
         try {
             const categoryDao = new CategoryDao();
@@ -23,7 +21,6 @@ export class CategoryService {
         }
     }
 
-    // 根据 ID 获取分类
     public async getCategoryById(id: string): Promise<ICategory | null> {
         try {
             const categoryDao = new CategoryDao();

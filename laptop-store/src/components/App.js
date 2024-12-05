@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import Checkout from './Checkout';
 import Login from './Login';
+import Order from './Order';
+import OrderList from './OrderList';
 import AdminDashboard from './AdminDashboard';
 import { AppProvider } from './AppContext';
 
@@ -34,30 +35,32 @@ function AppWithRouter() {
 // Main App Component
 function App({ handleSearch, searchQuery }) {
     return (
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            {/* Navbar */}
             <Navbar onSearch={handleSearch} />
-            <Routes>
-                {/* Ensure the routes are correct */}
-                <Route path="/" element={<Home />} />
-                <Route path="/products" element={<ProductList searchQuery={searchQuery} />} />
-                <Route path="/products/desktops" element={<ProductList category="desktops" />} />
-                <Route path="/products/laptops" element={<ProductList category="laptops" />} />
-                <Route path="/products/accessories" element={<ProductList category="accessories" />} />
-                <Route path="/products/:id" element={<ProductDetail />} />
-                <Route path="/cart" element={<ShoppingCart />} />
-                <Route path="/checkout" element={<Checkout />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/admin" element={<AdminDashboard />} />
-            </Routes>
+
+            {/* Main Content */}
+            <div style={{ flex: 1 }}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/products" element={<ProductList searchQuery={searchQuery} />} />
+                    <Route path="/products/desktops" element={<ProductList category="desktops" />} />
+                    <Route path="/products/laptops" element={<ProductList category="laptops" />} />
+                    <Route path="/products/accessories" element={<ProductList category="accessories" />} />
+                    <Route path="/products/:id" element={<ProductDetail />} />
+                    <Route path="/cart" element={<ShoppingCart />} />
+                    <Route path="/checkout" element={<Checkout />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/admin" element={<AdminDashboard />} />
+                    <Route path="/orders/:id" element={<Order />} />
+                    <Route path="/orders" element={<OrderList />} />
+                </Routes>
+            </div>
+
+            {/* Footer */}
             <Footer />
         </div>
     );
 }
-
-// Render Root Component
-ReactDOM.render(
-    <AppWithRouter />,
-    document.getElementById('root')
-);
 
 export default AppWithRouter;

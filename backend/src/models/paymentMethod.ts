@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 
 export interface IPaymentMethod extends Document {
     userId: Types.ObjectId;
-    cardType: string;
+    cardType?: string;
     cardNumber: string;
     cardName: string;
     expirationDate: string;
@@ -20,14 +20,13 @@ const PaymentMethodSchema: Schema = new Schema(
         },
         cardType: {
             type: String,
-            required: true,
-            enum: ["Visa", "MasterCard", "AmericanExpress"], // 限制卡片类型
+            enum: ["Visa", "MasterCard", "AmericanExpress"], 
         },
         cardNumber: {
             type: String,
             required: true,
             validate: {
-                validator: (v: string) => /^\d{16}$/.test(v), // 简单卡号格式验证
+                validator: (v: string) => /^\d{16}$/.test(v), 
                 message: (props: any) =>
                     `${props.value} is not a valid card number!`,
             },
@@ -41,7 +40,7 @@ const PaymentMethodSchema: Schema = new Schema(
             type: String,
             required: true,
             validate: {
-                validator: (v: string) => /^\d{2}\/\d{2}$/.test(v), // 格式 MM/YY
+                validator: (v: string) => /^\d{2}\/\d{2}$/.test(v), 
                 message: (props: any) =>
                     `${props.value} is not a valid expiration date!`,
             },
@@ -52,7 +51,7 @@ const PaymentMethodSchema: Schema = new Schema(
         },
     },
     {
-        timestamps: true, // 自动生成 createdAt 和 updatedAt
+        timestamps: true, 
         toJSON: { virtuals: true },
         toObject: { virtuals: true },
     }

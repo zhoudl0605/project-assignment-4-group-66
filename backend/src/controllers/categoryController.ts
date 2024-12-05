@@ -3,7 +3,6 @@ import { CategoryService } from "../services/categoryService";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 
 export class CategoryController {
-    // 创建分类
     public static async postCategoryController(
         req: Request,
         res: Response,
@@ -14,7 +13,6 @@ export class CategoryController {
 
         try {
             const category = await categoryService.createCategory(body);
-            // 验证分类数据
             const errors = category.validateSync();
             if (errors) {
                 console.error(
@@ -27,7 +25,6 @@ export class CategoryController {
                 } as RequestErrorResponse);
             }
 
-            // 保存分类
             await category.save();
 
             return res.status(201).json({
@@ -50,7 +47,6 @@ export class CategoryController {
         }
     }
 
-    // 获取分类列表
     public static async getCategoriesController(
         req: Request,
         res: Response,
@@ -75,7 +71,6 @@ export class CategoryController {
         }
     }
 
-    // 获取分类
     public static async getCategoryController(
         req: Request,
         res: Response,

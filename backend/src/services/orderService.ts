@@ -16,7 +16,7 @@ export class OrderService {
 
     public async getOrders(
         userId: string | null,
-        limit: number = 0,
+        limit?: number,
         skip: number = 0
     ): Promise<DbQueryResult<IOrder[]>> {
         return await this.orderDao.getOrders(userId, limit, skip);

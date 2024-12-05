@@ -137,39 +137,32 @@ describe("ProductService", () => {
             name: "Updated Product",
         } as unknown as IProduct;
 
-        // 模拟成功返回
         productDaoMock.updateProduct.mockResolvedValue(updatedProduct);
 
-        // 调用 productService 的 updateProduct 方法
         const result = await productService.updateProduct("1", {
             name: "Updated Product",
         });
 
-        // 验证 productDao 的 updateProduct 是否正确被调用
         expect(productDaoMock.updateProduct).toHaveBeenCalledWith("1", {
             name: "Updated Product",
         });
 
-        // 验证返回值是否符合预期
         expect(result).toMatchObject({
             name: "Updated Product",
         });
     });
 
     it("should throw an error when updating a product with invalid data", async () => {
-        // 模拟失败返回
         productDaoMock.updateProduct.mockRejectedValue(
             new Error("Failed to update product")
         );
 
-        // 调用 productService 的 updateProduct 方法，验证是否抛出错误
         await expect(
             productService.updateProduct("invalid-id", {
                 name: "Failed Update",
             })
         ).rejects.toThrow("Failed to update product: Failed to update product");
 
-        // 验证 productDao 的 updateProduct 是否正确被调用
         expect(productDaoMock.updateProduct).toHaveBeenCalledWith(
             "invalid-id",
             {

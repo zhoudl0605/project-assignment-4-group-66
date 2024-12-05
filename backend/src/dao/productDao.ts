@@ -7,7 +7,7 @@ export class ProductDao {
         skip?: number;
         category?: string;
     }): Promise<IProduct[]> {
-        const { limit = 1000, skip = 0, category } = query;
+        const { limit = null, skip = 0, category } = query;
         const filter: any = {};
 
         if (category) {

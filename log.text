@@ -1,0 +1,510 @@
+commit 17c6740e1436b8975c92bdc0ad188f1e76d833a1
+Merge: cce4bb2 4db1e35
+Author: Dinglun (Alex) Zhou <30737628+zhoudl0605@users.noreply.github.com>
+Date:   Wed Dec 4 21:15:37 2024 -0500
+
+    Merge pull request #2 from zhoudl0605/rebase-bell
+    
+    Rebase bell
+
+commit 4db1e35cd4cb9e629dfdfa2eecb9b54e73937b11
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:14:58 2024 -0500
+
+    remove not needed file
+
+commit a0dbcf62232a62660c1781d6fa489215d5bd97a1
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:14:08 2024 -0500
+
+    stop tracking .env
+
+commit 8c5e5eb4718cfd3829a9f242c4549194c675c44d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:13:24 2024 -0500
+
+    remove not needed file
+
+commit c9d073b82929576fc4e698065eb740488ba7a54d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:11:00 2024 -0500
+
+    put back fixed file name'
+
+commit ac57ad1adffdcc0a94076a5794bc3337e2803ab7
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:09:21 2024 -0500
+
+    remove messed up file name'
+
+commit b373dc144678d8d6c4459de0422a662da6eb7446
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 21:04:54 2024 -0500
+
+    remove unneeded code
+
+commit dd0c0afc3d09f49b0c51a9625af7ff5072f2345f
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 20:33:32 2024 -0500
+
+    update gitignore
+
+commit 03c1744cabca19eaf5bd7bba5d8ed720a818f385
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Wed Dec 4 18:11:52 2024 -0500
+
+    clean up
+
+commit 60b0b39cc807fc805479d537e54e86204753d36f
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Tue Nov 26 13:38:54 2024 -0500
+
+    Your commit message here
+
+commit 06bf2f75b565e1ae1d4f045e4acef033abd7eed8
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Sat Nov 30 18:28:52 2024 -0500
+
+    Your commit message
+
+commit 72a670c5bc581c0a4adaa90adb0199db891e4dc7
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Tue Nov 26 15:46:14 2024 -0500
+
+    Replace content of front-end-bell with new version
+
+commit c8b07bdc820bd828799d7d8eee0ec92f2ec12bda
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Tue Nov 26 13:38:54 2024 -0500
+
+    Initial commit or update files
+
+commit cce4bb2098c3e5fbc20afa71d98ee95c28c51be4
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 20:20:55 2024 -0500
+
+    fix admin pannel
+
+commit b999dc987dfb8ffe17f45cdfeb335030e3d8cccb
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 17:47:29 2024 -0500
+
+    fix admin pannel bug
+
+commit f7fc8b2189ce2c8c2c75ca6f77d77b7289e20e2d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 16:36:01 2024 -0500
+
+    fix errors
+
+commit 8bd671242fd52febebe188849b0cb4472d308ffc
+Author: root <root@vultr.guest>
+Date:   Wed Dec 4 20:45:15 2024 +0000
+
+    update lockfile
+
+commit 9cb53d6c2108f220df3579011b9311afca9a780e
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 15:07:15 2024 -0500
+
+    split product data
+
+commit 5440323c622bb7f2c4e82afa8a67648346421d74
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 14:53:58 2024 -0500
+
+    remove extra log
+
+commit 37f616026119af8d1374cdb63ba10b4740c2f509
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Dec 4 14:34:27 2024 -0500
+
+    add unit test
+
+commit fbee6e4fb2b640b1c4134555b8132b6b2fa1fd90
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 19:52:23 2024 -0500
+
+    remove track .env
+
+commit 48589cf6396fbc07d3c6f271dfb48cd1f0a6bd4d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 19:51:42 2024 -0500
+
+    try to connect backend with front
+
+commit 0950ae299f8b36e4612e8b8f16792a3e3ec460c2
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 18:29:43 2024 -0500
+
+    git errors
+
+commit fc37b7171e4dd8caa6d3ee56341b26d9dfa10d7e
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 18:09:09 2024 -0500
+
+    install packages'
+
+commit 220dd22eca01be499e9b1df3d8788fb16d3eb50d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 18:04:20 2024 -0500
+
+    put resolved conflict file back
+
+commit 5fee0ba849ac71f0857c5bfb51d457b734c74a22
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 18:03:32 2024 -0500
+
+    remove conflict file
+
+commit a6a28634db6d9faa1693e732c5dd1f857116ce1f
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 18:01:49 2024 -0500
+
+    rever order service conflict
+
+commit 2d498c193124cfa81994af8d4af06c486aa57a9b
+Merge: 16cd1eb fa43fad
+Author: Dinglun (Alex) Zhou <30737628+zhoudl0605@users.noreply.github.com>
+Date:   Tue Dec 3 18:01:01 2024 -0500
+
+    Merge pull request #1 from zhoudl0605/debug
+    
+    merge laptop-store
+
+commit fa43fad7d1c82626e1f47ab38913e7dd8c5b19ab
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Dec 3 17:59:55 2024 -0500
+
+    fix file name
+
+commit e438708399b13c394a1be5c1972a4a00f0272c15
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Sat Nov 30 18:57:54 2024 -0500
+
+    Updated components with latest changes
+
+commit 690d306731ec5ca09524c57abdc1e85ba816eb59
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Sat Nov 30 18:28:52 2024 -0500
+
+    Your commit message
+
+commit 7604b37f5cd5862717365135bbaaaa3786ae7808
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Tue Nov 26 15:46:14 2024 -0500
+
+    Replace content of front-end-bell with new version
+
+commit 6fa40d2e436886d1e6eebee2e70488f152d30820
+Author: Heyu Shen <hshen232@uwo.ca>
+Date:   Tue Nov 26 13:38:54 2024 -0500
+
+    Initial commit or update files
+
+commit 16cd1eba58197330cad200027c8ce82f70346cf4
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Mon Dec 2 14:55:09 2024 -0500
+
+    add payment email notification
+
+commit 51d7deefebfce8de25fb1e1420d9af48a4bf2f83
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:56:06 2024 -0500
+
+    Update product 46-50
+
+commit 76db16465bc944f0909c1bc36a34588ec880f66c
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:55:43 2024 -0500
+
+    Update product 41-45
+
+commit c2587f9c2997faace22e056da8cbaa113a96aa76
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:55:05 2024 -0500
+
+    Update product 36-40
+
+commit 9eea4b6292e7732d51c4d09f06e1b991676cad5f
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:54:24 2024 -0500
+
+    Update product 31-35
+
+commit a642244f87ddfde26f6e907ce0309eb1d3230dc4
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:53:35 2024 -0500
+
+    Update product 25-30
+
+commit 03ef455f672477b823324b72fe456643198686c7
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:52:57 2024 -0500
+
+    Update product 21-25
+
+commit 6a365359cefe19276ae7edbcecab9331cda114c2
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:52:07 2024 -0500
+
+    Update product 15-20
+
+commit 7cf98c3911ec96bc3707d0e7c8e9b6a7c78ede89
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:51:14 2024 -0500
+
+    Update product 11-15
+
+commit 42ab6811301bcdf4e3dc435b1a93d8f2d742af74
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:49:54 2024 -0500
+
+    Update product 6-10
+
+commit b019f1632a14e10e6936c7f3752218d8c441553b
+Author: ShizhongS <sshang8@uwo.ca>
+Date:   Sun Dec 1 18:48:11 2024 -0500
+
+    Update product 1-5
+
+commit 9330584252eb9aa3054730553a9dcbe1c223db01
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Dec 1 18:32:53 2024 -0500
+
+    add emailer
+
+commit b14df60813131591dd61ff8f2db592d669c9c7ac
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Dec 1 09:00:33 2024 -0500
+
+    update shopping services
+
+commit ee77dd27f2a94bf5e215e58d8abdb446a2e82b89
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Dec 1 09:00:15 2024 -0500
+
+    update code
+
+commit a82b233aa327b2edb0e765101805bf76bc2ac365
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Dec 1 04:08:56 2024 -0500
+
+    update project structure
+
+commit f3fe3936902dd7d61e47ba00a4f7648e3fe514ed
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Dec 1 04:08:33 2024 -0500
+
+    update project structure
+
+commit 5fb2c6a500764af1eef3411aaeb7b2fbe00ae6dc
+Author: root <root@vultr.guest>
+Date:   Sat Nov 30 17:03:11 2024 +0000
+
+    rename service file name
+
+commit 9d5be2dc3df466e0a4c110b1a5597ff9a14d6da1
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 11:59:02 2024 -0500
+
+    remove dist folder
+
+commit b43bf5468d194f539cd5e0f995ca6a4a619e2192
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 11:58:32 2024 -0500
+
+    edit gitignore
+
+commit 0669b7aaa0a09de432595eb1520f4b44d8591026
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 11:03:21 2024 -0500
+
+    fix user password
+
+commit 803949eaf537c5c5b653ca3c5bed60341ad5ebfe
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 09:19:06 2024 -0500
+
+    fix signup request
+
+commit d25014c81390e67ef47c0653ec319f2766208568
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 08:54:16 2024 -0500
+
+    finish backend pm2 config
+
+commit 6849ec684fd7bfd932cb2ceb25434b5d01f2aa4a
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 08:38:33 2024 -0500
+
+    upload compailed backend
+
+commit c057ee31bcd10993e82be1b03ca3a6453dcc7583
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 08:27:01 2024 -0500
+
+    load auth source from config
+
+commit 2bc53c212eb05c85d09604cb304acbd0ca7d08cf
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sat Nov 30 08:12:59 2024 -0500
+
+    add deploy condig
+
+commit 9f87355282e5c7c87501260c82f9989a8ce382b1
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Thu Nov 28 12:06:58 2024 -0500
+
+    add pm2 config
+
+commit 6550a7f9bdb4b576eacc59e628c797cb220f73e6
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Nov 27 16:31:01 2024 -0500
+
+    untrack .env
+
+commit f976732071d30aad1e4a07b90d9d8d3ebde1dbf1
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Nov 27 16:13:22 2024 -0500
+
+    update schema
+
+commit bcc7dbfa0f5a03a1b4ef52c5cd5961801f959334
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Nov 27 16:12:15 2024 -0500
+
+    remove duplicate folder
+
+commit 7b1cea567e4996592de94129e8f1b1a4ec7ea125
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Nov 27 16:10:55 2024 -0500
+
+    add laptop store
+
+commit ab5ef94b3ac9e09074b43a61ead66b00ed5f8dd3
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Wed Nov 27 16:04:56 2024 -0500
+
+    add admin contral pannel
+
+commit 362630307d1ffeebd2ea30d075ca105c59384f92
+Merge: 791fc6d d3a254e
+Author: Shizhong Shang <sshang8@uwo.ca>
+Date:   Sun Nov 24 01:50:47 2024 -0500
+
+    Merge branch 'main' of https://github.com/zhoudl0605/ECE9065
+
+commit 791fc6daeb2d5236b3939b574c9326897d805760
+Author: Shizhong Shang <sshang8@uwo.ca>
+Date:   Sun Nov 24 01:50:30 2024 -0500
+
+    all product data
+
+commit d3a254e247b18d1aecf15e53231e5f92156ba868
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Thu Nov 21 14:45:35 2024 -0500
+
+    add beackend services
+
+commit 4d013a6383c5d4bafb962cd310ff869f4591ea70
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Mon Nov 18 13:47:54 2024 -0500
+
+    fix file names and create controllers
+
+commit a3620819d167702ae04516184a93c1ce52f3c818
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Sun Nov 17 13:08:02 2024 -0500
+
+    update shopping services
+
+commit f89db6f825dae165d7f1c31e27142ab3e238e7cc
+Author: Shizhong Shang <sshang8@uwo.ca>
+Date:   Fri Nov 15 12:06:43 2024 -0500
+
+    product.json
+
+commit 9700efaeb24ae2550d2bf7d16dbc56029f4ab359
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Nov 12 14:14:49 2024 -0500
+
+    add docker-compose
+
+commit be82af6fb5b3cbdadcd23422f42b641487649a88
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Tue Nov 12 14:14:19 2024 -0500
+
+    add backend data models
+
+commit 932241590ad3a0d73806caa784a3330070d51bad
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Mon Nov 11 16:35:24 2024 -0500
+
+    add koa routes
+
+commit 312089862dfc88f9be55ef2f1761d4b51cd884e1
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Mon Nov 11 16:23:10 2024 -0500
+
+    set project with TS
+
+commit 0b90323406309be64eb9407d7341e75c062eda79
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Mon Nov 11 13:04:43 2024 -0500
+
+    add admin web ui
+
+commit 5ae50d74ded616d3a4bc5fd9528b4f4ddbafe311
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 16:32:49 2024 -0500
+
+    add backend template project
+
+commit 436f02a73c6ced2252e50424a5e6ef95a29f63af
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 16:20:47 2024 -0500
+
+    add backend ts
+
+commit 0fe2a3e04cfb0a1045949d6425547f51e18ae146
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 16:19:29 2024 -0500
+
+    add backend project
+
+commit 172c688c3b301de8edae786252b437f0977a8364
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 16:02:57 2024 -0500
+
+    add socket.io client
+
+commit a235a9dda6db536f03595a7845b2d0285ccd3956
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 16:01:33 2024 -0500
+
+    update project
+
+commit 94665c597408f6ba5df85900eed29bbc7d2eb79d
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 15:59:27 2024 -0500
+
+    add front end project
+
+commit f9a527653544576075e42c4ce8426da959a94764
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 15:54:53 2024 -0500
+
+    update project structure
+
+commit 28cd28ef4756800129fca884ac91d6a2b759a793
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 15:08:57 2024 -0500
+
+    update readme
+
+commit 22e94b54cb82592edce7dda2d37e44963c780bea
+Author: Dinglun (Alex) Zhou <alex.zhou0605@gmail.com>
+Date:   Fri Nov 8 15:04:23 2024 -0500
+
+    first commit

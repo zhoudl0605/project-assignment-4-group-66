@@ -79,10 +79,8 @@ export class PaymentMethodsController {
             });
         }
 
-        // 检查角色权限
         let targetUserId = body.userId;
         if (user.role !== UserRole.ADMIN) {
-            // 普通用户只能创建属于自己的支付方式
             targetUserId = user._id;
         }
 
@@ -92,7 +90,7 @@ export class PaymentMethodsController {
             const paymentMethod =
                 await paymentMethodService.createPaymentMethod({
                     ...body,
-                    userId: targetUserId, // 使用最终的用户 ID
+                    userId: targetUserId, 
                 });
 
             const errors = paymentMethod.validateSync();
@@ -191,7 +189,6 @@ export class PaymentMethodsController {
                 });
             }
 
-            // 确保普通用户只能更新属于自己的支付方式
             if (
                 user.role !== UserRole.ADMIN &&
                 paymentMethod.userId.toString() !== user._id.toString()
@@ -257,7 +254,6 @@ export class PaymentMethodsController {
                 });
             }
 
-            // 确保普通用户只能删除属于自己的支付方式
             if (
                 user.role !== UserRole.ADMIN &&
                 paymentMethod.userId.toString() !== user._id.toString()

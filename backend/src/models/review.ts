@@ -24,17 +24,17 @@ const ReviewSchema: Schema = new Schema(
         rating: {
             type: Number,
             required: true,
-            min: 1, // 最小评分
-            max: 5, // 最大评分
+            min: 1, 
+            max: 5, 
         },
         content: {
             type: String,
-            trim: true, // 去掉多余空格
-            maxlength: 500, // 限制内容长度
+            trim: true, 
+            maxlength: 500,
         },
     },
     {
-        timestamps: true, // 自动生成 createdAt 和 updatedAt
+        timestamps: true, 
     }
 );
 

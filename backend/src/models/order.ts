@@ -69,16 +69,16 @@ OrderSchema.pre<IOrder>("save", function (next) {
         0
     );
 
-    this.subTotal = parseFloat(subTotal.toFixed(2)); // 保留两位小数
+    this.subTotal = parseFloat(subTotal.toFixed(2)); 
 
     const taxRate = 0.13;
-    this.tax = parseFloat((subTotal * taxRate).toFixed(2)); // 保留两位小数
+    this.tax = parseFloat((subTotal * taxRate).toFixed(2)); 
 
     next();
 });
 
 OrderSchema.virtual("total").get(function (this: IOrder) {
-    return parseFloat((this.subTotal + this.tax).toFixed(2)); // 保留两位小数
+    return parseFloat((this.subTotal + this.tax).toFixed(2));
 });
 
 export const OrderModel = mongoose.model<IOrder>("Order", OrderSchema);

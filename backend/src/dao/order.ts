@@ -4,14 +4,14 @@ import { DbQueryResult } from "../types";
 export class OrderDao {
     async getOrders(
         userId: string | null,
-        limit: number = 0,
-        skip: number = 0
+        limit?: number,
+        skip?: number
     ): Promise<DbQueryResult<IOrder[]>> {
         const filter = userId ? { userId } : {};
         const query = OrderModel.find(filter);
 
-        if (limit > 0) query.limit(limit);
-        if (skip > 0) query.skip(skip);
+        if (limit) query.limit(limit);
+        if (skip) query.skip(skip);
 
         const [orders, total] = await Promise.all([
             query.exec(),

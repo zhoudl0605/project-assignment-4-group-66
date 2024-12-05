@@ -3,8 +3,8 @@ import { Box, Typography } from '@mui/material';
 
 function Footer() {
     return (
-        <Box
-            textAlign="center"
+        <footer
+            textalign="center"
             padding={3}
             bgcolor="#007bff"
             color="white"
@@ -18,7 +18,7 @@ function Footer() {
             <Typography variant="body2">
                 © 2024 Laptop Store. All rights reserved.
             </Typography>
-        </Box>
+        </footer>
     );
 }
 

@@ -53,21 +53,21 @@ export class PaymentController {
                     });
                 }
             } else {
-                // 数据校验
                 if (
-                    !cardType ||
                     !cardNumber ||
                     !cardName ||
                     !expirationDate ||
                     !cvv
                 ) {
+                    console.log("Missing required fields");
+                    console.log(cardNumber, cardName, expirationDate, cvv);
+
                     return res.status(400).json({
                         status: "error",
                         message: "Missing required fields",
                     });
                 }
 
-                // 调用服务层
                 const paymentMethodService = new PaymentMethodService();
                 paymentMethod = await paymentMethodService.createPaymentMethod({
                     userId: user._id,

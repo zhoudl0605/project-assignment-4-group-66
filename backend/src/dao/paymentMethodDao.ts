@@ -6,7 +6,7 @@ export class PaymentMethodDao {
         userId: string | null,
         query: any
     ): Promise<IPaymentMethod[]> {
-        const { limit = 10, skip = 0, category } = query;
+        const { limit = null, skip = 0, category } = query;
         const filter: any = {};
 
         if (userId) {

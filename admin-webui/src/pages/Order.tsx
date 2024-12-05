@@ -50,78 +50,81 @@ export default function OrderPage() {
 
     // Fetch orders and product list
     useEffect(() => {
-        fetchOrders();
-        fetchProducts();
+        const fetchAllData = async () => {
+            try {
+                const token = sessionStorage.getItem("token");
+
+                // Fetch products
+                const productResponse = await fetch(
+                    `${process.env.REACT_APP_API_BASE_URL}/products`,
+                    {
+                        headers: {
+                            Authorization: `${token}`,
+                        },
+                    }
+                );
+                if (!productResponse.ok) {
+                    throw new Error("Failed to fetch products");
+                }
+                const productData = await productResponse.json();
+                const formattedProducts = productData.data.map(
+                    (product: any) => ({
+                        id: product._id,
+                        name: product.name,
+                        price: product.price,
+                        quantity: product.stock ?? 0,
+                    })
+                );
+                setProductsList(formattedProducts);
+
+                // Fetch orders
+                const orderResponse = await fetch(
+                    `${process.env.REACT_APP_API_BASE_URL}/orders`,
+                    {
+                        headers: {
+                            Authorization: `${token}`,
+                        },
+                    }
+                );
+                if (!orderResponse.ok) {
+                    throw new Error("Failed to fetch orders");
+                }
+                const orderData = await orderResponse.json();
+                const formattedOrders = orderData.data.data.map(
+                    (order: any) => ({
+                        id: order._id,
+                        userId: order.userId,
+                        products: order.products.map((product: any) => {
+                            const productDetail = formattedProducts.find(
+                                (p: any) => p.id === product.productId
+                            );
+
+                            return {
+                                productId: product.productId,
+                                name: productDetail?.name || product.productId,
+                                quantity: product.quantity,
+                                price: productDetail?.price || 0,
+                            };
+                        }),
+                        subTotal: order.subTotal,
+                        tax: order.tax,
+                        total: order.total,
+                        status: order.status,
+                        createdAt: order.createdAt,
+                    })
+                );
+
+                setOrders(formattedOrders);
+            } catch (err: any) {
+                console.error(err.message);
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchAllData();
     }, []);
-
-    const fetchOrders = async () => {
-        try {
-            const token = sessionStorage.getItem("token");
-            const url = `${process.env.REACT_APP_API_BASE_URL}/orders`;
-            const response = await fetch(url, {
-                headers: {
-                    Authorization: `${token}`,
-                },
-            });
-            if (!response.ok) {
-                throw new Error("Failed to fetch orders");
-            }
-
-            const data = await response.json();
-
-            const formattedOrders = data.data.data.map((order: any) => ({
-                id: order._id,
-                userId: order.userId,
-                products: order.products.map((product: any) => ({
-                    productId: product.productId,
-                    name: product.name,
-                    quantity: product.quantity,
-                    price: product.price,
-                })),
-                subTotal: order.subTotal,
-                tax: order.tax,
-                total: order.total,
-                status: order.status,
-                createdAt: order.createdAt,
-            }));
-
-            setOrders(formattedOrders);
-            setLoading(false);
-        } catch (err: any) {
-            console.error(err);
-            setError(err.message);
-            setLoading(false);
-        }
-    };
-
-    const fetchProducts = async () => {
-        try {
-            const token = sessionStorage.getItem("token");
-            const url = `${process.env.REACT_APP_API_BASE_URL}/products`;
-            const response = await fetch(url, {
-                headers: {
-                    Authorization: `${token}`,
-                },
-            });
-            if (!response.ok) {
-                throw new Error("Failed to fetch products");
-            }
-
-            const data = await response.json();
-
-            const formattedProducts = data.data.map((product: any) => ({
-                id: product._id,
-                name: product.name,
-                price: product.price,
-                quantity: product.stock ?? 0,
-            }));
-
-            setProductsList(formattedProducts);
-        } catch (err: any) {
-            console.error("Error fetching products:", err.message);
-            setError(err.message);
-        }
-    };
 
     const updateOrder = async (order: OrderData) => {
         try {

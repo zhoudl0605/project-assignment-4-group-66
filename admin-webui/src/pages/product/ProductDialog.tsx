@@ -82,7 +82,7 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
             options: [
                 { value: "desktop", label: "Desktop" },
                 { value: "laptop", label: "Laptop" },
-                { value: "accessories", label: "Accessories" },
+                { value: "accessory", label: "Accessory" },
             ],
             required: true,
         },

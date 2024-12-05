@@ -11,6 +11,11 @@ import {
     Box,
     CircularProgress,
     Alert,
+    TextField,
+    Select,
+    MenuItem,
+    FormControl,
+    InputLabel,
 } from "@mui/material";
 import ProductDialog from "./product/ProductDialog";
 import Layout from "../layout/dashboard";
@@ -36,7 +41,13 @@ export default function ProductPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    // Fetch products from API
+    const [searchTerm, setSearchTerm] = useState<string>("");
+    const [selectedBrand, setSelectedBrand] = useState<string>("");
+    const [priceRange, setPriceRange] = useState<[number, number]>([
+        0,
+        Infinity,
+    ]);
+
     useEffect(() => {
         fetchProducts();
     }, []);
@@ -67,7 +78,6 @@ export default function ProductPage() {
             setLoading(false);
         } catch (err: any) {
             console.error(err);
-
             setError(err.message);
             setLoading(false);
         }
@@ -92,30 +102,6 @@ export default function ProductPage() {
         } catch (err: any) {
             throw new Error(err.message);
         }
-    };
-
-    const deleteProduct = async (productId: string) => {
-        try {
-            const url = `${process.env.REACT_APP_API_BASE_URL}/products/${productId}`;
-            const response = await fetch(url, {
-                method: "DELETE",
-            });
-            if (!response.ok) {
-                throw new Error("Failed to delete product");
-            }
-
-            // Remove product from state
-            setProducts((prev) => prev.filter((p) => p.id !== productId));
-
-            window.location.reload();
-        } catch (err: any) {
-            throw new Error(err.message);
-        }
-    };
-
-    const handleOpenDialog = (product?: ProductData) => {
-        setSelectedProduct(product);
-        setDialogOpen(true);
     };
 
     const handleCloseDialog = async (
@@ -157,9 +143,101 @@ export default function ProductPage() {
         }
     };
 
+    const deleteProduct = async (productId: string) => {
+        try {
+            const url = `${process.env.REACT_APP_API_BASE_URL}/products/${productId}`;
+            const response = await fetch(url, {
+                method: "DELETE",
+            });
+            if (!response.ok) {
+                throw new Error("Failed to delete product");
+            }
+
+            setProducts((prev) => prev.filter((p) => p.id !== productId));
+        } catch (err: any) {
+            console.error("Failed to Delete Product:", err.message);
+            setError(err.message);
+        }
+    };
+
+    const handleOpenDialog = (product?: ProductData) => {
+        setSelectedProduct(product);
+        setDialogOpen(true);
+    };
+
+    // const handleCloseDialog = async (
+    //     action: string,
+    //     updatedProduct?: ProductData
+    // ) => {
+    //     setDialogOpen(false);
+    //     if (action === "add" || action === "edit") {
+    //         fetchProducts();
+    //     }
+    // };
+
+    const filteredProducts = products.filter((product) => {
+        const matchesSearch = product.name
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase());
+        const matchesBrand = !selectedBrand || product.brand === selectedBrand;
+        const matchesPrice =
+            product.price >= priceRange[0] && product.price <= priceRange[1];
+        return matchesSearch && matchesBrand && matchesPrice;
+    });
+
     return (
         <Layout pagename="Product">
             <Box>
+                <Box display="flex" gap={2} mb={3} flexWrap="wrap">
+                    <TextField
+                        label="Product Name"
+                        variant="outlined"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        sx={{ width: "30%" }}
+                    />
+                    <FormControl sx={{ width: "20%" }}>
+                        <InputLabel>Brand</InputLabel>
+                        <Select
+                            value={selectedBrand}
+                            onChange={(e) => setSelectedBrand(e.target.value)}
+                            label="Brand"
+                        >
+                            <MenuItem value="">All Brands</MenuItem>
+                            {Array.from(
+                                new Set(products.map((p) => p.brand))
+                            ).map((brand) => (
+                                <MenuItem key={brand} value={brand}>
+                                    {brand}
+                                </MenuItem>
+                            ))}
+                        </Select>
+                    </FormControl>
+                    <FormControl sx={{ width: "20%" }}>
+                        <InputLabel>Price Range</InputLabel>
+                        <Select
+                            value={`${priceRange[0]}-${priceRange[1]}`}
+                            onChange={(e) => {
+                                const range = e.target.value
+                                    .split("-")
+                                    .map(Number);
+                                setPriceRange([range[0], range[1]]);
+                            }}
+                            label="Price Range"
+                        >
+                            <MenuItem value="0-Infinity">All</MenuItem>
+                            <MenuItem value="0-50">Lower than $50</MenuItem>
+                            <MenuItem value="50-100">$50 - $100</MenuItem>
+                            <MenuItem value="100-500">$100 - $500</MenuItem>
+                            <MenuItem value="500-1000">$500 - $1000</MenuItem>
+                            <MenuItem value="1000-5000">$1000 - $2000</MenuItem>
+                            <MenuItem value="2000-5000">$2000 - $5000</MenuItem>
+                            <MenuItem value="5000-Infinity">
+                                Higher $5000
+                            </MenuItem>
+                        </Select>
+                    </FormControl>
+                </Box>
                 <Button
                     variant="contained"
                     onClick={() => handleOpenDialog()}
@@ -189,11 +267,11 @@ export default function ProductPage() {
                                     <TableCell>Category</TableCell>
                                     <TableCell>Price</TableCell>
                                     <TableCell>Stock</TableCell>
-                                    <TableCell>Actions</TableCell>
+                                    <TableCell>Action</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
-                                {products.map((product) => (
+                                {filteredProducts.map((product) => (
                                     <TableRow key={product.id}>
                                         <TableCell>{product.id}</TableCell>
                                         <TableCell>{product.name}</TableCell>

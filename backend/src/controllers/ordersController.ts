@@ -4,6 +4,7 @@ import { OrderService } from "../services/orderService";
 import { ShoppingCartService } from "../services/shoppingCart";
 import { RequestErrorResponse, RequestSuccessResponse } from "../types";
 import { auth } from "../modules/auth";
+import { UserService } from "../services/userService";
 
 export class OrdersController {
     public static async getOrdersController(
@@ -12,8 +13,8 @@ export class OrdersController {
         next: NextFunction
     ) {
         const query = req.query;
-        const limit = parseInt(query.limit as string) || 10;
-        const skip = parseInt(query.skip as string) || 0;
+        const limit = query.limit ? parseInt(query.limit as string) : undefined;
+        const skip = query.limit ? parseInt(query.skip as string) : undefined;
 
         let bearertoken = req.headers.authorization;
         let token = bearertoken?.split(" ")[1];
@@ -27,7 +28,7 @@ export class OrdersController {
         const user = await auth.verifyToken(token);
         let userId = query.userId as string | null;
 
-        if (user?.role !== UserRole.ADMIN) {
+        if (user?.role !== UserRole.ADMIN && !userId) {
             userId = user?._id;
         }
 
@@ -54,7 +55,7 @@ export class OrdersController {
         res: Response,
         next: NextFunction
     ) {
-        const { products } = req.body; // 从客户端获取商品列表
+        const { products } = req.body;
         let bearertoken = req.headers.authorization;
         let token = bearertoken?.split(" ")[1];
         if (!token) {
@@ -98,7 +99,7 @@ export class OrdersController {
                 }
             }
 
-            const order = await orderService.createOrder(user._id, products);
+            const order = await orderService.createOrder(user.id, products);
 
             return res.status(201).json({
                 status: "success",
@@ -129,7 +130,7 @@ export class OrdersController {
             } as RequestErrorResponse);
         }
 
-        const user = await auth.verifyToken(token);
+        let user = await auth.verifyToken(token);
 
         if (!user) {
             return res.status(401).json({
@@ -137,6 +138,8 @@ export class OrdersController {
                 message: "Unauthorized",
             } as RequestErrorResponse);
         }
+        const userService = new UserService();
+        user = await userService.getUserById(user.id);
 
         const orderService = new OrderService();
 
@@ -149,6 +152,9 @@ export class OrdersController {
                     message: "Order not found",
                 } as RequestErrorResponse);
             }
+
+            const userId = user._id.toString();
+            const orderUserId = order.userId.toString();
 
             if (
                 user.role !== UserRole.ADMIN &&
