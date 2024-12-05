@@ -1173,5 +1173,128 @@
             "Operating System: macOS"
         ],
         "url": "https://www.bestbuy.ca/en-ca/product/apple-macbook-pro-16-2-fall-2023-space-black-apple-m3-max-1tb-sdd-36gb-ram-english-brand-new/17720831"
+    },
+    {
+        "name": "j5create USB-C 4K HDMI Docking Station (JCD533)",
+        "price": 74.98,
+        "category": "associators",
+        "brand": "j5create",
+        "sku": "41",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/158/15847/15847371.jpg"
+        ],
+        "specs": [
+            "Connect all your cables with ease with the help of this j5create USB-C docking station. It's equipped with a 4K HDMI output and a USB-C Power Delivery port that supports up to 100W pass-through so you can stay productive. It also includes a gigabit ethernet port, memory card reader and writer, combo audio jack, and three SuperSpeed USB 5Gbps ports for all your connectivity needs.",
+            "Features a 4K HDMI output and USB-C Power Delivery port that supports up to 100W pass-through to stay connected and productive",
+            "Included Gigabit Ethernet port, memory card reader/writer, combo audio jack, and three SuperSpeed USB 5Gbps ports for multiple connectivity options",
+            "9 combined ports in a double-sided cable storage compartment for improved connectivity",
+            "100-watt power pass-through allows you to charge your laptop and power the connected peripherals when used with a USB-C power adapter (not included)",
+            "DisplayPort Alt Mode lets you connect to 4K HDMI display over USB-C to suit all your peripheral needs",
+            "Provides direct access to SD and microSD memory cards for fast data storage and easy transfer of your files",
+            "3.5 mm audio jack allows you to connect microphone or headphones for added convenience",
+            "Security lock slot protects your personal information for extra peace of mind",
+            "Double-sided cable storage compartment is easy to set up and keeps your cables tidy and organised",
+            "Elevated design to prevent heat build-up",
+            "Works well with Macbook, Dell XPS, or any other USB-C laptops that need additional ports"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/j5create-usb-c-4k-hdmi-docking-station-jcd533/15847371"
+    },
+    {
+        "name": "Dell WD22TB4 Thunderbolt 4 Dock",
+        "price": 219.99,
+        "category": "associators",
+        "brand": "Dell",
+        "sku": "42",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_1.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_2.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_3.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_4.jpeg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17358/17358456_5.jpeg"
+        ],
+        "specs": [
+            "Dell WD22TB4 Thunderbolt 4 Dock"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/dell-wd22tb4-thunderbolt-4-dock/17358456"
+    },
+    {
+        "name": "Kensington Universal Tabletop Laptop Riser",
+        "price": 39.99,
+        "category": "associators",
+        "brand": "Kensington",
+        "sku": "43",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_2.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_4.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_5.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/173/17302/17302139_7.jpg"
+        ],
+        "specs": [
+            "Get the Kensington Universal tabletop laptop riser for enhanced ergonomics and healthier lifestyle. The elevated design of the laptop riser promotes better posture and reduces strain on the neck and back. This tabletop stand has a tiltable laptop tray that offers convenience and optimal viewing angle, and boasts an open design for increased heat dissipation.",
+            "Supports maximum screen size of up to 16\" and is ideal for professionals, students, and avid gamers",
+            "Large and sturdy laptop stand supports your laptop, an external keyboard, input devices or other work supplies for an organized and clutter-free desktop space",
+            "Ergonomic design elevates the screen-to-eye level for better viewing angle and minimized neck and back strain",
+            "Open design enhances air circulation and increases heat dissipation",
+            "Non-toxic silicon pads hold the laptop in position and protect it from scratches",
+            "Safety ledge stopper safeguards your device from slipping over",
+            "Made of solid, recyclable aluminium for lasting durability",
+            "Laptop tray is tiltable by 0-45-degrees",
+            "Solid build with weight capacity up to 22lb. (10kg)"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/kensington-universal-tabletop-laptop-riser/17302139"
+    },
+    {
+        "name": "Logitech Casa Pop-Up Desk Kit - Bohemian Blush",
+        "price": 199.99,
+        "category": "associators",
+        "brand": "Logitech",
+        "sku": "44",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_1.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_3.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_5.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_7.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/177/17726/17726284_9.jpg"
+        ],
+        "specs": [
+            "Revolutionize the way you work with the Logitech Casa Pop-Up desk kit. This compact kit lets you create a comfortable and organized workspace. It includes a wireless keyboard, wireless touchpad, and laptop riser, which can be folded and stored away after use. Place it on your dining table, high countertop, or any a corner for a versatile work experience.",
+            "Pop-up desk kit includes a wireless keyboard, wireless touchpad, and a book-like case that transforms into a laptop stand",
+            "Casa Keys, the minimalist wireless keyboard and Casa Touch, the smooth wireless touchpad give you laptop-like feel when you work",
+            "Supports 10-inch to 17-inch laptops weighing up to 7.5kg (16.5lb.)",
+            "Connects to multiple operating systems like Windows, macOS, iPadOS, and ChromeOS, through Bluetooth Low Energy for better efficiency",
+            "The rechargeable battery of Casa Keys lasts for up to 5 months on a full charge, and that of Casa Touch lasts for up to 3 weeks. Both devices can be used even as they are charging",
+            "Book-like laptop case unfolds into a laptop stand, raising your screen to eye level for an ergonomic posture",
+            "Plastic parts in Casa Pop-up desk include certified post-consumer recycled plastic (Touchpad: minimum 62%; Keyboard: minimum 47%; Book: minimum 44%) for eco-friendly use"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/logitech-casa-pop-up-desk-kit-bohemian-blush/17726284"
+    },
+    {
+        "name": "Targus Strata II 15.6\" Laptop Sleeve - Grey/Brown",
+        "price": 24.99,
+        "category": "associators",
+        "brand": "Targus",
+        "sku": "45",
+        "stock": 50,
+        "medias": [
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/115/11530/11530800.jpg",
+            "https://multimedia.bbycastatic.ca/multimedia/products/500x500/115/11530/11530800_1.jpg"
+        ],
+        "specs": [
+            "Slim and easy to carry, the Targus Strata II 15.6\" laptop sleeve is convenient for taking your laptop on the go. Its plush interior protects your laptop from scratches, ideal if you have a 2-in-1 device with an exposed screen. Stash away accessories in the front zippered pocket, and carry the sleeve by its handles.",
+            "Fits a laptop up to 15.6\"",
+            "Made of lightweight materials with soft-touch leatherette accents for style and functionality",
+            "Plush interior protects your device from scratches and scuffs",
+            "Front zippered pocket provides space for accessories",
+            "Carry handles make it easy to take the laptop sleeve anywhere"
+        ],
+        "url": "https://www.bestbuy.ca/en-ca/product/targus-strata-ii-15-6-laptop-sleeve-grey-brown/11530800"
     }
 ]
