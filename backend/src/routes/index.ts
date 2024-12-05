@@ -1,5 +1,3 @@
-import App from "koa";
-import express from "express";
 import authRouter from "./auth";
 import usersRouter from "./users";
 import shoppingCartRouter from "./shoppingCarts";

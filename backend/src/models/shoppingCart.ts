@@ -27,13 +27,13 @@ const ShoppingCartSchema: Schema = new Schema(
                 quantity: {
                     type: Number,
                     required: true,
-                    min: 1, // 保证数量至少为 1
+                    min: 1, 
                 },
             },
         ],
     },
     {
-        timestamps: true, // 自动生成 createdAt 和 updatedAt
+        timestamps: true, 
     }
 );
 
