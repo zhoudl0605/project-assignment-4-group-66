@@ -15,7 +15,9 @@ export class PaymentMethodsController {
         const limit = parseInt(query.limit as string) || 10;
         const skip = parseInt(query.skip as string) || 0;
 
-        const token = req.headers.authorization;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+
         if (!token) {
             return res.status(401).json({
                 status: "error",
@@ -60,7 +62,8 @@ export class PaymentMethodsController {
         next: NextFunction
     ) {
         const body = req.body;
-        const token = req.headers.authorization;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
         if (!token) {
             return res.status(401).json({
                 status: "error",
@@ -158,7 +161,8 @@ export class PaymentMethodsController {
     ) {
         const id = req.params.id;
         const body = req.body;
-        const token = req.headers.authorization;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
         if (!token) {
             return res.status(401).json({
                 status: "error",
@@ -223,7 +227,8 @@ export class PaymentMethodsController {
         next: NextFunction
     ) {
         const id = req.params.id;
-        const token = req.headers.authorization;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
         if (!token) {
             return res.status(401).json({
                 status: "error",

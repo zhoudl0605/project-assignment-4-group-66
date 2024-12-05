@@ -39,9 +39,16 @@ export class OrderDao {
         orderId: string,
         updateData: Partial<IOrder>
     ): Promise<IOrder | null> {
-        return await OrderModel.findByIdAndUpdate(orderId, updateData, {
-            new: true,
-        }).exec();
+        const order = await OrderModel.findById(orderId);
+        if (!order) {
+            throw new Error("Order not found");
+        }
+
+        if (updateData.userId) order.userId = updateData.userId;
+        if (updateData.products) order.products = updateData.products;
+        if (updateData.status) order.status = updateData.status;
+
+        return await order.save();
     }
 
     async deleteOrder(orderId: string): Promise<IOrder | null> {

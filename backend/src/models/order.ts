@@ -10,9 +10,9 @@ export interface IOrder extends Document {
         price: number;
     }[];
     status: OrderStatus;
-    subTotal: number; // 每次保存时动态计算
-    tax: number; // 每次保存时动态计算
-    total: number; // 虚拟字段
+    subTotal: number;
+    tax: number;
+    total: number;
 }
 
 const OrderSchema: Schema = new Schema(
@@ -57,15 +57,11 @@ const OrderSchema: Schema = new Schema(
         },
     },
     {
-        timestamps: true, // 自动生成 createdAt 和 updatedAt
+        timestamps: true,
         toJSON: { virtuals: true },
         toObject: { virtuals: true },
     }
 );
-
-OrderSchema.virtual("total").get(function (this: IOrder) {
-    return this.subTotal + this.tax;
-});
 
 OrderSchema.pre<IOrder>("save", function (next) {
     const subTotal = this.products.reduce(
@@ -73,12 +69,16 @@ OrderSchema.pre<IOrder>("save", function (next) {
         0
     );
 
-    this.subTotal = subTotal;
+    this.subTotal = parseFloat(subTotal.toFixed(2)); // 保留两位小数
 
-    const taxRate = 0.1;
-    this.tax = subTotal * taxRate;
+    const taxRate = 0.13;
+    this.tax = parseFloat((subTotal * taxRate).toFixed(2)); // 保留两位小数
 
     next();
+});
+
+OrderSchema.virtual("total").get(function (this: IOrder) {
+    return parseFloat((this.subTotal + this.tax).toFixed(2)); // 保留两位小数
 });
 
 export const OrderModel = mongoose.model<IOrder>("Order", OrderSchema);

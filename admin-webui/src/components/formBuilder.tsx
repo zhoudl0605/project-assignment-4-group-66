@@ -22,9 +22,10 @@ export interface FormField {
         | "password";
     options?: { value: string | number; label: string }[];
     required?: boolean;
-    pattern?: RegExp;
+    pattern?: string;
     inputMode?: "text" | "none" | "tel" | "url" | "email" | "numeric";
     maxLength?: number;
+    placeholder?: string;
 }
 
 interface FormBuilderProps {
@@ -130,6 +131,7 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         label={field.label}
                         value={formValues[field.name] || ""}
                         onChange={handleChange(field.name)}
+                        placeholder={field.placeholder}
                         required={field.required}
                         inputMode={field.inputMode}
                         inputProps={{
@@ -145,6 +147,7 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
                         label={field.label}
                         value={formValues[field.name] || ""}
                         onChange={handleChange(field.name)}
+                        placeholder={field.placeholder}
                         required={field.required}
                         inputProps={{
                             maxLength: field.maxLength, // 添加 maxLength 限制
@@ -154,31 +157,27 @@ const FormBuilder: React.FC<FormBuilderProps> = ({
             default:
                 return (
                     <TextField
+                        type="text"
                         fullWidth
-                        type={field.type}
                         label={field.label}
                         value={formValues[field.name] || ""}
                         onChange={(event) => {
-                            if (field.pattern) {
-                                event.target.value = event.target.value.replace(
-                                    field.pattern,
-                                    ""
-                                );
-                            }
                             handleChange(field.name)(event);
                         }}
                         required={field.required}
                         inputMode={field.inputMode}
                         inputProps={{
                             maxLength: field.maxLength, // 添加 maxLength 限制
+                            pattern: field.pattern, // 添加 pattern 属性
                         }}
+                        placeholder={field.placeholder}
                     />
                 );
         }
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} action="#">
             <Grid container spacing={2} columns={12}>
                 {fields.map((field) => (
                     <Grid size={{ xs: 12 }} key={field.name}>

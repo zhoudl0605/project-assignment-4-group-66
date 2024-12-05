@@ -115,9 +115,8 @@ async function loginAction(email: string, password: string) {
 
         if (res.ok) {
             const data = await res.json();
-            console.log("Login response:", data);
             const token = data.data.token;
-            sessionStorage.setItem("token", token);
+            sessionStorage.setItem("token", "Bearer " +  token);
             window.location.href = "/"; // 重定向到首页
         } else {
             const errorData = await res.json();

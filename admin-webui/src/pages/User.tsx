@@ -15,7 +15,7 @@ import {
 import UserDialog from "./user/UserDialog";
 import Layout from "../layout/dashboard";
 
-interface UserData {
+export interface UserData {
     id: string;
     name: string;
     email: string;
@@ -51,7 +51,6 @@ export default function UserPage() {
             }
 
             const data = await response.json();
-            console.log(data);
 
             const formattedUsers = data.result.data.map((user: any) => ({
                 id: user._id,
@@ -67,8 +66,6 @@ export default function UserPage() {
                     postalCode: user.address?.postalCode || "",
                 },
             }));
-
-            console.log(formattedUsers);
 
             setUsers(formattedUsers);
             setLoading(false);

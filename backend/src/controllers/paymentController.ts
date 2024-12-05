@@ -13,7 +13,8 @@ export class PaymentController {
         next: NextFunction
     ) {
         try {
-            const token = req.headers.authorization;
+            let bearertoken = req.headers.authorization;
+            let token = bearertoken?.split(" ")[1];
             if (!token) {
                 return res.status(401).json({
                     status: "error",
@@ -98,7 +99,6 @@ export class PaymentController {
 
             return res.status(201).json({
                 status: "success",
-                data: paymentMethod,
             });
         } catch (error: any) {
             console.error("Error in postPaymentMethod:", error.message);

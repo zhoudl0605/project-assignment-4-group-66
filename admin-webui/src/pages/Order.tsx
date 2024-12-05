@@ -26,6 +26,7 @@ export interface ProductListItem {
     id: string;
     name: string;
     price: number;
+    quantity: number;
 }
 
 export interface OrderData {
@@ -112,6 +113,7 @@ export default function OrderPage() {
                 id: product._id,
                 name: product.name,
                 price: product.price,
+                quantity: product.stock ?? 0,
             }));
 
             setProductsList(formattedProducts);
@@ -123,6 +125,38 @@ export default function OrderPage() {
 
     const updateOrder = async (order: OrderData) => {
         try {
+            let invalidOrder = false;
+            order.products = order.products.filter((product) => {
+                const availableProduct = productsList.find(
+                    (p) => p.id === product.productId
+                );
+
+                if (!availableProduct) {
+                    invalidOrder = true;
+                    return false;
+                }
+
+                if (
+                    product.quantity > 0 &&
+                    availableProduct && // Ensure the product exists in the productsList
+                    product.quantity <= availableProduct.quantity
+                ) {
+                    return true;
+                }
+
+                invalidOrder = true;
+                return false;
+            });
+
+            if (order.products.length === 0) {
+                invalidOrder = true;
+            }
+
+            if (invalidOrder) {
+                setError("Invalid order, please check the products");
+                throw new Error("Invalid order, please check the products");
+            }
+
             const token = sessionStorage.getItem("token");
             const url = `${process.env.REACT_APP_API_BASE_URL}/orders/${order.id}`;
             const response = await fetch(url, {
@@ -201,7 +235,7 @@ export default function OrderPage() {
         } else if (action === "edit" && updatedOrder) {
             try {
                 await updateOrder(updatedOrder);
-                window.location.reload();
+                // window.location.reload();
             } catch (err: any) {
                 console.error("Error updating order:", err.message);
                 setError(err.message);

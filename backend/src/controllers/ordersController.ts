@@ -15,7 +15,15 @@ export class OrdersController {
         const limit = parseInt(query.limit as string) || 10;
         const skip = parseInt(query.skip as string) || 0;
 
-        const token = req.headers.authorization!;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+        if (!token) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
         const user = await auth.verifyToken(token);
         let userId = query.userId as string | null;
 
@@ -47,7 +55,15 @@ export class OrdersController {
         next: NextFunction
     ) {
         const { products } = req.body; // 从客户端获取商品列表
-        const token = req.headers.authorization!;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+        if (!token) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
         const user = await auth.verifyToken(token);
 
         if (!user) {
@@ -104,7 +120,15 @@ export class OrdersController {
     ) {
         const id = req.params.id;
 
-        const token = req.headers.authorization!;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+        if (!token) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
         const user = await auth.verifyToken(token);
 
         if (!user) {
@@ -157,7 +181,15 @@ export class OrdersController {
         const id = req.params.id;
         const body = req.body;
 
-        const token = req.headers.authorization!;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+        if (!token) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
         const user = await auth.verifyToken(token);
 
         if (!user) {
@@ -211,7 +243,15 @@ export class OrdersController {
     ) {
         const id = req.params.id;
 
-        const token = req.headers.authorization!;
+        let bearertoken = req.headers.authorization;
+        let token = bearertoken?.split(" ")[1];
+        if (!token) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized",
+            } as RequestErrorResponse);
+        }
+
         const user = await auth.verifyToken(token);
 
         if (!user) {

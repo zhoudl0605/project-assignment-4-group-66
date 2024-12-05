@@ -241,7 +241,10 @@ export class OrderService {
             throw new Error("Order not found.");
         }
 
-        if (existingOrder.status !== "processing") {
+        if (
+            existingOrder.status !== "processing" &&
+            existingOrder.status !== "pending"
+        ) {
             throw new Error("Order is not in a valid state for payment.");
         }
 
@@ -251,8 +254,15 @@ export class OrderService {
         const user = await new UserDao().getUserById(
             existingOrder.userId.toString()
         );
+        if (!user || !user.email) {
+            console.warn(
+                `User not found or missing email for userId: ${existingOrder.userId}`
+            );
+            return updatedOrder;
+        }
+
         const emailContent = `
-            Dear ${user!.name},
+            Dear ${user.name ?? "Customer"},
     
             Your order has been successfully paid!
             
